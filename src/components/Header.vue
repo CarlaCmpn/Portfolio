@@ -23,7 +23,6 @@
 </script>
 
 <style scoped>
-
 .name{
 	margin-top: 67px;
 	padding-left: 75px;
@@ -37,7 +36,7 @@
 	padding-right: 75px;
 	right: 0;
 	position: absolute;
-	cursor: pointer;
+	/* cursor: pointer; */
 }
 
 h1{

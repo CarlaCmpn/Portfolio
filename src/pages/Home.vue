@@ -4,6 +4,9 @@
       <div class="title">
         <h2>All my<br><span>works</span></h2>
       </div>
+      <div class="image">
+        <img src=../assets/ellipse.png>
+      </div>
       <div class="number">
         <p>01</p>
         <div class="line-h"></div>
@@ -55,16 +58,14 @@
     display: flex;
     flex-direction: column;
     height: 100%;
-    padding-right: 148px;
+    padding-right: 49px;
     border-right: 1px #ffffff solid;
     margin-right: 10px;
   }
 
   .title{
-    display: flex;
-    padding-top: 400px;
-    /* align-items: center; */
-    height: 80%;
+    position: absolute;
+    top: 420px;
   }
 
   h2{
@@ -75,10 +76,22 @@
     font-style: italic;
   }
 
+  .image{
+    padding-top: 360px;
+    padding-left: 90px;
+    height: 80%;
+    /* background-color: tomato; */
+  }
+
+  .image img{
+    width: 100%;
+    height: auto;
+  }
+
   .number{
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
     height: 20%;
   }
 

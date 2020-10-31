@@ -1,22 +1,25 @@
 <template>
   <div id="app">
-    <Header />
-    <router-view/>
+    <Loading />
+    <!-- <Header />
+    <router-view/> -->
   </div>
 </template>
 
 <script>
 import Header from './components/Header'
+import Loading from './components/Loading'
 export default {
   name: 'App',
   components:{
-    Header
+    Header,
+    Loading
   }
 }
 </script>
 
 <style>
-*{
+body{
   margin: 0;
   padding: 0;
   top: 0;

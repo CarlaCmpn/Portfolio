@@ -1,9 +1,13 @@
 <template>
   <div id="app">
-    <Intro />
     <!-- <Loading /> -->
-    <!-- <Header />
-    <router-view/> -->
+    <div v-if="intro">
+       <Intro />
+    </div>
+    <div v-if="home">
+      <Header />
+      <router-view/>
+    </div>
   </div>
 </template>
 
@@ -19,6 +23,22 @@ export default {
     Header,
     Loading,
     Intro
+  },
+  data(){
+    return{
+      intro: true,
+      home: false,
+    }
+  },
+  mounted(){
+    let t = this
+
+    if(t.intro === true){
+      setTimeout(function(){
+        t.intro = false
+        t.home = true
+      }, 16000);
+    }
   }
 }
 </script>

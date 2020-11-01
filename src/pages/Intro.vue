@@ -12,9 +12,6 @@
     <div v-if="transition4">
       <Transition4 />
     </div>
-    <div v-if="home">
-      <Home />
-    </div>
   </div>
 </template>
 
@@ -24,7 +21,6 @@ import Transition1 from '../components/Transition1'
 import Transition2 from '../components/HelloTransition'
 import Transition3 from '../components/Presentation'
 import Transition4 from '../components/Transition2'
-import Home from '../pages/Home'
 
 export default {
   name: 'Intro',
@@ -33,7 +29,6 @@ export default {
       Transition2,
       Transition3,
       Transition4,
-      Home
   },
   data(){
     return{
@@ -41,7 +36,6 @@ export default {
       transition2: false,
       transition3: false,
       transition4: false,
-      home: false,
     }
   },
   mounted(){
@@ -61,14 +55,6 @@ export default {
               setTimeout(function(){
                 transition.transition3 = false
                 transition.transition4 = true
-
-                if(transition.transition4 === true){
-                  setTimeout(function(){
-                    transition.transition4 = false
-                    transition.home = true
-                  }, 3000);
-                }
-                
               }, 7000);
             }
 

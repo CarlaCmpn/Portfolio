@@ -1,19 +1,24 @@
 <template>
   <div id="app">
-    <Loading />
+    <Intro />
+    <!-- <Loading /> -->
     <!-- <Header />
     <router-view/> -->
   </div>
 </template>
 
 <script>
+
 import Header from './components/Header'
-import Loading from './components/Loading'
+import Loading from './pages/Loading'
+import Intro from './pages/Intro'
+
 export default {
   name: 'App',
   components:{
     Header,
-    Loading
+    Loading,
+    Intro
   }
 }
 </script>

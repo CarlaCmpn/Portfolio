@@ -51,8 +51,18 @@
     color: white;
     margin-left: 75px;
     height: 100vh;
-    z-index: 60;
+    opacity: 1;
+    animation: opacity 1.5s 1 backwards;
   }
+
+  @keyframes opacity {
+		0% {
+			opacity: 0;
+		}
+		100% {
+			opacity: 1;
+		}
+	}
 
   .title-block{
     display: flex;

@@ -3,7 +3,6 @@
 		<div class="border-ligne">
 			<div class="loading">
 				<h3>LOADING</h3>
-				<!-- <button @click="show = !show">Permuter l'affichage</button> -->
 				<span>.</span>
 				<span>.</span>
 				<span>.</span>
@@ -14,8 +13,9 @@
 
 <script>
 
+
 export default {
-  name: 'App',
+  name: 'Loading',
   data(){
 	return{
 		show: true,

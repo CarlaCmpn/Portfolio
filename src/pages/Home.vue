@@ -5,7 +5,7 @@
         <h2>All my<br><span>works</span></h2>
       </div>
       <div class="image">
-        <img src=../assets/ellipse.png>
+        <img src=../assets/ellipse.svg>
       </div>
       <div class="number">
         <p>01</p>

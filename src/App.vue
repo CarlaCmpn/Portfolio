@@ -1,5 +1,6 @@
 <template>
   <div id="app">
+    <!-- <Transition /> -->
     <!-- <Loading /> -->
     <div v-if="intro">
        <Intro />
@@ -16,13 +17,15 @@
 import Header from './components/Header'
 import Loading from './pages/Loading'
 import Intro from './pages/Intro'
+import Transition from './components/Transition3'
 
 export default {
   name: 'App',
   components:{
     Header,
     Loading,
-    Intro
+    Intro,
+    Transition
   },
   data(){
     return{

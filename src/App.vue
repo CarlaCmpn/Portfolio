@@ -1,8 +1,8 @@
 <template>
   <div id="app">
-    <!-- <div v-if="intro">
+    <div v-if="intro">
        <Intro />
-    </div> -->
+    </div>
     <div v-if="home">
       <Header />
       <router-view/>
@@ -27,8 +27,8 @@ export default {
   },
   data(){
     return{
-      intro: false,
-      home: true,
+      intro: true,
+      home: false,
     }
   },
   mounted(){

@@ -127,19 +127,24 @@
   font-weight: normal;
 }
 
-.container .projects .block-project .main-project .cover-project .text-project .see-more {
+.container .projects .block-project .main-project .cover-project .text-project a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.container .projects .block-project .main-project .cover-project .text-project a .see-more {
   display: flex;
   align-items: center;
   width: auto;
   cursor: pointer;
 }
 
-.container .projects .block-project .main-project .cover-project .text-project .see-more p {
-  font-size: 14px;
+.container .projects .block-project .main-project .cover-project .text-project a .see-more p {
+  font-size: 16px;
   font-style: italic;
 }
 
-.container .projects .block-project .main-project .cover-project .text-project .see-more .line {
+.container .projects .block-project .main-project .cover-project .text-project a .see-more .line {
   margin-left: 10px;
   width: 50px;
   height: 1px;

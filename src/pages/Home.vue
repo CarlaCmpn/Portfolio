@@ -7,11 +7,6 @@
       <div class="image">
         <img src=../assets/ellipse.svg>
       </div>
-      <!-- <div class="number">
-        <p>01</p>
-        <div class="line-h"></div>
-        <p>06</p>
-      </div> -->
     </div>
     <div class="projects">
       <div class="block-project">
@@ -25,10 +20,12 @@
             </div>
             <div class="text-project">
               <h3>My portfolio v2</h3>
-              <div class="see-more">
-                <p>See the project</p>
-                <div class="line"></div>
-              </div>
+              <router-link to="/project">
+                <div class="see-more">
+                  <p>See the project</p>
+                  <div class="line"></div>
+                </div>
+              </router-link>
             </div>
           </div>
           <div class="text-right">

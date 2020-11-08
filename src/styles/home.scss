@@ -123,22 +123,27 @@
 							font-weight: normal;
 						}
 
-						.see-more{
-							display: flex;
-							align-items: center;
-							width: auto;
-							cursor: pointer;
-	
-							p{
-								font-size: 14px;
-								font-style: italic;
-							}
-	
-							.line{
-								margin-left: 10px;
-								width: 50px;
-								height: 1px;
-								background-color: #ffffff;
+						a{
+							text-decoration: none;
+							color: #ffffff;
+
+							.see-more{
+								display: flex;
+								align-items: center;
+								width: auto;
+								cursor: pointer;
+		
+								p{
+									font-size: 16px;
+									font-style: italic;
+								}
+		
+								.line{
+									margin-left: 10px;
+									width: 50px;
+									height: 1px;
+									background-color: #ffffff;
+								}
 							}
 						}
 					}

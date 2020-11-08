@@ -1,55 +1,96 @@
 <template>
 	<div>
+		<div v-if="openTransition">
+			<Transition />
+		</div>
 		<div class="navbar">
 			<div class="name">
 				<h1>Carla.</h1>
 			</div>
-			<div class="menu">
+			<div v-on:click="open = true" class="menu">
 				<div class="line-menu"></div>
 				<div class="line-menu"></div>
 				<div class="line-menu"></div>
 			</div>
 		</div>
-		<div class="navbar-open">
-			<div class="list">
-				<p>Works</p>
-				<p>About</p>
-				<p>Contact</p>
+		<div v-if="open" class="navbar-open">
+			<div v-on:click="open = false" class="cross">
+				<img src="../assets/cross.svg" alt="">
 			</div>
-			<div class="image">
-				<img src="../assets/square.svg" alt="">
-			</div>
-			<div class="image">
-				<img src="../assets/square.svg" alt="">
-			</div>
-			<div class="image">
-				<img src="../assets/circle.svg" alt="">
-			</div>
-			<div class="image">
-				<img src="../assets/circle.svg" alt="">
-			</div>
-			<div class="image">
-				<img src="../assets/triangle.svg" alt="">
-			</div>
-			<div class="image">
-				<img src="../assets/triangle.svg" alt="">
-			</div>
+			<kinesis-container class="list" :animationDuration="duration" :easing="easing">
+				<kinesis-element tag="p" :type="type" :parallaxStrength="10">
+					<p>Works</p>
+					<p>About</p>
+					<p>Contact</p>
+				</kinesis-element>
+				<div class="image">
+					<kinesis-element :type="type" :parallaxStrength="10">
+						<img src="../assets/square.svg" alt="">
+					</kinesis-element>
+				</div>
+				<div class="image">
+					<kinesis-element :type="type" :parallaxStrength="10">
+						<img src="../assets/square.svg" alt="">
+					</kinesis-element>
+				</div>
+				<div class="image">
+					<kinesis-element :type="type" :parallaxStrength="10">
+						<img src="../assets/circle.svg" alt="">
+					</kinesis-element>
+				</div>
+				<div class="image">
+					<kinesis-element :type="type" :parallaxStrength="10">
+						<img src="../assets/circle.svg" alt="">
+					</kinesis-element>
+				</div>
+				<div class="image">
+					<kinesis-element :type="type" :parallaxStrength="10">
+						<img src="../assets/triangle.svg" alt="">
+					</kinesis-element>
+				</div>
+				<div class="image">
+					<kinesis-element :type="type" :parallaxStrength="10">
+						<img src="../assets/triangle.svg" alt="">
+					</kinesis-element>
+				</div>
+			</kinesis-container>
 		</div>
 	</div>
 </template>
 
 <script>
-  export default {
-    name: 'Header',
-    data() {
-      return {
+import Vue from 'vue'
+import VueKinesis from 'vue-kinesis'
+import Transition from './Transition3'
+Vue.use(VueKinesis)
 
-      }
-    }
-  }
+export default {
+	name: 'Header',
+	components:{
+		Transition
+	},
+	data() {
+		return {
+			openTransition: false,
+			open: false,
+		}
+	},
+	mounted(){
+		let transition = this
+
+		// if(transition.openTransition = true){
+		// 	setTimeout(function(){
+		// 		alert("tttt")
+		// 		// transition.openTransition = false
+		// 		// transition.open = true
+        //     }, 1000);
+		// }
+	}
+}
 </script>
 
 <style scoped>
+
 	.name{
 		margin-top: 67px;
 		padding-left: 75px;
@@ -64,7 +105,7 @@
 		padding-right: 75px;
 		right: 0;
 		position: absolute;
-		/* cursor: pointer; */
+		cursor: pointer;
 	}
 
 	h1{
@@ -94,6 +135,7 @@
 
 	.navbar-open{
 		display: flex;
+		flex-direction: column;
 		justify-content: center;
 		align-items: center;
 		position: absolute;
@@ -108,8 +150,9 @@
 		justify-content: center;
 		align-items: center;
 		flex-direction: column;
-		width: 300px;
-		height: 500px;
+		width: 80%;
+		height: 80%;
+		text-align: center;
 		/* background-color: teal; */
 	}
 
@@ -118,6 +161,7 @@
 		color: #ffffff;
 		text-decoration: underline;
 		font-style: italic;
+		cursor: pointer;
 	}
 
 	.image{
@@ -127,15 +171,21 @@
 		height: 140px;
 	}
 
+	.image:nth-of-type(1){
+		top: 300px;
+		left: 0px;
+		animation-delay: 0s;
+	}
+
 	.image:nth-of-type(2){
-		top: 700px;
+		top: 60px;
 		left: 420px;
 		animation-delay: 0s;
 	}
 
 	.image:nth-of-type(3){
 		top: 300px;
-		right: 188px;
+		right: 100px;
 		animation-delay: .5s;
 	}
 
@@ -146,20 +196,29 @@
 	}
 
 	.image:nth-of-type(5){
-		top: 300px;
+		top: 600px;
 		left: 139px;
 		animation-delay: 1.5s;	
 	}
 
 	.image:nth-of-type(6){
 		top: 100px;
-		right: 600px;
+		right: 300px;
 		animation-delay: 2s;	
 	}
 
-	.image:nth-of-type(7){
-		top: 500px;
-		left: 300px;
-		animation-delay: 2.5s;	
+	.cross{
+		display: flex;
+		align-items: center;
+		justify-content: flex-end;
+		width: 100%;
+		height: 50px;
+		margin-right: 75px;
+		cursor: pointer;
+	}
+
+	.cross img{
+		width: 30px;
+		height: auto;
 	}
 </style>

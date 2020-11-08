@@ -18,7 +18,7 @@ export default {
   name: 'Loading',
   data(){
 	return{
-		show: true,
+		show: true
 	}
   }
 }

@@ -22,6 +22,7 @@
 
 <style scoped>
 	.container{
+		position: absolute;
 		display: flex;
 		flex-direction: column;
 		justify-content: space-between;
@@ -29,6 +30,7 @@
 		width: 100vw;
 		height: 100vh;
 		background-color: #ffffff;
+		z-index: 2;
 	}
 
 	.ligne{

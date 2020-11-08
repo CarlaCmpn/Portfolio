@@ -39,6 +39,10 @@
   font-weight: normal;
 }
 
+.container .title-block .title h2 span {
+  font-style: italic;
+}
+
 .container .title-block .image {
   padding-top: 360px;
   padding-left: 90px;
@@ -48,30 +52,6 @@
 .container .title-block .image .image img {
   width: 70%;
   height: auto;
-}
-
-.container .title-block .number {
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  height: 20%;
-}
-
-.container .title-block .number span {
-  font-style: italic;
-}
-
-.container .title-block .number p {
-  font-size: 25px;
-  color: #ffffff;
-  opacity: 0.5;
-}
-
-.container .title-block .number .line-h {
-  width: 100px;
-  background-color: #ffffff;
-  height: 1px;
-  margin: 0 18px;
 }
 
 .container .projects {

@@ -1,10 +1,8 @@
 <template>
   <div id="app">
-    <!-- <Transition /> -->
-    <!-- <Loading /> -->
-    <div v-if="intro">
+    <!-- <div v-if="intro">
        <Intro />
-    </div>
+    </div> -->
     <div v-if="home">
       <Header />
       <router-view/>
@@ -29,8 +27,8 @@ export default {
   },
   data(){
     return{
-      intro: true,
-      home: false,
+      intro: false,
+      home: true,
     }
   },
   mounted(){

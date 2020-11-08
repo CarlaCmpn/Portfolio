@@ -1,0 +1,147 @@
+.navbar{
+	.name{
+		margin-top: 67px;
+		padding-left: 75px;
+		left: 0;
+		position: absolute;
+		z-index: 3;
+
+		a{
+			text-decoration: none;
+
+			h1{
+				color: white;
+				font-size: 30px;
+				font-style: italic;
+				text-decoration: none;
+				margin: 0;
+			}
+
+			.underligne{
+				width: 80px;
+				height: 1px;
+				background-color: #ffffff;
+			}
+		}
+	}
+
+	.menu{
+		margin-top: 67px;
+		padding-right: 75px;
+		right: 0;
+		position: absolute;
+		cursor: pointer;
+		z-index: 3;
+
+		.line-menu{
+			height: 1px;
+			background-color: #ffffff;
+			margin: 10px 0;
+
+			&:nth-child(1){
+				width: 33px;
+			}
+		
+			&:nth-child(2){
+				width: 17px;
+			}
+		
+			&:nth-child(3){
+				width: 33px;
+			}
+		}
+	}
+}
+
+.navbar-open{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	position: absolute;
+	width: 100vw;
+	height: 100vh;
+	background-color: #252525;
+	z-index: 1;
+
+	.list{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+		width: 80%;
+		height: 80%;
+		text-align: center;
+		/* background-color: teal; */
+
+		.list-link{
+			margin: 30px 0;
+
+			a{
+				text-decoration: none;
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+
+				p{
+					margin: 0;
+					font-size: 60px;
+					color: #ffffff;
+					text-decoration: none;
+					font-style: italic;
+					cursor: pointer;
+				}
+	
+				.underligne{
+					width: 150px;
+					height: 1px;
+					background-color: #ffffff;
+	
+				}
+			}
+		}
+
+		.image{
+			position: absolute;
+			opacity: 1;
+			width: 140px;
+			height: 140px;
+
+			&:nth-of-type(1){
+				top: 300px;
+				left: 0px;
+				animation-delay: 0s;
+			}
+		
+			&:nth-of-type(2){
+				top: 60px;
+				left: 420px;
+				animation-delay: 0s;
+			}
+		
+			&:nth-of-type(3){
+				top: 300px;
+				right: 100px;
+				animation-delay: .5s;
+			}
+		
+			&:nth-of-type(4){
+				top: 636px;
+				right: 165px;
+				animation-delay: 1s;
+			}
+		
+			&:nth-of-type(5){
+				top: 600px;
+				left: 139px;
+				animation-delay: 1.5s;	
+			}
+		
+			&:nth-of-type(6){
+				top: 100px;
+				right: 300px;
+				animation-delay: 2s;	
+			}
+		}
+	}
+}

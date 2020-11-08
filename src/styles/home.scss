@@ -35,6 +35,10 @@
 			h2{
 				font-size: 60px;
 				font-weight: normal;
+
+				span{
+					font-style: italic;
+				}
 			}
 		}
 
@@ -47,30 +51,6 @@
 				width: 70%;
 				height: auto;
 			  }
-		}
-
-		.number{
-			display: flex;
-			align-items: center;
-			justify-content: flex-start;
-			height: 20%;
-
-			span{
-				font-style: italic;
-			}
-
-			p{
-				font-size: 25px;
-				color: #ffffff;
-				opacity: 0.5;
-			}
-
-			.line-h{
-				width: 100px;
-				background-color: #ffffff;
-				height: 1px;
-				margin: 0 18px;
-			 }
 		}
 	}
 

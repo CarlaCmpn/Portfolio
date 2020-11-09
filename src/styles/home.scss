@@ -9,7 +9,6 @@
     overflow-y: hidden;
 	white-space: nowrap;
 
-
 	@keyframes opacity {
 		0% {
 			opacity: 0;
@@ -91,20 +90,26 @@
 					width: 80%;
 					height: 600px;
 
+					&:hover .image-project img{
+						width: 130%;
+						transition: width 1s ease;
+						filter: grayscale(0%);
+					}
+
 					.image-project{
+						display: flex;
+						justify-content: center;
+						align-items: center;
 						width: 100%;
 						height: 80%;
 						background-color: brown;
 						overflow: hidden;
 
 						img{
-							width: 120%;
+							width: 115%;
 							height: auto;
 							filter: grayscale(100%);
-	
-							&:hover{
-								filter: grayscale(0%);
-							}
+							transition: width 1s ease;
 						}
 					}
 
@@ -132,6 +137,19 @@
 								align-items: center;
 								width: auto;
 								cursor: pointer;
+
+								&:hover .line{
+									animation: ligne 1s 1 normal;
+								}
+
+								@keyframes ligne{
+									0%{
+										width: 0px;
+									}
+									100%{
+										width: 50px;
+									}
+								}
 		
 								p{
 									font-size: 16px;

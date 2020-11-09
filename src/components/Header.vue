@@ -1,59 +1,38 @@
 <template>
 	<div>
-		<!-- <div v-if="openTransition">
-			<Transition />
-		</div> -->
 		<div class="navbar">
-			<div class="name" v-on:click="open = false">
+			<div class="name" v-on:click="isActive = false">
 				<router-link to="/">
-					<h1>Carla.</h1>
-					<div class="underligne"></div>
+					<h1 v-bind:class="[isActive ? 'open-title' : null]">Carla.</h1>
+					<div class="underligne" v-bind:class="[isActive ? 'open-title' : null]"></div>
 				</router-link>
 			</div>
-			<div class="menu" v-on:click="open ? open = false : open = true" >
+			<div class="menu" v-bind:class="[isActive ? 'menu_open' : null]" @click="hamburger()">
 				<div class="line-menu"></div>
 				<div class="line-menu"></div>
 				<div class="line-menu"></div>
 			</div>
 		</div>
-		<div class="navbar-open" v-if="open">
+		<div class="navbar-open" v-bind:class="[isActive ? 'transition-open' : 'transition-close']">
 			<div class="list">
-				<div class="list-link" v-on:click="open = false">
+				<div class="list-link" v-on:click="isActive = false">
 					<router-link to="/">
 						<p>Works</p>
 						<div class="underligne"></div>
 					</router-link>
 				</div>
-				<div class="list-link" v-on:click="open = false">
+				<div class="list-link" v-on:click="isActive = false">
 					<router-link to="/about">
 						<p>About</p>
 						<div class="underligne"></div>
 					</router-link>
 				</div>
-				<div class="list-link" v-on:click="open = false">
+				<div class="list-link" v-on:click="isActive = false">
 					<router-link to="/contact">
 						<p>Contact</p>
 						<div class="underligne"></div>
 					</router-link>
 				</div>
-				<!-- <div class="image">
-					<img src="../assets/square.svg" alt="">
-				</div>
-				<div class="image">
-					<img src="../assets/square.svg" alt="">
-				</div>
-				<div class="image">
-					<img src="../assets/circle.svg" alt="">
-				</div>
-				<div class="image">
-					<img src="../assets/circle.svg" alt="">
-				</div>
-				<div class="image">
-					<img src="../assets/triangle.svg" alt="">
-				</div>
-				<div class="image">
-					<img src="../assets/triangle.svg" alt="">
-				</div> -->
 			</div> 
 		</div>
 	</div>
@@ -61,35 +40,26 @@
 
 <script>
 import Vue from 'vue'
-import VueKinesis from 'vue-kinesis'
-import Transition from './Transition3'
-Vue.use(VueKinesis)
 
 export default {
 	name: 'Header',
 	components:{
-		Transition
+		
 	},
 	data() {
 		return {
-			openTransition: false,
-			open: false,
+			isActive: false,
 		}
 	},
-	mounted(){
-		let transition = this
-
-		// if(transition.openTransition = true){
-		// 	setTimeout(function(){
-		// 		alert("tttt")
-		// 		// transition.openTransition = false
-		// 		// transition.open = true
-        //     }, 1000);
-		// }
-	}
+	methods: {
+		hamburger: function() {
+			this.isActive = !this.isActive
+		}
+  	}
 }
 </script>
 
 <style scoped>
 	@import '../styles/header.min.css';
+	@import '../styles/reset.css';
 </style>

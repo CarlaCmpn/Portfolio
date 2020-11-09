@@ -1,9 +1,13 @@
+.navbar {
+  z-index: 3;
+}
+
 .navbar .name {
   margin-top: 67px;
   padding-left: 75px;
   left: 0;
   position: absolute;
-  z-index: 3;
+  z-index: 4;
 }
 
 .navbar .name a {
@@ -30,7 +34,7 @@
   right: 0;
   position: absolute;
   cursor: pointer;
-  z-index: 3;
+  z-index: 4;
 }
 
 .navbar .menu .line-menu {
@@ -60,7 +64,10 @@
   width: 100vw;
   height: 100vh;
   background-color: #252525;
-  z-index: 1;
+  z-index: 3;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  position: fixed;
 }
 
 .navbar-open .list {

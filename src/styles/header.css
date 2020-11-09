@@ -112,12 +112,12 @@
 }
 
 .navbar-open.transition-open {
-  transition: all ease-in 1.5s;
+  transition: all ease 1.5s;
   transform: translateX(0%);
 }
 
 .navbar-open.transition-close {
-  transition: all ease-out 1.5s;
+  transition: all ease 1.5s;
   transform: translateX(100%);
 }
 

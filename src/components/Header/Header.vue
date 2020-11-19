@@ -45,7 +45,7 @@
 </template>
 
 <script>
-import Vue from 'vue'
+// import Vue from 'vue'
 
 export default {
 	name: 'Header',
@@ -91,6 +91,6 @@ export default {
 </script>
 
 <style scoped>
-	@import '../styles/header.min.css';
-	@import '../styles/reset.css';
+	@import 'header.css';
+	@import '../../styles/reset.css';
 </style>

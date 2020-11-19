@@ -12,7 +12,7 @@
 
 <script>
 
-import Header from './components/Header'
+import Header from './components/Header/Header'
 import Loading from './pages/Loading'
 import Intro from './pages/Intro'
 import Transition from './components/Transition3'

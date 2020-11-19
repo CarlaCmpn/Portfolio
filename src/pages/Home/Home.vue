@@ -5,22 +5,22 @@
         <h2>All my<br><span>works</span></h2>
       </div>
       <div class="image">
-        <img src=../assets/ellipse.svg>
+        <img src="@/assets/ellipse.svg">
       </div>
     </div>
     <div class="projects">
-      <div class="block-project">
+      <div class="block-project" v-for="data in dataHome" :key="data.title">
         <div class="main-project">
           <div class="text-left">
-              <p>Personnal project</p>
+              <p>{{data.description}}</p>
           </div>
           <div class="cover-project">
             <div class="image-project">
-              <img src="../assets/couv_travel_diary.jpeg" alt="">
+              <img src="#">
             </div>
             <div class="text-project">
-              <h3>My portfolio v2</h3>
-              <router-link to="/project">
+              <h3>{{data.title}}</h3>
+              <router-link :to="data.link">
                 <div class="see-more">
                   <p>See the project</p>
                   <div class="line"></div>
@@ -29,7 +29,7 @@
             </div>
           </div>
           <div class="text-right">
-              <p>01</p>
+              <p></p>
           </div>
         </div>
       </div>
@@ -39,16 +39,18 @@
 </template>
 
 <script>
+  import json from "../../../json/data.json"
+
   export default {
     name: 'Home',
     data() {
       return {
-
+        dataHome: json.home,
       }
-    }
+    },
   }
 </script>
 
-<style scoped>
-  @import '../styles/home.min.css';
+<style>
+  @import 'home.css';
 </style>

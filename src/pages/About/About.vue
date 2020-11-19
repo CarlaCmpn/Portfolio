@@ -5,7 +5,7 @@
 				<h2>More<br><span>about me</span></h2>
 			</div>
 			<div class="image">
-				<img src=../assets/ellipse.svg>
+				<img src=../../assets/ellipse.svg>
 			</div>
 		</div>
 		<div class="description">
@@ -19,7 +19,7 @@
 
 			</div>
 			<div class="svg">
-				<img src="../assets/available.svg" alt="">
+				<img src="../../assets/available.svg" alt="">
 			</div>
 		</div>
 		<div class="links">
@@ -39,5 +39,5 @@ export default{
 </script>
 
 <style scoped>
-  @import '../styles/about.min.css';
+  @import 'about.css';
 </style>

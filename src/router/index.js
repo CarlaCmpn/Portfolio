@@ -1,9 +1,9 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import Home from '../pages/Home'
-import About from '../pages/About'
-import Contact from '../pages/Contact'
-import Project from '../pages/Project'
+import Home from '../pages/Home/Home.vue'
+import About from '../pages/About/About.vue'
+import Contact from '../pages/Contact/Contact.vue'
+import Project from '../pages/Project/Project.vue'
 
 Vue.use(Router)
 
@@ -26,7 +26,7 @@ export default new Router({
       component: Contact
     },
     {
-      path: '/project',
+      path: '/project/:name',
       name: 'project',
       component: Project
     }

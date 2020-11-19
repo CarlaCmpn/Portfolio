@@ -1,0 +1,25 @@
+{
+	"home": [
+		{
+			"id": "01",
+			"title": "My portfolio v2",
+			"description": "Personnal project",
+			"path_img": "",
+			"link": "/project/a"
+		},
+		{
+			"id": "02",
+			"title": "My travel diary",
+			"description": "Personnal project",
+			"path_img": "couv_travel_diary.jpeg",
+			"link": "/project/travel_diary"
+		},
+		{
+			"id": "03",
+			"title": "Space game",
+			"description": "School project",
+			"path_img": "",
+			"link": "/project/space_game"
+		}
+	]    
+}

@@ -27,8 +27,8 @@ export default {
   },
   data(){
     return{
-      intro: true,
-      home: false,
+      intro: false,
+      home: true
     }
   },
   mounted(){

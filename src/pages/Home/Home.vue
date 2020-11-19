@@ -16,20 +16,20 @@
           </div>
           <div class="cover-project">
             <div class="image-project">
-              <img src="#">
+              <img :src="require('@/assets/images/'+`${data.img}`)">
             </div>
             <div class="text-project">
               <h3>{{data.title}}</h3>
-              <router-link :to="data.link">
+              <a :href="data.link">
                 <div class="see-more">
                   <p>See the project</p>
                   <div class="line"></div>
                 </div>
-              </router-link>
+              </a>
             </div>
           </div>
           <div class="text-right">
-              <p></p>
+            <p>{{data.id}}</p>
           </div>
         </div>
       </div>
@@ -46,8 +46,12 @@
     data() {
       return {
         dataHome: json.home,
+        images : [],
       }
     },
+    mounted() {
+      
+    }
   }
 </script>
 

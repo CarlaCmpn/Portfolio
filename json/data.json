@@ -4,22 +4,55 @@
 			"id": "01",
 			"title": "My portfolio v2",
 			"description": "Personnal project",
-			"path_img": "",
-			"link": "/project/a"
+			"img": "couv_portfolio.jpeg",
+			"link": "/project/portfolio"
 		},
 		{
 			"id": "02",
 			"title": "My travel diary",
 			"description": "Personnal project",
-			"path_img": "couv_travel_diary.jpeg",
+			"img": "couv_travel_diary.jpeg",
 			"link": "/project/travel_diary"
 		},
 		{
 			"id": "03",
 			"title": "Space game",
 			"description": "School project",
-			"path_img": "",
+			"img": "couv_space_game.jpeg",
 			"link": "/project/space_game"
 		}
-	]    
+	],
+	"project": [
+		{
+			"title": "My portfolio",
+			"description": "My new folio",
+			"subtitle_presentation": "",
+			"text_presentation": "",
+			"date": "",
+			"role": "",
+			"type_of_project": "",
+			"title_roadmap_word_1": "",
+			"title_roadmap_word_2": "",
+			"text_roadmap_1": "",
+			"text_roadmap_2": "",
+			"text_roadmap_3": "",
+			"quote": "",
+			"title_conclusion_word_1": "",
+			"title_conclusion_word_2": "",
+			"text_conclusion_1": "",
+			"text_conclusion_2": "",
+			"text_conclusion_3": "",
+			"next_page": "/project/travel_diary"
+		},
+		{
+			"title": "My travel diary",
+			"description": "Share my travel",
+			"next_page": "/project/space_game"
+		},
+		{
+			"title": "Space game",
+			"description": "",
+			"next_page": "/project/portfolio"
+		}
+	]
 }

@@ -5,21 +5,33 @@
 			"title": "My portfolio v2",
 			"description": "Personnal project",
 			"img": "couv_portfolio.jpeg",
-			"link": "/project/portfolio"
+			"link": "/project/portfolio",
+			"class_reveal": "reveal-1",
+			"class_reveal_title": "reveal-title-1",
+			"class_reveal_description": "reveal-description-1",
+			"class_reveal_id": "reveal-id-1"
 		},
 		{
 			"id": "02",
 			"title": "My travel diary",
 			"description": "Personnal project",
 			"img": "couv_travel_diary.jpeg",
-			"link": "/project/travel_diary"
+			"link": "/project/travel_diary",
+			"class_reveal": "reveal-2",
+			"class_reveal_title": "reveal-title-2",
+			"class_reveal_description": "reveal-description-2",
+			"class_reveal_id": "reveal-id-2"
 		},
 		{
 			"id": "03",
 			"title": "Space game",
 			"description": "School project",
 			"img": "couv_space_game.jpeg",
-			"link": "/project/space_game"
+			"link": "/project/space_game",
+			"class_reveal": "reveal-3",
+			"class_reveal_title": "reveal-title-3",
+			"class_reveal_description": "reveal-description-3",
+			"class_reveal_id": "reveal-id-3"
 		}
 	],
 	"project": [

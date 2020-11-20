@@ -1,4 +1,4 @@
-.container { 
+.container {
   display: flex;
   color: white;
   padding-left: 75px;
@@ -22,7 +22,7 @@
 .container .title-block {
   display: flex;
   flex-direction: column;
-  height: 100%;
+  height: 100vh;
   padding-right: 49px;
   border-right: 1px #ffffff solid;
   margin-right: 10px;
@@ -31,7 +31,7 @@
 
 .container .title-block .title {
   position: absolute;
-  top: 420px;
+  top: 45vh;
 }
 
 .container .title-block .title h2 {
@@ -44,7 +44,7 @@
 }
 
 .container .title-block .image {
-  padding-top: 360px;
+  padding-top: 40vh;
   padding-left: 90px;
   height: 80%;
 }
@@ -106,7 +106,6 @@
   align-items: center;
   width: 100%;
   height: 80%;
-  background-color: brown;
   overflow: hidden;
 }
 
@@ -176,4 +175,65 @@
 
 .container .projects .block-project .main-project .text-right p {
   transform: rotate(90deg);
+}
+
+.container .projects .block-project .next-project {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin-top: 10px;
+  height: 50px;
+}
+
+.container .projects .block-project .next-project .arrow {
+  width: 50px;
+  background-color: #ffffff;
+  height: 1px;
+  transform: rotate(90deg);
+  animation-name: test;
+  animation-duration: 2s;
+  animation-timing-function: ease-out;
+  animation-iteration-count: infinite;
+}
+
+@keyframes test {
+  0% {
+    transform: rotate(90deg) translateX(0px);
+    opacity: 1;
+  }
+  100% {
+    transform: rotate(90deg) translateX(30px);
+    opacity: 0;
+  }
+}
+
+[class*="reveal-"] {
+  opacity: 0;
+  transform: translateY(-30px);
+}
+
+.reveal-visible {
+  opacity: 1;
+  transform: translateY(0px);
+  transition-duration: 1s;
+  transition-timing-function: ease;
+}
+
+.reveal-title-1,
+.reveal-title-2,
+.reveal-title-3 {
+  transition-delay: .3s;
+}
+
+.reveal-description-1,
+.reveal-description-2,
+.reveal-description-3 {
+  transition-delay: .6s;
+}
+
+.reveal-id-1,
+.reveal-id-2,
+.reveal-id-3 {
+  transition-delay: .9s;
 }

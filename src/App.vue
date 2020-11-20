@@ -51,7 +51,6 @@ body{
   top: 0;
   background: #252525;
   font-family: "Didot";
-  overflow-y: none;
 }
 
 </style>

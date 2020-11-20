@@ -3,7 +3,6 @@
 		<div class="container">
 			<div class="title-info">
 				<h2>{{dataProject[this.id].title}}</h2>
-				<!-- <img src=../assets/ellipse.svg> -->
 			</div>
 			<div class="presentation-info">
 				<h3>{{dataProject[this.id].description}}</h3>

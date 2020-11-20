@@ -2,7 +2,14 @@
   <div class="container">
     <div class="title-block">
       <div class="title">
-        <h2>All my<br><span>works</span></h2>
+        <h2>All my</h2>
+        <div class="block">
+          <p>w</p>
+          <p>o</p>
+          <p>r</p>
+          <p>k</p>
+          <p>s</p>
+        </div>
       </div>
       <div class="image">
         <img src="@/assets/ellipse.svg">
@@ -33,7 +40,7 @@
           </div>
         </div>
         <div class="next-project">
-          <div class="arrow"></div>
+          <div :class="data.class_arrow"></div>
         </div>
       </div>
     </div>

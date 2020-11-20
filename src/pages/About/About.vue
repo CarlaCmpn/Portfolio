@@ -2,7 +2,14 @@
 	<div class="container">
 		<div class="title-block">
 			<div class="title">
-				<h2>More<br><span>about me</span></h2>
+				<h2>All my</h2>
+				<div class="block">
+				<p>a</p>
+				<p>b</p>
+				<p>o</p>
+				<p>u</p>
+				<p>t</p>
+				</div>
 			</div>
 			<div class="image">
 				<img src=../../assets/ellipse.svg>

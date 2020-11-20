@@ -9,7 +9,8 @@
 			"class_reveal": "reveal-1",
 			"class_reveal_title": "reveal-title-1",
 			"class_reveal_description": "reveal-description-1",
-			"class_reveal_id": "reveal-id-1"
+			"class_reveal_id": "reveal-id-1",
+			"class_arrow": "arrow"
 		},
 		{
 			"id": "02",
@@ -20,7 +21,8 @@
 			"class_reveal": "reveal-2",
 			"class_reveal_title": "reveal-title-2",
 			"class_reveal_description": "reveal-description-2",
-			"class_reveal_id": "reveal-id-2"
+			"class_reveal_id": "reveal-id-2",
+			"class_arrow": "arrow"
 		},
 		{
 			"id": "03",
@@ -31,7 +33,8 @@
 			"class_reveal": "reveal-3",
 			"class_reveal_title": "reveal-title-3",
 			"class_reveal_description": "reveal-description-3",
-			"class_reveal_id": "reveal-id-3"
+			"class_reveal_id": "reveal-id-3",
+			"class_arrow": ""
 		}
 	],
 	"project": [

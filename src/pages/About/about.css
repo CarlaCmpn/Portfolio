@@ -31,16 +31,58 @@
 
 .container .title-block .title {
   position: absolute;
-  top: 420px;
+  top: 45vh;
+  z-index: 1;
 }
 
 .container .title-block .title h2 {
   font-size: 60px;
   font-weight: normal;
+  margin: 0;
 }
 
-.container .title-block .title h2 span {
+.container .title-block .title .block {
+  display: flex;
+}
+
+.container .title-block .title .block p {
+  margin: 0;
+  font-size: 60px;
   font-style: italic;
+  animation-name: opacity-title;
+  animation-timing-function: ease-in-out;
+  animation-duration: .2s;
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+
+.container .title-block .title .block p:nth-of-type(1) {
+  animation-delay: .2s;
+}
+
+.container .title-block .title .block p:nth-of-type(2) {
+  animation-delay: .4s;
+}
+
+.container .title-block .title .block p:nth-of-type(3) {
+  animation-delay: .6s;
+}
+
+.container .title-block .title .block p:nth-of-type(4) {
+  animation-delay: .8s;
+}
+
+.container .title-block .title .block p:nth-of-type(5) {
+  animation-delay: 1s;
+}
+
+@keyframes opacity-title {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 .container .title-block .image {

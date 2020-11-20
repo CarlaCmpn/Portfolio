@@ -29,12 +29,6 @@
   z-index: 1;
 }
 
-.container .title-info img {
-  width: 5%;
-  margin-left: -30px;
-  margin-top: -20px;
-}
-
 .container .presentation-info {
   display: flex;
   justify-content: center;

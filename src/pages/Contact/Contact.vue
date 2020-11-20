@@ -2,7 +2,16 @@
 	<div class="container">
 		<div class="title-block">
 			<div class="title">
-				<h2>Contact<br><span>for collabs</span></h2>
+				<h2>All my</h2>
+				<div class="block">
+				<p>c</p>
+				<p>o</p>
+				<p>n</p>
+				<p>t</p>
+				<p>a</p>
+				<p>c</p>
+				<p>t</p>
+				</div>
 			</div>
 			<div class="image">
 				<img src=../../assets/ellipse.svg>

@@ -30,15 +30,70 @@
 
 		.title{
 			position: absolute;
-			top: 420px;
+			top: 45vh;
+			z-index: 1;
 
 			h2{
 				font-size: 60px;
 				font-weight: normal;
+				margin: 0;
+			}
 
-				span{
+			.block{
+
+				display: flex;
+
+				p{
+					margin: 0;
+					font-size: 60px;
 					font-style: italic;
+					animation-name: opacity-title;
+					animation-timing-function: ease-in-out;
+					animation-duration: .2s;
+					animation-fill-mode: forwards;
+					opacity: 0;
+
+					&:nth-of-type(1){
+						animation-delay: .2s;
+					}
+
+					&:nth-of-type(2){
+						animation-delay: .4s;
+					}
+
+					&:nth-of-type(3){
+						animation-delay: .6s;
+					}
+
+					&:nth-of-type(4){
+						animation-delay: .8s;
+					}
+
+					&:nth-of-type(5){
+						animation-delay: 1s;
+					}
+
+					&:nth-of-type(6){
+						animation-delay: 1.2s;
+					}
+
+					&:nth-of-type(7){
+						animation-delay: 1.4s;
+					}
+
+					@keyframes opacity-title {
+						0%{
+						
+							opacity: 0;
+						}
+						100%{
+						
+							opacity: 1;
+						}
+					}
+		
 				}
+				
 			}
 		}
 

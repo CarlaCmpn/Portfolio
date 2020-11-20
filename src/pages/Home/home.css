@@ -3,20 +3,9 @@
   color: white;
   padding-left: 75px;
   height: 100vh;
-  opacity: 1;
-  animation: opacity 1.5s 1 backwards;
   overflow-x: hidden;
   overflow-y: hidden;
   white-space: nowrap;
-}
-
-@keyframes opacity {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
 }
 
 .container .title-block {
@@ -32,21 +21,76 @@
 .container .title-block .title {
   position: absolute;
   top: 45vh;
+  z-index: 1;
 }
 
 .container .title-block .title h2 {
   font-size: 60px;
   font-weight: normal;
+  margin: 0;
 }
 
-.container .title-block .title h2 span {
+.container .title-block .title .block {
+  display: flex;
+}
+
+.container .title-block .title .block p {
+  margin: 0;
+  font-size: 60px;
   font-style: italic;
+  animation-name: opacity-title;
+  animation-timing-function: ease-in-out;
+  animation-duration: .2s;
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+
+.container .title-block .title .block p:nth-of-type(1) {
+  animation-delay: .2s;
+}
+
+.container .title-block .title .block p:nth-of-type(2) {
+  animation-delay: .4s;
+}
+
+.container .title-block .title .block p:nth-of-type(3) {
+  animation-delay: .6s;
+}
+
+.container .title-block .title .block p:nth-of-type(4) {
+  animation-delay: .8s;
+}
+
+.container .title-block .title .block p:nth-of-type(5) {
+  animation-delay: 1s;
+}
+
+@keyframes opacity-title {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 .container .title-block .image {
-  padding-top: 40vh;
+  padding-top: 35vh;
   padding-left: 90px;
   height: 80%;
+  animation-name: startImg;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+  opacity: 1;
+}
+
+@keyframes startImg {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 .container .title-block .image .image img {
@@ -184,6 +228,20 @@
   width: 100%;
   margin-top: 10px;
   height: 50px;
+  opacity: 0;
+  animation-name: start;
+  animation-duration: 2s;
+  animation-delay: 1s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes start {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 .container .projects .block-project .next-project .arrow {
@@ -191,13 +249,13 @@
   background-color: #ffffff;
   height: 1px;
   transform: rotate(90deg);
-  animation-name: test;
+  animation-name: arrow;
   animation-duration: 2s;
   animation-timing-function: ease-out;
   animation-iteration-count: infinite;
 }
 
-@keyframes test {
+@keyframes arrow {
   0% {
     transform: rotate(90deg) translateX(0px);
     opacity: 1;

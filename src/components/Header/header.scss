@@ -29,6 +29,16 @@
 				width: 100%;
 				height: 1px;
 				background-color: #ffffff;
+				animation: start-underligne 2s 1 normal;
+
+				@keyframes start-underligne{
+					0%{
+						width: 0%;
+					}
+					100%{
+						width: 100%;
+					}
+				}
 
 				&.open-title{
 					background-color: #252525;
@@ -57,14 +67,35 @@
 
 			&:nth-child(1){
 				width: 33px;
+				animation-name: line-menu;
+				animation-duration: 1s;
+				animation-timing-function: linear;
+				animation-iteration-count: 1;
 			}
 		
 			&:nth-child(2){
 				width: 17px;
+				animation-name: line-menu;
+				animation-duration: 1s;
+				animation-timing-function: linear;
+				animation-iteration-count: 1;
 			}
 		
 			&:nth-child(3){
 				width: 33px;
+				animation-name: line-menu;
+				animation-duration: 1s;
+				animation-timing-function: linear;
+				animation-iteration-count: 1;
+			}
+
+			@keyframes line-menu {
+				0%{
+					width: 0px;
+				}
+				100%{
+					width: 33px;
+				}
 			}
 		}
 

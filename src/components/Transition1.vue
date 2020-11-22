@@ -30,11 +30,12 @@ export default {
 		width: 100vw;
 		height: 100vh;
 		background-color: #ffffff;
+		overflow: hidden;
 	}
 
 	.ligne{
 		width: 0px;
-		height: 100%;
+		height: 100vh;
 		background: #252525;
 		animation-name: ligne;
 		animation-duration: 2s;

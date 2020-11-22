@@ -26,8 +26,10 @@ export default {
 	.container{
 		display: flex;
 		justify-content: center;
+		/* align-items: center; */
 		width: 100vw;
 		height: 100vh;
+		overflow: hidden;
 		background-color: #252525;
 	}
 	.text{
@@ -36,12 +38,13 @@ export default {
 		align-items: center;
 		width: 500px;
 		height: 100px;
+		/* background-color: red; */
 	}
 	span{
 		font-size: 100px;
 		color: #ffffff;
 		opacity: 0;
-		animation: test 3s ease-in-out 1 backwards;
+		animation: letter 3s ease-in-out 1 backwards;
 	}
 
 	span:nth-of-type(2){
@@ -60,25 +63,25 @@ export default {
 		animation-delay: 1s;
 	}
 
-	@keyframes test {
+	@keyframes letter {
 		0% {
 			opacity: 1;
-			transform: translateY(500px);
+			transform: translateY(50vh);
 		}
 		25% {
 			opacity: 1;
-			transform: translateY(400px);
+			transform: translateY(40vh);
 		}
 		50% {
 			opacity: 1;
-			transform: translateY(500px);
+			transform: translateY(50vh);
 		}
 		75% {
 			opacity: 1;
-			transform: translateY(400px);
+			transform: translateY(40vh);
 		}
 		100% {
-			transform: translateY(500px);
+			transform: translateY(50vh);
 		}
 	}
 

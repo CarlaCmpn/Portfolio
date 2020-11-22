@@ -27,8 +27,8 @@ export default {
   },
   data(){
     return{
-      intro: false,
-      home: true
+      intro: true,
+      home: false
     }
   },
   mounted(){
@@ -38,7 +38,7 @@ export default {
       setTimeout(function(){
         t.intro = false
         t.home = true
-      }, 16000);
+      }, 9500);
     }
   }
 }

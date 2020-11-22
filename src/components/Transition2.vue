@@ -22,6 +22,7 @@ export default {
 		width: 100vw;
 		height: 100vh;
 		background-color: #252525;
+		overflow: hidden;
 	}
 
 	.block1{

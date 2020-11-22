@@ -1,13 +1,13 @@
 <template>
 	<div>
 		<div class="container">
-			<div class="title-info">
+			<div class="title-info reveal-title">
 				<h2>{{dataProject[this.id].title}}</h2>
 			</div>
-			<div class="presentation-info">
+			<div class="presentation-info reveal-subtitle">
 				<h3>{{dataProject[this.id].description}}</h3>
 			</div>
-			<div class="triptych">
+			<div class="triptych reveal-triptych">
 				<div class="triptych-image"></div>
 				<div class="triptych-image"></div>
 				<div class="triptych-image"></div>
@@ -36,7 +36,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="second-image">
+			<div class="second-image reveal-img">
 				<h2>Photo</h2>
 			</div>
 			<div class="content">
@@ -49,7 +49,7 @@
 					<p>{{dataProject[this.id].text_roadmap_3}}</p>
 				</div>
 			</div>
-			<div class="quotes">
+			<div class="quotes reveal-quote">
 				<p>“{{dataProject[this.id].quote}}“</p>
 			</div>
 			<div class="video">
@@ -66,7 +66,7 @@
 				</div>
 			</div>
 			<div class="next-project">
-				<div class="next-project-button">
+				<div class="next-project-button reveal-next">
 					<div class="ligne"></div>
 					<a :href="dataProject[this.id].next_page">Next</a>
 				</div>
@@ -100,7 +100,40 @@ import json from '../../../json/data.json'
 		}else if(currentUrl === "/project/space_game"){
 			this.id = 2
 		}
-	}
+
+		this.scrollTrigger()
+	},
+	methods: {
+      scrollTrigger(){
+        const ratio = .1
+
+        const options = {
+          root: null,
+          rootMargin: '0px',
+          threshold: .1
+        }
+
+        const handleIntersect =  function(entries, observer){
+          entries.forEach(function(entry) {
+            if(entry.intersectionRatio > ratio){
+              entry.target.classList.add('reveal-visible')
+              console.log('visible')
+            }else{
+              console.log('invisible')
+              entry.target.classList.remove('reveal-visible')
+            }
+          })
+        }
+
+        const observer = new IntersectionObserver(handleIntersect, options)
+        observer.observe(document.querySelector('.reveal-title'))
+        observer.observe(document.querySelector('.reveal-subtitle'))
+        observer.observe(document.querySelector('.reveal-triptych'))
+        observer.observe(document.querySelector('.reveal-img'))
+        observer.observe(document.querySelector('.reveal-quote'))
+        observer.observe(document.querySelector('.reveal-next'))
+      }
+    },
 }
 </script>
 

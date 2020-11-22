@@ -265,3 +265,19 @@
   font-size: 27px;
   text-align: center;
 }
+
+[class*="reveal-"] {
+  opacity: 0;
+  transform: translateY(-30px);
+}
+
+.reveal-visible {
+  opacity: 1;
+  transform: translateY(0px);
+  transition-duration: 1s;
+  transition-timing-function: ease;
+}
+
+.reveal-subtitle {
+  transition-delay: .3s;
+}

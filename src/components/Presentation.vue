@@ -37,11 +37,14 @@
 
 <style scoped>
 	.container{
+		width: 100vw;
 		height: 100vh;
 		display: flex;
 		justify-content: center;
 		align-items: flex-start;
 		flex-direction: column;
+		overflow-x: hidden;
+		overflow-y: hidden;
 	}
 
 	.block{
@@ -104,7 +107,6 @@
 		width: 140px;
 		height: 140px;
 		animation: form 1s 1 forwards;
-		/* background-color: teal; */
 	}
 
 	@keyframes form {
@@ -120,39 +122,38 @@
 		}
 	}
 
+
 	.image:nth-of-type(2){
-		top: 700px;
-		left: 420px;
+		top: 5vh;
 		animation-delay: 0s;
 	}
 
 	.image:nth-of-type(3){
-		top: 185px;
-		right: 188px;
+		top: 60vh;
 		animation-delay: .5s;
 	}
 
 	.image:nth-of-type(4){
-		top: 636px;
-		right: 165px;
+		top: 80vh;
+		left: 60vw;
 		animation-delay: 1s;
 	}
 
 	.image:nth-of-type(5){
-		top: 100px;
-		left: 139px;
+		top: 30vh;
+		left: 60vw;
 		animation-delay: 1.5s;	
 	}
 
 	.image:nth-of-type(6){
-		top: 130px;
-		left: 600px;
+		top: 50vh;
+		left: 80vw;
 		animation-delay: 2s;	
 	}
 
 	.image:nth-of-type(7){
-		top: 730px;
-		left: 800px;
-		animation-delay: 2.5s;	
+		top: 10vh;
+		left: 70vw;
+		animation-delay: 2.5s;
 	}
 </style>

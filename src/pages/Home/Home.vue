@@ -75,9 +75,9 @@
           entries.forEach(function(entry) {
             if(entry.intersectionRatio > ratio){
               entry.target.classList.add('reveal-visible')
-              // console.log('visible')
+              console.log('visible')
             }else{
-              // console.log('invisible')
+              console.log('invisible')
               entry.target.classList.remove('reveal-visible')
             }
           })

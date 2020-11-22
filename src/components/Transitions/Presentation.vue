@@ -15,22 +15,22 @@
 			</div>
 		</div>
 		<div class="image">
-			<img src="../assets/square.svg" alt="">
+			<img src="../../assets/square.svg" alt="">
 		</div>
 		<div class="image">
-			<img src="../assets/square.svg" alt="">
+			<img src="../../assets/square.svg" alt="">
 		</div>
 		<div class="image">
-			<img src="../assets/circle.svg" alt="">
+			<img src="../../assets/circle.svg" alt="">
 		</div>
 		<div class="image">
-			<img src="../assets/circle.svg" alt="">
+			<img src="../../assets/circle.svg" alt="">
 		</div>
 		<div class="image">
-			<img src="../assets/triangle.svg" alt="">
+			<img src="../../assets/triangle.svg" alt="">
 		</div>
 		<div class="image">
-			<img src="../assets/triangle.svg" alt="">
+			<img src="../../assets/triangle.svg" alt="">
 		</div>
 	</div>
 </template>

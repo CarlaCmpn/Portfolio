@@ -9,18 +9,14 @@
     <div v-if="transition3">
       <Transition3 />
     </div>
-    <!-- <div v-if="transition4">
-      <Transition4 />
-    </div> -->
   </div>
 </template>
 
 <script>
 
-import Transition3 from '../components/Transition1'
-import Transition1 from '../components/HelloTransition'
-import Transition2 from '../components/Presentation'
-// import Transition4 from '../components/Transition2'
+import Transition1 from '../components/Transitions/HelloTransition'
+import Transition2 from '../components/Transitions/Presentation'
+import Transition3 from '../components/Transitions/Curtain'
 
 export default {
   name: 'Intro',
@@ -28,14 +24,12 @@ export default {
       Transition1,
       Transition2,
       Transition3,
-      // Transition4,
   },
   data(){
     return{
       transition1: true,
       transition2: false,
       transition3: false,
-      // transition4: false,
     }
   },
   mounted(){
@@ -50,13 +44,6 @@ export default {
           setTimeout(function(){
             transition.transition2 = false
             transition.transition3 = true
-
-            // if(transition.transition3 === true){
-            //   setTimeout(function(){
-            //     transition.transition3 = false
-            //     transition.transition4 = true
-            //   }, 7000);
-            // }
 
           }, 4000);
         }

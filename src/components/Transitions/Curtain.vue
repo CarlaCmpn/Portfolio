@@ -14,7 +14,7 @@
 
 <script>
 export default {
-  name: 'Transition1',
+  name: 'Curtain',
   data(){
 	return{
 	

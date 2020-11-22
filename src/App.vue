@@ -15,7 +15,6 @@
 import Header from './components/Header/Header'
 import Loading from './pages/Loading'
 import Intro from './pages/Intro'
-import Transition from './components/Transition3'
 
 export default {
   name: 'App',
@@ -23,12 +22,11 @@ export default {
     Header,
     Loading,
     Intro,
-    Transition
   },
   data(){
     return{
-      intro: true,
-      home: false
+      intro: false,
+      home: true
     }
   },
   mounted(){

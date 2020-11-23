@@ -301,7 +301,6 @@
     display: flex;
     padding: 0;
     flex-direction: column;
-    background-color: darkkhaki;
   }
   .container .title-block {
     display: flex;
@@ -364,7 +363,6 @@
     display: flex;
     padding: 0;
     flex-direction: column;
-    background-color: darkgoldenrod;
   }
   .container .title-block {
     display: flex;

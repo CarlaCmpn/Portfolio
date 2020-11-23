@@ -2,15 +2,10 @@
 	<div class="container">
 		<div class="title-block">
 			<div class="title">
-				<h2>All my</h2>
+				<h2>Contact</h2>
 				<div class="block">
-				<p>c</p>
-				<p>o</p>
-				<p>n</p>
-				<p>t</p>
-				<p>a</p>
-				<p>c</p>
-				<p>t</p>
+				<p>m</p>
+				<p>e</p>
 				</div>
 			</div>
 			<div class="image">
@@ -30,9 +25,6 @@
 				<textarea name="message" placeholder="Message"/> 
 				<button type="submit">Send</button>
 			</form>
-		</div>
-		<div class="links">
-			
 		</div>
 	</div>
 </template>

@@ -2,7 +2,7 @@
 	<div class="container">
 		<div class="title-block">
 			<div class="title">
-				<h2>All my</h2>
+				<h2>More</h2>
 				<div class="block">
 				<p>a</p>
 				<p>b</p>
@@ -15,12 +15,6 @@
 				<img src=../../assets/ellipse.svg>
 			</div>
 		</div>
-		<div class="description">
-			<div class="description-content">
-				<p>Lorem ipsum dolor sit amet, consectetur <br> adipiscing elit, sed do eiusmod tempor <br> incididunt ut labore et dolore magna aliqua. <br>Ut enim ad minim veniam, quis nostrud <br>exercitation ullamco laboris nisi ut <br>aliquip ex ea commodo consequat.</p> 
-				<p>Lorem ipsum dolor sit amet, consectetur <br> adipiscing elit, sed do eiusmod tempor <br> incididunt ut labore et dolore magna aliqua. <br>Ut enim ad minim veniam, quis nostrud <br>exercitation ullamco laboris nisi ut <br>aliquip ex ea commodo consequat.</p> 
-			</div>
-		</div>
 		<div class="picture">
 			<div class="picture-container">
 
@@ -28,9 +22,19 @@
 			<div class="svg">
 				<img src="../../assets/available.svg" alt="">
 			</div>
+			<a href="/contact">
+                <div class="contact">
+                  <p>Contact me</p>
+                  <div class="line"></div>
+                </div>
+            </a>
 		</div>
-		<div class="links">
-			<div class="links-content">
+		<div class="description">
+			<div class="description-content">
+				<p>Lorem ipsum dolor sit amet, consectetur <br> adipiscing elit, sed do eiusmod tempor <br> incididunt ut labore et dolore magna aliqua. <br>Ut enim ad minim veniam, quis nostrud <br>exercitation ullamco laboris nisi ut <br>aliquip ex ea commodo consequat.</p> 
+				<p>Lorem ipsum dolor sit amet, consectetur <br> adipiscing elit, sed do eiusmod tempor <br> incididunt ut labore et dolore magna aliqua. <br>Ut enim ad minim veniam, quis nostrud <br>exercitation ullamco laboris nisi ut <br>aliquip ex ea commodo consequat.</p> 
+			</div>
+			<div class="description-link">
 				<a href="">Resume</a>
 				<a href="https://www.linkedin.com/in/carla-compan-952b2a173/">Linkedin</a>
 				<a href="https://github.com/CarlaCmpn">Github</a>

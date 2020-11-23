@@ -304,6 +304,8 @@
 	transition-delay: .9s;
 }
 
+
+// big screen et tablet 
 @media screen and (max-width: 1024px) and (min-width: 431px)
 {
     .container{
@@ -383,6 +385,7 @@
 	}
 }
 
+// mobile L and S 
 @media screen and (max-width: 430px){
 	.container{
 		display: flex;

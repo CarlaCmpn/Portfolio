@@ -214,3 +214,25 @@
     width: 100%;
   }
 }
+
+@media screen and (max-width: 1024px) and (min-width: 431px) {
+  .navbar .name {
+    padding-left: 20px;
+    margin: 30px;
+  }
+  .navbar .menu {
+    padding-right: 20px;
+    margin: 30px;
+  }
+}
+
+@media screen and (max-width: 430px) {
+  .navbar .name {
+    padding-left: 20px;
+    margin: 30px;
+  }
+  .navbar .menu {
+    padding-right: 20px;
+    margin: 30px;
+  }
+}

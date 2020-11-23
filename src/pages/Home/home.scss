@@ -303,3 +303,161 @@
 .reveal-id-3{
 	transition-delay: .9s;
 }
+
+@media screen and (max-width: 1024px) and (min-width: 431px)
+{
+    .container{
+		display: flex;
+		padding: 0;
+		flex-direction: column;
+		background-color: darkkhaki;
+
+		.title-block{
+			display: flex;
+			justify-content: flex-end;
+			width: 100%;
+			height: 25vh;
+
+			.title{
+				display: flex;
+				flex-direction: column;
+				justify-content: flex-end;
+				align-items: center;
+				position: relative;
+				top: 0;
+
+				h2{
+					font-size: 45px;
+					font-weight: normal;
+					margin: 0;
+				}
+
+				.block{
+					p{
+						font-size: 45px;
+					}
+				}
+			}
+
+			.image{
+				display: none;
+			}
+		}
+
+		.projects{
+			width: 100%;
+			height: 75vh;
+
+			.block-project{
+				height: 100%;
+				border: none;
+
+				.main-project{
+					display: flex;
+					width: 80%;
+					height: 80%;
+
+					.text-left{
+						padding: 10px 0;
+					}
+
+					.cover-project{
+						width: 80%;
+						height: 100%;
+
+						.image-project{
+							height: 70%;
+						}
+
+						.text-project{
+							height: 30%;
+						}
+					}
+
+					.text-right{
+						padding: 10px 0;
+					}
+				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 430px){
+	.container{
+		display: flex;
+		padding: 0;
+		flex-direction: column;
+		background-color: darkgoldenrod;
+
+		.title-block{
+			display: flex;
+			justify-content: flex-end;
+			width: 100%;
+			height: 25vh;
+			padding-bottom: 15px;
+
+			.title{
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				position: relative;
+				top: 0;
+
+				h2{
+					font-size: 35px;
+					font-weight: normal;
+					margin: 0;
+				}
+
+				.block{
+					margin-left: 10px;
+					p{
+						font-size: 35px;
+					}
+				}
+			}
+
+			.image{
+				display: none;
+			}
+		}
+
+		.projects{
+			width: 100%;
+			height: 75vh;
+
+			.block-project{
+				height: 100%;
+				border: none;
+
+				.main-project{
+					display: flex;
+					width: 80%;
+					height: 80%;
+
+					.text-left{
+						padding: 0;
+					}
+
+					.cover-project{
+						width: 80%;
+						height: 100%;
+
+						.image-project{
+							height: 70%;
+						}
+
+						.text-project{
+							height: 30%;
+						}
+					}
+
+					.text-right{
+						padding: 0;
+					}
+				}
+			}
+		}
+	}
+}

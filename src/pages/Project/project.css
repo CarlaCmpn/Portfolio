@@ -40,19 +40,27 @@
   font-size: 30px;
 }
 
-.container .triptych {
+.container .cover {
   display: flex;
+  justify-content: center;
+  align-items: center;
   width: 100%;
-  justify-content: space-between;
   margin-top: 130px;
-  padding: 0px 75px;
   box-sizing: border-box;
 }
 
-.container .triptych .triptych-image {
-  width: 336px;
-  height: 336px;
-  background-color: gray;
+.container .cover .cover-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  height: auto;
+  background-color: crimson;
+}
+
+.container .cover .cover-image img {
+  width: 100%;
+  height: auto;
 }
 
 .container .description {

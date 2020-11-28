@@ -121,12 +121,14 @@
 
 .container .projects .block-project .main-project {
   display: flex;
-  width: 400px;
-  height: 600px;
+  justify-content: center;
+  width: 70%;
+  height: 60%;
 }
 
 .container .projects .block-project .main-project .text-left {
   width: 10%;
+  padding-top: 15px;
 }
 
 .container .projects .block-project .main-project .text-left p {
@@ -134,12 +136,14 @@
 }
 
 .container .projects .block-project .main-project .cover-project {
-  width: 80%;
-  height: 600px;
+  display: flex;
+  width: 60%;
+  height: 100%;
+  flex-direction: column;
 }
 
 .container .projects .block-project .main-project .cover-project:hover .image-project img {
-  width: 130%;
+  width: 145%;
   transition: width 1s ease;
   filter: grayscale(0%);
 }
@@ -154,7 +158,7 @@
 }
 
 .container .projects .block-project .main-project .cover-project .image-project img {
-  width: 115%;
+  width: 135%;
   height: auto;
   filter: grayscale(100%);
   transition: width 1s ease;
@@ -215,6 +219,7 @@
 
 .container .projects .block-project .main-project .text-right {
   width: 10%;
+  padding-top: 15px;
 }
 
 .container .projects .block-project .main-project .text-right p {

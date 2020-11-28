@@ -4,7 +4,7 @@
 			"id": "01",
 			"title": "My portfolio v2",
 			"description": "Personnal project",
-			"img": "couv_portfolio.jpeg",
+			"img": "couv_portfolio.png",
 			"link": "/project/portfolio",
 			"class_reveal": "reveal-1",
 			"class_reveal_title": "reveal-title-1",
@@ -28,7 +28,7 @@
 			"id": "03",
 			"title": "Space game",
 			"description": "School project",
-			"img": "couv_space_game.jpeg",
+			"img": "couv_space_game.jpg",
 			"link": "/project/space_game",
 			"class_reveal": "reveal-3",
 			"class_reveal_title": "reveal-title-3",
@@ -41,6 +41,7 @@
 		{
 			"title": "My portfolio",
 			"description": "My new folio",
+			"img_cover": "couv_portfolio.png", 
 			"subtitle_presentation": "Presentation",
 			"text_presentation": "Ce portfolio a pour objectif de rassembler l’ensemble des projets qui me tienne à coeur et que je souhaite partager. Il a été conçu entièrement par moi avec vue.js pour le développement et figma pour la réalisation des  maquettes.",
 			"date": "2020",
@@ -62,11 +63,13 @@
 		{
 			"title": "My travel diary",
 			"description": "Share my travel",
+			"img_cover": "couv_portfolio.png",
 			"next_page": "/project/space_game"
 		},
 		{
 			"title": "Space game",
 			"description": "",
+			"img_cover": "couv_portfolio.png",
 			"next_page": "/project/portfolio"
 		}
 	]

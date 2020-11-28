@@ -125,11 +125,14 @@
 
 			.main-project{
 				display: flex;
-				width: 400px;
-				height: 600px;
+				justify-content: center;
+				width: 70%;
+				height: 60%;
+				// background-color: brown;
 
 				.text-left{
 					width: 10%;
+					padding-top: 15px;
 
 					p{
 						transform: rotate(90deg);
@@ -137,11 +140,14 @@
 				}
 
 				.cover-project{
-					width: 80%;
-					height: 600px;
+					display: flex;
+					// justify-content: space-between;
+					width: 60%;
+					height: 100%;
+					flex-direction: column;
 
 					&:hover .image-project img{
-						width: 130%;
+						width: 145%;
 						transition: width 1s ease;
 						filter: grayscale(0%);
 					}
@@ -153,9 +159,11 @@
 						width: 100%;
 						height: 80%;
 						overflow: hidden;
+						// background-color: chocolate;
+					
 
 						img{
-							width: 115%;
+							width: 135%;
 							height: auto;
 							filter: grayscale(100%);
 							transition: width 1s ease;
@@ -169,6 +177,7 @@
 						margin: 0;
 						width: 100%;
 						height: 20%;
+						// background-color: cornflowerblue;
 
 						h3{
 							margin: 0;
@@ -218,6 +227,7 @@
 
 				.text-right{
 					width: 10%;
+					padding-top: 15px;
 
 					p{
 						transform: rotate(90deg);
@@ -237,6 +247,7 @@
 				animation-duration: 2s;
 				animation-delay: 1s;
 				animation-fill-mode: forwards;
+				// background-color: burlywood;
 
 				@keyframes start {
 					0%{

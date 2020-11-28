@@ -4,11 +4,13 @@
 			<div class="title">
 				<h2>More</h2>
 				<div class="block">
-				<p>a</p>
-				<p>b</p>
-				<p>o</p>
-				<p>u</p>
-				<p>t</p>
+					<p>a</p>
+					<p>b</p>
+					<p>o</p>
+					<p>u</p>
+					<p>t</p>
+					<p>m</p>
+					<p>e</p>
 				</div>
 			</div>
 			<div class="image">
@@ -17,7 +19,7 @@
 		</div>
 		<div class="picture">
 			<div class="picture-container">
-
+				<img src="../../assets/images/about.jpg" alt="">
 			</div>
 			<div class="svg">
 				<img src="../../assets/available.svg" alt="">
@@ -31,8 +33,9 @@
 		</div>
 		<div class="description">
 			<div class="description-content">
-				<p>Lorem ipsum dolor sit amet, consectetur <br> adipiscing elit, sed do eiusmod tempor <br> incididunt ut labore et dolore magna aliqua. <br>Ut enim ad minim veniam, quis nostrud <br>exercitation ullamco laboris nisi ut <br>aliquip ex ea commodo consequat.</p> 
-				<p>Lorem ipsum dolor sit amet, consectetur <br> adipiscing elit, sed do eiusmod tempor <br> incididunt ut labore et dolore magna aliqua. <br>Ut enim ad minim veniam, quis nostrud <br>exercitation ullamco laboris nisi ut <br>aliquip ex ea commodo consequat.</p> 
+				<p>Let me introduce myself, my name is Carla Compan and <br> I have been a student at Hétic for 4 years. I follow the high school <br> course in order to obtain a diploma of Title of Expert in Engineering <br> and management of digital communication.</p> 
+				<p>At the end of my studies I want to become a full-stack developer, <br> while keeping, if I can, a design approach. Working in the world <br> of the web has always been obvious to me and I hope to be able <br> to evolve and flourish in this environment.</p> 
+				<p>I recently embarked on the adventure of the freenlance missions, <br> do not hesitate to contact me for any information.</p>
 			</div>
 			<div class="description-link">
 				<a href="">Resume</a>

@@ -4,8 +4,16 @@
 			<div class="title">
 				<h2>Contact</h2>
 				<div class="block">
-				<p>m</p>
-				<p>e</p>
+				<p>f</p>
+				<p>o</p>
+				<p>r</p>
+				<p>c</p>
+				<p>o</p>
+				<p>l</p>
+				<p>l</p>
+				<p>a</p>
+				<p>b</p>
+				<p>s</p>
 				</div>
 			</div>
 			<div class="image">
@@ -14,8 +22,7 @@
 		</div>
 		<div class="description">
 			<div class="description-content">
-				<p>Lorem ipsum dolor sit amet, consectetur <br> adipiscing elit, sed do eiusmod tempor <br> incididunt ut labore et dolore magna aliqua. <br>Ut enim ad minim veniam, quis nostrud <br>exercitation ullamco laboris nisi ut <br>aliquip ex ea commodo consequat.</p> 
-				<!-- <p>My email : carla.compan@hetic.net</p> -->
+				<p>I recently embarked on the adventure of freelance assignments. <br> I am available to discuss with you on the technical realization of your projects. <br> Please do not hesitate to contact me for any information. <br> You can contact me with the form or by email at : carla.compan@hetic.net</p>
 			</div>
 		</div>
 		<div class="form">

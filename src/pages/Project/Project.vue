@@ -7,10 +7,10 @@
 			<div class="presentation-info reveal-subtitle">
 				<h3>{{dataProject[this.id].description}}</h3>
 			</div>
-			<div class="triptych reveal-triptych">
-				<div class="triptych-image"></div>
-				<div class="triptych-image"></div>
-				<div class="triptych-image"></div>
+			<div class="cover reveal-cover">
+				<div class="cover-image">
+					<img :src="require('@/assets/images/'+`${dataProject[this.id].img_cover}`)">
+				</div>
 			</div>
 			<div class="description">
 				<div class="description-intro">
@@ -128,7 +128,7 @@ import json from '../../../json/data.json'
         const observer = new IntersectionObserver(handleIntersect, options)
         observer.observe(document.querySelector('.reveal-title'))
         observer.observe(document.querySelector('.reveal-subtitle'))
-        observer.observe(document.querySelector('.reveal-triptych'))
+        observer.observe(document.querySelector('.reveal-cover'))
         observer.observe(document.querySelector('.reveal-img'))
         observer.observe(document.querySelector('.reveal-quote'))
         observer.observe(document.querySelector('.reveal-next'))

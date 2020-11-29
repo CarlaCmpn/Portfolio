@@ -18,7 +18,7 @@
 					<p>{{dataProject[this.id].text_presentation}}</p>
 					<div class="discover">
 						<div class="ligne"></div>
-						<a href="">Discover</a>
+						<a :href="dataProject[this.id].discover_link">{{dataProject[this.id].discover_button}}</a>
 					</div>
 				</div>
 				<div class="description-category">
@@ -36,8 +36,10 @@
 					</div>
 				</div>
 			</div>
-			<div class="second-image reveal-img">
-				<h2>Photo</h2>
+			<div class="duo-images reveal-img">
+				<img :src="require('@/assets/images/'+`${dataProject[this.id].three_images_1}`)">
+				<img :src="require('@/assets/images/'+`${dataProject[this.id].three_images_2}`)">
+				<img :src="require('@/assets/images/'+`${dataProject[this.id].three_images_3}`)">
 			</div>
 			<div class="content">
 				<div class="content-intro">
@@ -53,9 +55,9 @@
 				<p>“{{dataProject[this.id].quote}}“</p>
 			</div>
 			<div class="video">
-				<div class="video-container"></div>
+				<video controls :src="require('@/assets/images/'+`${dataProject[this.id].video}`)"/>
 			</div>
-			<div class="conclusion">
+			<!-- <div class="conclusion">
 				<div class="conclusion-intro">
 					<h4>{{dataProject[this.id].title_conclusion_word_1}}<br>{{dataProject[this.id].title_conclusion_word_2}}</h4>
 					<p>{{dataProject[this.id].text_conclusion_1}}</p>
@@ -64,7 +66,7 @@
 					<p>{{dataProject[this.id].text_conclusion_2}}</p>
 					<p>{{dataProject[this.id].text_conclusion_3}}</p>
 				</div>
-			</div>
+			</div> -->
 			<div class="next-project">
 				<div class="next-project-button reveal-next">
 					<div class="ligne"></div>
@@ -120,7 +122,7 @@ import json from '../../../json/data.json'
               console.log('visible')
             }else{
               console.log('invisible')
-              entry.target.classList.remove('reveal-visible')
+            //   entry.target.classList.remove('reveal-visible')
             }
           })
         }

@@ -19,10 +19,13 @@
 			<div class="image">
 				<img src=../../assets/ellipse.svg>
 			</div>
+			<footer class="footer-big">
+				<p>Code & design by me ✨</p>
+			</footer>
 		</div>
 		<div class="description">
 			<div class="description-content">
-				<p>I recently embarked on the adventure of freelance assignments. <br> I am available to discuss with you on the technical realization of your projects. <br> Please do not hesitate to contact me for any information. <br> You can contact me with the form or by email at : carla.compan@hetic.net</p>
+				<p>I recently embarked on the adventure of freelance assignments. I am available to discuss with you on the technical realization of your projects. Please do not hesitate to contact me for any information. You can contact me with the form or by email at : carla.compan@hetic.net</p>
 			</div>
 		</div>
 		<div class="form">
@@ -33,6 +36,9 @@
 				<button type="submit">Send</button>
 			</form>
 		</div>
+		<footer class="footer-small">
+			<p>Code & design by me ✨</p>
+		</footer>
 	</div>
 </template>
 

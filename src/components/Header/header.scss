@@ -149,7 +149,7 @@
 
 	&.transition-close{
 		transition: all ease 1.5s;
-		transform: translateX(100%);
+		transform: translateX(100vw);
 	}
 
 	.list{
@@ -220,13 +220,13 @@
 @media screen and (max-width: 1024px) and (min-width: 431px){
 	.navbar{
 		.name{
-			padding-left: 20px;
+			padding-left: 0px;
 			margin: 30px;
 			// background-color: darkmagenta;
 		}
 		.menu{
 			// background-color: darkmagenta;
-			padding-right: 20px;
+			padding-right: 0px;
 			margin: 30px;
 		}
 	}
@@ -236,14 +236,21 @@
 @media screen and (max-width: 430px){
 	.navbar{
 		.name{
-			padding-left: 20px;
+			padding-left: 0px;
 			margin: 30px;
 			// background-color: darkmagenta;
 		}
 		.menu{
 			// background-color: darkmagenta;
-			padding-right: 20px;
+			padding-right: 0px;
 			margin: 30px;
+		}
+	}
+
+	.navbar-open{
+
+		p{
+			font-size: 45px !important;
 		}
 	}
 }

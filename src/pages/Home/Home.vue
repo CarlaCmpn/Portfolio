@@ -14,6 +14,9 @@
       <div class="image">
         <img src="@/assets/ellipse.svg">
       </div>
+      <footer class="footer-big">
+				<p>Code & design by me ✨</p>
+			</footer>
     </div>
     <div class="projects">
       <div class="block-project" v-for="data in dataHome" :key="data.title">
@@ -43,6 +46,9 @@
           <div :class="data.class_arrow"></div>
         </div>
       </div>
+      <footer class="footer-small">
+				<p>Code & design by me ✨</p>
+			</footer>
     </div>
   </div>
 </template>
@@ -78,7 +84,6 @@
               console.log('visible')
             }else{
               console.log('invisible')
-              entry.target.classList.remove('reveal-visible')
             }
           })
         }

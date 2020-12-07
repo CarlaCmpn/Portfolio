@@ -42,7 +42,7 @@
 			"title": "My portfolio v2",
 			"description": "My new folio",
 			"img_cover": "portfolio/couv_portfolio.png", 
-			"subtitle_presentation": "What's it ?",
+			"subtitle_presentation": "My wish",
 			"text_presentation": "This portfolio aims to bring together all the projects that are close to my heart and that I want to share. It was designed entirely by me.",
 			"discover_button": "",
 			"discover_link": "",
@@ -57,8 +57,10 @@
 			"text_roadmap_1": "I started to imagine this portfolio after my 3rd year internship in which I was a front-end developer for 5 months. At the end of this internship, I felt the need to have a site that suited me more. Since the creation of my first portfolio a year and a half ago, my design and development skills have evolved. He was no longer representative of my tastes and abilities. It was the ideal project to use my new skills.",
 			"text_roadmap_2": "Regarding the design a lot of ideas came to me. Shared between several design inspirations, I wanted something simple, aesthetic and modern. Using the figma, I was able to quickly create my models and imagine my animations.",
 			"text_roadmap_3": "This project was an opportunity to deepen my skills in web development. Indeed, I chose to use vue.js to create my portfolio. A framework that I knew very little about at the start of this project. I also, unlike my first portfolio, wanted to add animations and transitions done in css.",
-			"quote": "My portfolio is the best way to share my universe and my creations.",
-			"video": "space_game/space.mp4",
+			"quote": " My portfolio is the best way to share my universe and my creations. ",
+			"video": "portfolio/intro.mp4",
+			"title_conclusion_word_1": "Now,",
+			"text_conclusion_1": "I am proud and satisfied with the work I have done. My portfolio is more in my image and allows me to showcase my work. It was with real pleasure that I imagined and made it alone.",
 			"next_page": "/project/travel_diary"
 		},
 		{

@@ -57,16 +57,16 @@
 			<div class="video">
 				<video controls :src="require('@/assets/images/'+`${dataProject[this.id].video}`)"/>
 			</div>
-			<!-- <div class="conclusion">
+			<div class="conclusion">
 				<div class="conclusion-intro">
 					<h4>{{dataProject[this.id].title_conclusion_word_1}}<br>{{dataProject[this.id].title_conclusion_word_2}}</h4>
 					<p>{{dataProject[this.id].text_conclusion_1}}</p>
 				</div>
-				<div class="conclusion-text">
+				<!-- <div class="conclusion-text">
 					<p>{{dataProject[this.id].text_conclusion_2}}</p>
 					<p>{{dataProject[this.id].text_conclusion_3}}</p>
-				</div>
-			</div> -->
+				</div> -->
+			</div>
 			<div class="next-project">
 				<div class="next-project-button reveal-next">
 					<div class="ligne"></div>
@@ -74,7 +74,7 @@
 				</div>
 			</div>
 			<footer>
-				<p>Code & design by me</p>
+				<p>Code & design by me ✨</p>
 			</footer>
 		</div>
 	</div>

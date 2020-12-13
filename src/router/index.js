@@ -21,7 +21,7 @@ export default new Router({
       component: About
     },
     {
-      path: '/contact',
+      path: 'https://gallant-shockley-e20d52.netlify.app/contact',
       name: 'contact',
       component: Contact
     },

@@ -38,7 +38,7 @@
 			<div class="description-content">
 				<p>Let me introduce myself, my name is Carla Compan and I have been a student at Hétic for 4 years. I follow the high school course in order to obtain a diploma of Title of Expert in Engineering and management of digital communication.</p> 
 				<p>At the end of my studies I want to become a full-stack developer, while keeping, if I can, a design approach. Working in the world of the web has always been obvious to me and I hope to be able to evolve and flourish in this environment.</p> 
-				<p>I recently embarked on the adventure of the freenlance missions, do not hesitate to contact me for any information.</p>
+				<p>I recently embarked on the adventure of the freelance missions, do not hesitate to contact me for any information.</p>
 			</div>
 			<div class="description-link">
 				<a href="">Resume</a>

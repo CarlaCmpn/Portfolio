@@ -24,12 +24,24 @@ export default new Router({
       component: Contact
     },
     {
-      path: '/project/:name',
+      path: '/project/portfolio',
       component: Project
+    },
+    {
+      path: '/project/space_game',
+      component: Project
+    },
+    {
+      path: '/project/travel_diary',
+      component: Project
+    },
+    {
+      path: '/project/*',
+      component: PageNotFound
     },
     {
       path: '*',
       component: PageNotFound
-    }
+    },
   ]
 })

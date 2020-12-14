@@ -10,9 +10,17 @@
 .container h1 {
   color: #ffffff;
   font-size: 45px;
+  font-weight: bold;
+}
+
+.container h2 {
+  margin-top: 20px;
+  color: #ffffff;
+  font-size: 30px;
 }
 
 .container .button {
+  margin-top: 50px;
   display: flex;
   align-items: center;
   width: auto;
@@ -30,4 +38,17 @@
   width: 50px;
   height: 1px;
   background-color: #ffffff;
+}
+
+.container .button:hover .line {
+  animation: ligne 1s 1 normal;
+}
+
+@keyframes ligne {
+  0% {
+    width: 0px;
+  }
+  100% {
+    width: 50px;
+  }
 }

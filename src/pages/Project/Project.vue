@@ -95,7 +95,7 @@ import json from '../../../json/data.json'
 		let currentUrl = window.location.pathname;
 		console.log(currentUrl);
 
-		if(currentUrl === "/project/portfolio" || "https://gallant-shockley-e20d52.netlify.app/project/portfolio"){
+		if(currentUrl === "/project/portfolio"){
 			this.id = 0
 		}else if(currentUrl === "/project/travel_diary"){
 			this.id = 1

@@ -1,0 +1,17 @@
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteCond %{SERVER_PORT} !=443
+RewriteRule ^(.*)$ https://gallant-shockley-e20d52.netlify.app/ [R=301,L]
+RedirectPermanent fr/ https://gallant-shockley-e20d52.netlify.app/
+
+</IfModule>
+
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteBase /
+  RewriteRule ^index\.html$ - [L]
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteCond %{REQUEST_FILENAME} !-l
+  RewriteRule . /index.html [L]
+</IfModule>

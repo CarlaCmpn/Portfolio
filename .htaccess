@@ -1,7 +1,7 @@
 <IfModule mod_rewrite.c>
 RewriteEngine On
 RewriteCond %{SERVER_PORT} !=443
-RewriteRule ^(.*)$ https://gallant-shockley-e20d52.netlify.app/ [R=301,L]
+RewriteRule ^(.*)$ https://gallant-shockley-e20d52.netlify.app/$1 [R=301,L]
 RedirectPermanent fr/ https://gallant-shockley-e20d52.netlify.app/
 
 </IfModule>

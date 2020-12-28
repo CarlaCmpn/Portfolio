@@ -3,7 +3,7 @@
 		<h1>Are you lost ?</h1>
 		<h2>Erreur 404</h2>
 		<div class="button">
-			<a href="/">Back to home</a>
+			<!-- <a href="/">Back to home</a> -->
 			<div class="line"></div>
 		</div>
 	</div>
@@ -14,6 +14,6 @@ export default {
 }
 </script>
 <style scoped>
-	@import 'pagenotfound.min.css';
-	@import '../../styles/reset.css'
+	/* @import 'pagenotfound.min.css';
+	@import '../../styles/reset.css'; */
 </style>

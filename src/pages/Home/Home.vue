@@ -22,7 +22,10 @@
       <div class="block-project" v-for="data in dataHome" :key="data.title">
         <div class="main-project">
           <div class="text-left" :class="data.class_reveal_description">
-              <p>{{data.description}}</p>
+              <p>{{data.id}}</p>
+          </div>
+          <div class="text-right" :class="data.class_reveal_id">
+            <p>{{data.description}}</p>
           </div>
           <div class="cover-project">
             <div class="image-project" :class="data.class_reveal">
@@ -38,9 +41,9 @@
               </a>
             </div>
           </div>
-          <div class="text-right" :class="data.class_reveal_id">
+          <!-- <div class="text-right" :class="data.class_reveal_id">
             <p>{{data.id}}</p>
-          </div>
+          </div> -->
         </div>
         <div class="next-project">
           <div :class="data.class_arrow"></div>

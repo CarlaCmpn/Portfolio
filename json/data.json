@@ -1,8 +1,8 @@
 {
 	"home": [
 		{
-			"id": "01",
-			"title": "My portfolio v2",
+			"id": "01.",
+			"title": "This portfolio aims to bring together all the projects that are close to my heart and that I want to share. It was designed entirely by me.",
 			"description": "Personnal project",
 			"img": "portfolio/couv_portfolio.png",
 			"link": "/project/portfolio",
@@ -14,7 +14,7 @@
 		},
 		{
 			"id": "02",
-			"title": "My travel diary",
+			"title": "This project is the creation of my online travel journal. It is a blog where I will share my feedback, advice and recommendations.",
 			"description": "Personnal project",
 			"img": "travel_diary/couv_travel_diary.png",
 			"link": "/project/travel_diary",
@@ -26,7 +26,7 @@
 		},
 		{
 			"id": "03",
-			"title": "Space game",
+			"title": "Space game is a 3D game where the objective is to reach the finish line with as many points as possible.",
 			"description": "School project",
 			"img": "space_game/couv_space_game.png",
 			"link": "/project/space_game",
@@ -39,8 +39,6 @@
 	],
 	"project": [
 		{
-			"title": "My portfolio v2",
-			"description": "My new folio",
 			"img_cover": "portfolio/couv_portfolio.png", 
 			"subtitle_presentation": "My wish",
 			"text_presentation": "This portfolio aims to bring together all the projects that are close to my heart and that I want to share. It was designed entirely by me.",

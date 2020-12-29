@@ -29,7 +29,7 @@
 			</div>
 		</div>
 		<div class="form">
-			<form method="POST" name="contact" data-netlify="true">
+			<form action="POST" name="contact" data-netlify="true">
 				<input type="text" name="name" placeholder="Name"/>
 				<input type="email" name="email" placeholder="Email"/>
 				<textarea name="message" placeholder="Message"/> 

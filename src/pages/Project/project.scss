@@ -2,7 +2,7 @@
 	display: flex;
 	flex-direction: column;
     color: white;
-    height: 100vh;
+    height: auto;
     opacity: 1;
 	animation: opacity 1.5s 1 backwards;
 	
@@ -45,20 +45,21 @@
 		justify-content: center;
 		align-items: center;
 		width: 100%;
-		// height: 40%;
+		height: 100%;
 		margin-top: 130px;
-		// padding: 0px 75px;
 		box-sizing: border-box;
+		// background-color: blueviolet;
+		overflow: hidden;
 
 		.cover-image{
 			display: flex;
 			justify-content: center;
 			align-items: center;
 			width: 50%;
-			height: auto;
+			height: 50%;
 
 			img{
-				width: 100%;
+				width: 70%;				
 				height: auto;
 			}
 		}
@@ -67,7 +68,7 @@
 	.description{
 		display: flex;
 		width: 100%;
-		margin-top: 190px;
+		margin-top: 100px;
 		padding: 0px 75px;
 		box-sizing: border-box;
 
@@ -83,6 +84,7 @@
 				font-size: 16px;
 				width: 489px;
 				margin-top: 33px;
+				white-space: normal;
 			}
 
 			.discover{
@@ -116,30 +118,29 @@
 				border-bottom: 1px solid #ffffff;
 				padding: 25px 0px;
 
-				p{
+				p:nth-child(1){
 					font-size: 20px;
+					color: rgb(155, 153, 153);
 					margin-right: 30px;		
 				}
 			}
 		}
 	}
 
-	.duo-images{
-		margin-top: 230px;
+	.model{
 		display: flex;
-		flex-wrap: wrap;
-		// align-items: center;
-		justify-content: space-between;
+		flex-direction: column;
+		align-items: center;
 		width: 100%;
 		height: auto;
-		padding: 0 75px;
-		box-sizing: border-box;
+		background-color: #ffffff;
+		margin-top: 150px;
+		padding: 100px 0;
 
 		img{
-			width: 48%;
+			width: 80%;
 			height: auto;
-			border: 1px solid white;
-			margin-bottom: 70px;
+			margin: 30px 0;
 		}
 	}
 
@@ -163,6 +164,7 @@
 				font-size: 16px;
 				width: 80%;
 				margin-top: 33px;
+				white-space: normal;
 			}
 		}
 
@@ -174,8 +176,63 @@
 			p{
 				font-size: 16px;
 				margin-top: 33px;
+				white-space: normal;
 			}
 			
+		}
+	}
+
+	.graphical-charter{
+		margin-top: 130px;
+		display: flex;
+		width: 100%;
+		padding: 0px 75px;
+		box-sizing: border-box;
+		flex-direction: column;
+
+		h4{
+			font-size: 41px;
+		}
+
+		.graphical-charter-content{
+			display: flex;
+			margin-top: 40px;
+			justify-content: space-between;
+
+			.colors{
+				display: flex;
+				justify-content: space-around;
+				width: 40%;
+				// background-color: #f3f3f3;
+				height: 200px;
+				
+				.color{
+					display: flex;
+					flex-direction: column;
+					justify-content: center;
+					align-items: center;
+
+					.round{
+						width: 100px;
+						height: 100px;
+						background-color: aquamarine;
+						border-radius: 100%;
+					}
+
+					p{
+						margin-top: 15px;
+						color: #fff;
+						font-size: 20px;
+					}
+				}
+			}
+
+			.typo{
+				width: 40%;
+				background-color: #ffffff;
+				height: 200px;
+
+			}
 		}
 	}
 
@@ -195,6 +252,7 @@
 			font-style: italic;
 			font-weight: normal;
 			width: 964px;
+			white-space: normal;
 		}
 	}
 
@@ -230,6 +288,7 @@
 				font-size: 16px;
 				width: 489px;
 				margin-top: 33px;
+				white-space: normal;
 			}
 		}
 

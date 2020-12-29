@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: column;
   color: white;
-  height: 100vh;
+  height: auto;
   opacity: 1;
   animation: opacity 1.5s 1 backwards;
 }
@@ -45,8 +45,10 @@
   justify-content: center;
   align-items: center;
   width: 100%;
+  height: 100%;
   margin-top: 130px;
   box-sizing: border-box;
+  overflow: hidden;
 }
 
 .container .cover .cover-image {
@@ -54,18 +56,18 @@
   justify-content: center;
   align-items: center;
   width: 50%;
-  height: auto;
+  height: 50%;
 }
 
 .container .cover .cover-image img {
-  width: 100%;
+  width: 70%;
   height: auto;
 }
 
 .container .description {
   display: flex;
   width: 100%;
-  margin-top: 190px;
+  margin-top: 100px;
   padding: 0px 75px;
   box-sizing: border-box;
 }
@@ -83,6 +85,7 @@
   font-size: 16px;
   width: 489px;
   margin-top: 33px;
+  white-space: normal;
 }
 
 .container .description .description-intro .discover {
@@ -117,27 +120,27 @@
   padding: 25px 0px;
 }
 
-.container .description .description-category .description-category-block p {
+.container .description .description-category .description-category-block p:nth-child(1) {
   font-size: 20px;
+  color: #9b9999;
   margin-right: 30px;
 }
 
-.container .duo-images {
-  margin-top: 230px;
+.container .model {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
   width: 100%;
   height: auto;
-  padding: 0 75px;
-  box-sizing: border-box;
+  background-color: #ffffff;
+  margin-top: 150px;
+  padding: 100px 0;
 }
 
-.container .duo-images img {
-  width: 48%;
+.container .model img {
+  width: 80%;
   height: auto;
-  border: 1px solid white;
-  margin-bottom: 70px;
+  margin: 30px 0;
 }
 
 .container .content {
@@ -161,6 +164,7 @@
   font-size: 16px;
   width: 80%;
   margin-top: 33px;
+  white-space: normal;
 }
 
 .container .content .content-text {
@@ -172,6 +176,59 @@
 .container .content .content-text p {
   font-size: 16px;
   margin-top: 33px;
+  white-space: normal;
+}
+
+.container .graphical-charter {
+  margin-top: 130px;
+  display: flex;
+  width: 100%;
+  padding: 0px 75px;
+  box-sizing: border-box;
+  flex-direction: column;
+}
+
+.container .graphical-charter h4 {
+  font-size: 41px;
+}
+
+.container .graphical-charter .graphical-charter-content {
+  display: flex;
+  margin-top: 40px;
+  justify-content: space-between;
+}
+
+.container .graphical-charter .graphical-charter-content .colors {
+  display: flex;
+  justify-content: space-around;
+  width: 40%;
+  height: 200px;
+}
+
+.container .graphical-charter .graphical-charter-content .colors .color {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.container .graphical-charter .graphical-charter-content .colors .color .round {
+  width: 100px;
+  height: 100px;
+  background-color: aquamarine;
+  border-radius: 100%;
+}
+
+.container .graphical-charter .graphical-charter-content .colors .color p {
+  margin-top: 15px;
+  color: #fff;
+  font-size: 20px;
+}
+
+.container .graphical-charter .graphical-charter-content .typo {
+  width: 40%;
+  background-color: #ffffff;
+  height: 200px;
 }
 
 .container .quotes {
@@ -191,6 +248,7 @@
   font-style: italic;
   font-weight: normal;
   width: 964px;
+  white-space: normal;
 }
 
 .container .video {
@@ -227,6 +285,7 @@
   font-size: 16px;
   width: 489px;
   margin-top: 33px;
+  white-space: normal;
 }
 
 .container .conclusion .conclusion-text {

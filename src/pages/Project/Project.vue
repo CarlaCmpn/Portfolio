@@ -10,9 +10,15 @@
 				<div class="description-intro">
 					<h4>Presentation</h4>
 					<p>{{dataProject[this.id].text_presentation}}</p>
-					<div class="discover">
-						<div class="ligne"></div>
-						<!-- <a :href="dataProject[this.id].discover_link">{{dataProject[this.id].discover_button}}</a> -->
+					<a v-if="dataProject[this.id].discover_link != ''" :href="dataProject[this.id].discover_link" rel="noopener noreferrer" target="_blank">
+						<div class="discover">
+							<p>{{dataProject[this.id].discover_button}}</p>
+							<div class="line"></div>
+						</div>
+					</a>
+					<div v-if="dataProject[this.id].discover_link === ''" class="discover">
+						<p>{{dataProject[this.id].discover_button}}</p>
+						<div class="line"></div>
 					</div>
 				</div>
 				<div class="description-category">
@@ -46,42 +52,29 @@
 				</div>
 			</div>
 			<div class="graphical-charter">
-				<h4>Theme</h4>
 				<div class="graphical-charter-content">
 					<div class="colors">
-						<div class="color">
-							<div class="round"></div>
-							<p>###</p>
-						</div>
-						<div class="color">
-							<div class="round"></div>
-							<p>###</p>
-						</div>
-						<div class="color">
-							<div class="round"></div>
-							<p>###</p>
-						</div>
+						<h4>Colors</h4>
+						<img :src="require('@/assets/images/'+`${dataProject[this.id].color}`)">
 					</div>
-					<div class="typo">
-
+					<div class="typographies">
+						<h4>Typography</h4>
+						<img :src="require('@/assets/images/'+`${dataProject[this.id].font}`)">
 					</div>
 				</div>
 			</div>
 			<div class="quotes reveal-quote">
 				<p>“{{dataProject[this.id].quote}}“</p>
 			</div>
-			<!-- <div class="video">
-				<video controls :src="require('@/assets/images/'+`${dataProject[this.id].video}`)"/>
-			</div> -->
 			<div class="conclusion">
 				<div class="conclusion-intro">
 					<h4>{{dataProject[this.id].title_conclusion_word_1}}<br>{{dataProject[this.id].title_conclusion_word_2}}</h4>
 					<p>{{dataProject[this.id].text_conclusion_1}}</p>
 				</div>
-				<!-- <div class="conclusion-text">
-					<p>{{dataProject[this.id].text_conclusion_2}}</p>
-					<p>{{dataProject[this.id].text_conclusion_3}}</p>
-				</div> -->
+				<div class="mockup">
+					<img v-if="dataProject[this.id].mockup != ''" :src="require('@/assets/images/'+`${dataProject[this.id].mockup}`)">
+					<video controls v-if="dataProject[this.id].video != ''" :src="require('@/assets/images/'+`${dataProject[this.id].video}`)"/>
+				</div>
 			</div>
 			<div class="next-project">
 				<div class="next-project-button reveal-next">
@@ -112,9 +105,9 @@ import json from '../../../json/data.json'
 		console.log(currentUrl);
 
 		if(currentUrl === "/project/portfolio"){
-			this.id = 0
-		}else if(currentUrl === "/project/travel_diary"){
 			this.id = 1
+		}else if(currentUrl === "/project/travel_diary"){
+			this.id = 0
 		}else if(currentUrl === "/project/space_game"){
 			this.id = 2
 		}

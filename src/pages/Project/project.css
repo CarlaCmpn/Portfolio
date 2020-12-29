@@ -88,24 +88,79 @@
   white-space: normal;
 }
 
-.container .description .description-intro .discover {
-  display: flex;
-  align-items: center;
-  margin-top: 30px;
-  cursor: pointer;
+.container .description .description-intro a {
+  text-decoration: none;
+  color: #ffffff;
 }
 
-.container .description .description-intro .discover .ligne {
-  width: 67px;
+.container .description .description-intro a .discover {
+  display: flex;
+  align-items: center;
+  width: auto;
+  cursor: pointer;
+  margin-top: 30px;
+}
+
+.container .description .description-intro a .discover:hover .line {
+  animation: ligne 1s 1 normal;
+}
+
+@keyframes ligne {
+  0% {
+    width: 0px;
+  }
+  100% {
+    width: 50px;
+  }
+}
+
+.container .description .description-intro a .discover p {
+  font-size: 20px;
+  font-style: italic;
+  margin: 0;
+  width: auto;
+}
+
+.container .description .description-intro a .discover .line {
+  margin-left: 10px;
+  width: 50px;
   height: 1px;
   background-color: #ffffff;
 }
 
-.container .description .description-intro .discover a {
-  font-size: 18px;
-  text-decoration: none;
-  color: #ffffff;
-  margin-left: 34px;
+.container .description .description-intro .discover {
+  display: flex;
+  align-items: center;
+  width: auto;
+  cursor: pointer;
+  margin-top: 30px;
+}
+
+.container .description .description-intro .discover:hover .line {
+  animation: ligne 1s 1 normal;
+}
+
+@keyframes ligne {
+  0% {
+    width: 0px;
+  }
+  100% {
+    width: 50px;
+  }
+}
+
+.container .description .description-intro .discover p {
+  font-size: 20px;
+  font-style: italic;
+  margin: 0;
+  width: auto;
+}
+
+.container .description .description-intro .discover .line {
+  margin-left: 10px;
+  width: 50px;
+  height: 1px;
+  background-color: #ffffff;
 }
 
 .container .description .description-category {
@@ -141,6 +196,7 @@
   width: 80%;
   height: auto;
   margin: 30px 0;
+  box-shadow: 8px 8px 12px #c4c4c4;
 }
 
 .container .content {
@@ -188,47 +244,43 @@
   flex-direction: column;
 }
 
-.container .graphical-charter h4 {
-  font-size: 41px;
-}
-
 .container .graphical-charter .graphical-charter-content {
   display: flex;
   margin-top: 40px;
-  justify-content: space-between;
 }
 
 .container .graphical-charter .graphical-charter-content .colors {
   display: flex;
-  justify-content: space-around;
-  width: 40%;
-  height: 200px;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  width: 50%;
+  height: auto;
 }
 
-.container .graphical-charter .graphical-charter-content .colors .color {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+.container .graphical-charter .graphical-charter-content .colors img {
+  width: 60%;
+  height: auto;
 }
 
-.container .graphical-charter .graphical-charter-content .colors .color .round {
-  width: 100px;
-  height: 100px;
-  background-color: aquamarine;
-  border-radius: 100%;
+.container .graphical-charter .graphical-charter-content .colors h4 {
+  font-size: 41px;
+  width: 100%;
+  margin-bottom: 50px;
 }
 
-.container .graphical-charter .graphical-charter-content .colors .color p {
-  margin-top: 15px;
-  color: #fff;
-  font-size: 20px;
+.container .graphical-charter .graphical-charter-content .typographies {
+  width: 50%;
 }
 
-.container .graphical-charter .graphical-charter-content .typo {
-  width: 40%;
-  background-color: #ffffff;
-  height: 200px;
+.container .graphical-charter .graphical-charter-content .typographies h4 {
+  font-size: 41px;
+  width: 100%;
+  margin-bottom: 50px;
+}
+
+.container .graphical-charter .graphical-charter-content .typographies img {
+  width: 25%;
+  height: auto;
 }
 
 .container .quotes {
@@ -273,6 +325,9 @@
 }
 
 .container .conclusion .conclusion-intro {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   width: 50%;
   box-sizing: border-box;
 }
@@ -288,16 +343,18 @@
   white-space: normal;
 }
 
-.container .conclusion .conclusion-text {
+.container .conclusion .mockup {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 50%;
-  padding-right: 72px;
+  height: auto;
   box-sizing: border-box;
 }
 
-.container .conclusion .conclusion-text p {
-  font-size: 16px;
-  width: 489px;
-  margin-top: 33px;
+.container .conclusion .mockup img {
+  width: 75%;
+  height: auto;
 }
 
 .container .next-project {

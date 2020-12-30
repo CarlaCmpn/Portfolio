@@ -1,7 +1,7 @@
 @import '../../styles/variables/colors/_colors.scss';
 @import '../../styles/mixins/_typography.scss';
 
-.container{
+.container-about{
     display: flex;
     padding-left: 75px;
     height: 100vh;
@@ -10,7 +10,7 @@
     overflow-x: hidden;
     overflow-y: hidden;
 	white-space: nowrap;
-	flex-wrap: wrap;
+	flex-wrap: wrap; 
 	background-color: var(--dark-background);
 
 

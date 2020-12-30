@@ -3,9 +3,10 @@
   --dark-font: #111111;
   --light-background: #ffffff;
   --light-font: #ffffff;
+  --grey-font: #9b9999;
 }
 
-.container {
+.container-intro {
   width: 100vw;
   height: 100vh;
   display: flex;
@@ -19,17 +20,17 @@
   background-color: var(--light-background);
 }
 
-.container .block-text {
+.container-intro .block-text {
   margin-left: 170px;
 }
 
-.container .block-text .block-text__content {
+.container-intro .block-text .block-text__content {
   display: flex;
   height: 70px;
   align-items: center;
 }
 
-.container .block-text .block-text__content .block-text__content--cache {
+.container-intro .block-text .block-text__content .block-text__content--cache {
   position: absolute;
   width: 1000px;
   height: 80px;
@@ -38,16 +39,16 @@
   animation: cache 5s 1 forwards;
 }
 
-.container .block-text .block-text__content p {
+.container-intro .block-text .block-text__content p {
   font-size: 58px;
   color: var(--dark-font);
 }
 
-.container .block-text .block-text__content:nth-of-type(2) .block-text__content--cache {
+.container-intro .block-text .block-text__content:nth-of-type(2) .block-text__content--cache {
   animation-delay: 1s;
 }
 
-.container .block-text .block-text__content:nth-of-type(3) .block-text__content--cache {
+.container-intro .block-text .block-text__content:nth-of-type(3) .block-text__content--cache {
   animation-delay: 2s;
 }
 
@@ -63,7 +64,7 @@
   }
 }
 
-.container .image {
+.container-intro .image {
   position: absolute;
   opacity: 0;
   width: 140px;
@@ -81,41 +82,41 @@
   }
 }
 
-.container .image:nth-of-type(2) {
+.container-intro .image:nth-of-type(2) {
   top: 5vh;
   animation-delay: 0s;
 }
 
-.container .image:nth-of-type(3) {
+.container-intro .image:nth-of-type(3) {
   top: 70vh;
   animation-delay: .5s;
 }
 
-.container .image:nth-of-type(4) {
+.container-intro .image:nth-of-type(4) {
   top: 80vh;
   left: 60vw;
   animation-delay: 1s;
 }
 
-.container .image:nth-of-type(5) {
+.container-intro .image:nth-of-type(5) {
   top: 20vh;
   left: 40vw;
   animation-delay: 1.5s;
 }
 
-.container .image:nth-of-type(6) {
+.container-intro .image:nth-of-type(6) {
   top: 50vh;
   left: 80vw;
   animation-delay: 2s;
 }
 
-.container .image:nth-of-type(7) {
+.container-intro .image:nth-of-type(7) {
   top: 10vh;
   left: 70vw;
   animation-delay: 2.5s;
 }
 
-.container .button {
+.container-intro .button {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -128,7 +129,7 @@
   left: 50vw;
 }
 
-.container .button img {
+.container-intro .button img {
   width: 50px;
   height: 50px;
 }

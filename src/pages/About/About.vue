@@ -1,5 +1,5 @@
 <template>
-	<div class="container">
+	<div class="container-about">
 		<div class="block-left">
 			<div class="block-left__title">
 				<h2>More</h2>
@@ -59,7 +59,10 @@ export default{
 }
 </script>
 
-<style scoped>
-  @import 'about.min.css';
+<style>
   @import '../../styles/reset.css';
+</style>
+
+<style>
+	@import 'about.min.css';
 </style>

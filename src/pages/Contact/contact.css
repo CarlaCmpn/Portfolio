@@ -3,9 +3,10 @@
   --dark-font: #111111;
   --light-background: #ffffff;
   --light-font: #ffffff;
+  --grey-font: #9b9999;
 }
 
-.container {
+.container-contact {
   display: flex;
   padding-left: 75px;
   height: 100vh;
@@ -16,6 +17,7 @@
   white-space: nowrap;
   flex-direction: column;
   flex-wrap: wrap;
+  background-color: var(--dark-background);
 }
 
 @keyframes opacity {
@@ -27,7 +29,7 @@
   }
 }
 
-.container .block-left {
+.container-contact .block-left {
   display: flex;
   flex-direction: column;
   height: 100%;
@@ -37,24 +39,24 @@
   width: 25%;
 }
 
-.container .block-left .block-left__title {
+.container-contact .block-left .block-left__title {
   position: absolute;
   top: 45vh;
   z-index: 1;
 }
 
-.container .block-left .block-left__title h2 {
+.container-contact .block-left .block-left__title h2 {
   font-size: 60px;
   font-family: 'didot';
   color: var(--light-font);
 }
 
-.container .block-left .block-left__title .block-left__subtitle {
+.container-contact .block-left .block-left__title .block-left__subtitle {
   margin-top: 15px;
   display: flex;
 }
 
-.container .block-left .block-left__title .block-left__subtitle p {
+.container-contact .block-left .block-left__title .block-left__subtitle p {
   font-size: 60px;
   font-family: 'DidotLTStd-Italic';
   color: var(--light-font);
@@ -65,48 +67,48 @@
   opacity: 0;
 }
 
-.container .block-left .block-left__title .block-left__subtitle p:nth-of-type(1) {
+.container-contact .block-left .block-left__title .block-left__subtitle p:nth-of-type(1) {
   animation-delay: .2s;
 }
 
-.container .block-left .block-left__title .block-left__subtitle p:nth-of-type(2) {
+.container-contact .block-left .block-left__title .block-left__subtitle p:nth-of-type(2) {
   animation-delay: .4s;
 }
 
-.container .block-left .block-left__title .block-left__subtitle p:nth-of-type(3) {
+.container-contact .block-left .block-left__title .block-left__subtitle p:nth-of-type(3) {
   animation-delay: .6s;
 }
 
-.container .block-left .block-left__title .block-left__subtitle p:nth-of-type(4) {
+.container-contact .block-left .block-left__title .block-left__subtitle p:nth-of-type(4) {
   animation-delay: .8s;
   padding-left: 10px;
 }
 
-.container .block-left .block-left__title .block-left__subtitle p:nth-of-type(5) {
+.container-contact .block-left .block-left__title .block-left__subtitle p:nth-of-type(5) {
   animation-delay: 1s;
 }
 
-.container .block-left .block-left__title .block-left__subtitle p:nth-of-type(6) {
+.container-contact .block-left .block-left__title .block-left__subtitle p:nth-of-type(6) {
   animation-delay: 1.2s;
 }
 
-.container .block-left .block-left__title .block-left__subtitle p:nth-of-type(7) {
+.container-contact .block-left .block-left__title .block-left__subtitle p:nth-of-type(7) {
   animation-delay: 1.4s;
 }
 
-.container .block-left .block-left__title .block-left__subtitle p:nth-of-type(8) {
+.container-contact .block-left .block-left__title .block-left__subtitle p:nth-of-type(8) {
   animation-delay: 1.6s;
 }
 
-.container .block-left .block-left__title .block-left__subtitle p:nth-of-type(9) {
+.container-contact .block-left .block-left__title .block-left__subtitle p:nth-of-type(9) {
   animation-delay: 1.8s;
 }
 
-.container .block-left .block-left__title .block-left__subtitle p:nth-of-type(10) {
+.container-contact .block-left .block-left__title .block-left__subtitle p:nth-of-type(10) {
   animation-delay: 2s;
 }
 
-.container .block-left .block-left__title .block-left__subtitle p:nth-of-type(11) {
+.container-contact .block-left .block-left__title .block-left__subtitle p:nth-of-type(11) {
   animation-delay: 2.2s;
 }
 
@@ -119,31 +121,31 @@
   }
 }
 
-.container .block-left .block-left__icon {
+.container-contact .block-left .block-left__icon {
   padding-top: 360px;
   padding-left: 90px;
   height: 80%;
 }
 
-.container .block-left .block-left__icon .block-left__icon img {
+.container-contact .block-left .block-left__icon .block-left__icon img {
   width: 70%;
   height: auto;
 }
 
-.container .block-left .block-left__footer--big {
+.container-contact .block-left .block-left__footer--big {
   width: 100%;
   display: flex;
   align-items: flex-start;
   margin-bottom: 30px;
 }
 
-.container .block-left .block-left__footer--big p {
+.container-contact .block-left .block-left__footer--big p {
   font-size: 18px;
   font-family: 'DidotLTStd-Italic';
   color: var(--light-font);
 }
 
-.container .block-description {
+.container-contact .block-description {
   display: flex;
   align-items: flex-end;
   justify-content: center;
@@ -153,7 +155,7 @@
   height: 30%;
 }
 
-.container .block-description .block-description__content {
+.container-contact .block-description .block-description__content {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -161,7 +163,7 @@
   white-space: initial;
 }
 
-.container .block-description .block-description__content p {
+.container-contact .block-description .block-description__content p {
   text-align: center;
   width: 60%;
   color: var(--light-font);
@@ -170,7 +172,7 @@
   line-height: 20px;
 }
 
-.container .block-form {
+.container-contact .block-form {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -180,14 +182,14 @@
   border-left: 1px var(--light-background) solid;
 }
 
-.container .block-form form {
+.container-contact .block-form form {
   display: flex;
   width: 274px;
   margin-top: 80px;
   flex-direction: column;
 }
 
-.container .block-form form input {
+.container-contact .block-form form input {
   border-top: none;
   border-right: none;
   border-left: none;
@@ -198,14 +200,14 @@
   color: var(--light-font);
 }
 
-.container .block-form form input::placeholder {
+.container-contact .block-form form input::placeholder {
   color: var(--light-font);
   font-size: 16px;
   font-family: 'didot';
   line-height: 20px;
 }
 
-.container .block-form form textarea {
+.container-contact .block-form form textarea {
   border-top: none;
   border-right: none;
   border-left: none;
@@ -216,14 +218,14 @@
   border-bottom: 1px solid var(--light-background);
 }
 
-.container .block-form form textarea::placeholder {
+.container-contact .block-form form textarea::placeholder {
   color: var(--light-font);
   font-size: 16px;
   font-family: 'didot';
   line-height: 20px;
 }
 
-.container .block-form form button {
+.container-contact .block-form form button {
   margin-top: 35px;
   padding: 7px 0;
   border-radius: 0px;
@@ -237,7 +239,7 @@
   line-height: 20px;
 }
 
-.container .block-form form button:hover {
+.container-contact .block-form form button:hover {
   background-color: var(--light-background);
   color: var(--dark-background);
 }

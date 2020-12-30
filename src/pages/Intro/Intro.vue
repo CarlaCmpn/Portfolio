@@ -1,5 +1,5 @@
 <template>
-  <div class="container">
+  <div class="container-intro">
 		<div class="block-text">
 			<div class="block-text__content">
 				<div class="block-text__content--cache"></div>
@@ -55,6 +55,9 @@ export default {
 </script>
 
 <style>
-	@import 'intro.min.css';
 	@import '../../styles/reset.css';
+</style>
+
+<style>
+	@import 'intro.min.css';
 </style>

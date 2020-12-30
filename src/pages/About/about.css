@@ -3,9 +3,10 @@
   --dark-font: #111111;
   --light-background: #ffffff;
   --light-font: #ffffff;
+  --grey-font: #9b9999;
 }
 
-.container {
+.container-about {
   display: flex;
   padding-left: 75px;
   height: 100vh;
@@ -27,7 +28,7 @@
   }
 }
 
-.container .block-left {
+.container-about .block-left {
   display: flex;
   flex-direction: column;
   height: 100%;
@@ -37,24 +38,24 @@
   width: 20%;
 }
 
-.container .block-left .block-left__title {
+.container-about .block-left .block-left__title {
   position: absolute;
   top: 45vh;
   z-index: 1;
 }
 
-.container .block-left .block-left__title h2 {
+.container-about .block-left .block-left__title h2 {
   font-size: 60px;
   font-family: 'didot';
   color: var(--light-font);
 }
 
-.container .block-left .block-left__title .block-left__subtitle {
+.container-about .block-left .block-left__title .block-left__subtitle {
   margin-top: 15px;
   display: flex;
 }
 
-.container .block-left .block-left__title .block-left__subtitle p {
+.container-about .block-left .block-left__title .block-left__subtitle p {
   font-size: 60px;
   font-family: 'DidotLTStd-Italic';
   color: var(--light-font);
@@ -65,32 +66,32 @@
   opacity: 0;
 }
 
-.container .block-left .block-left__title .block-left__subtitle p:nth-of-type(1) {
+.container-about .block-left .block-left__title .block-left__subtitle p:nth-of-type(1) {
   animation-delay: .2s;
 }
 
-.container .block-left .block-left__title .block-left__subtitle p:nth-of-type(2) {
+.container-about .block-left .block-left__title .block-left__subtitle p:nth-of-type(2) {
   animation-delay: .4s;
 }
 
-.container .block-left .block-left__title .block-left__subtitle p:nth-of-type(3) {
+.container-about .block-left .block-left__title .block-left__subtitle p:nth-of-type(3) {
   animation-delay: .6s;
 }
 
-.container .block-left .block-left__title .block-left__subtitle p:nth-of-type(4) {
+.container-about .block-left .block-left__title .block-left__subtitle p:nth-of-type(4) {
   animation-delay: .8s;
 }
 
-.container .block-left .block-left__title .block-left__subtitle p:nth-of-type(5) {
+.container-about .block-left .block-left__title .block-left__subtitle p:nth-of-type(5) {
   animation-delay: 1s;
 }
 
-.container .block-left .block-left__title .block-left__subtitle p:nth-of-type(6) {
+.container-about .block-left .block-left__title .block-left__subtitle p:nth-of-type(6) {
   animation-delay: 1.2s;
   padding-left: 10px;
 }
 
-.container .block-left .block-left__title .block-left__subtitle p:nth-of-type(7) {
+.container-about .block-left .block-left__title .block-left__subtitle p:nth-of-type(7) {
   animation-delay: 1.4s;
 }
 
@@ -103,31 +104,31 @@
   }
 }
 
-.container .block-left .block-left__icon {
+.container-about .block-left .block-left__icon {
   padding-top: 360px;
   padding-left: 90px;
   height: 80%;
 }
 
-.container .block-left .block-left__icon .block-left__icon img {
+.container-about .block-left .block-left__icon .block-left__icon img {
   width: 70%;
   height: auto;
 }
 
-.container .block-left .block-left__footer--big {
+.container-about .block-left .block-left__footer--big {
   width: 100%;
   display: flex;
   align-items: flex-start;
   margin-bottom: 30px;
 }
 
-.container .block-left .block-left__footer--big p {
+.container-about .block-left .block-left__footer--big p {
   font-size: 18px;
   font-family: 'DidotLTStd-Italic';
   color: var(--light-font);
 }
 
-.container .picture {
+.container-about .picture {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -136,7 +137,7 @@
   border-left: 1px var(--light-background) solid;
 }
 
-.container .picture .block-picture {
+.container-about .picture .block-picture {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -145,12 +146,12 @@
   overflow: hidden;
 }
 
-.container .picture .block-picture img {
+.container-about .picture .block-picture img {
   width: 145%;
   height: auto;
 }
 
-.container .picture .block-picture__icon {
+.container-about .picture .block-picture__icon {
   margin-top: -50px;
   margin-right: -250px;
   animation-name: circle;
@@ -160,11 +161,11 @@
   animation-timing-function: linear;
 }
 
-.container .picture a {
+.container-about .picture a {
   text-decoration: none;
 }
 
-.container .picture a .block-picture__contact {
+.container-about .picture a .block-picture__contact {
   width: 250px;
   text-decoration: none;
   display: flex;
@@ -172,20 +173,20 @@
   cursor: pointer;
 }
 
-.container .picture a .block-picture__contact p {
+.container-about .picture a .block-picture__contact p {
   font-size: 16px;
   font-family: 'DidotLTStd-Bold';
   color: var(--light-font);
 }
 
-.container .picture a .block-picture__contact .block-picture__contact--line {
+.container-about .picture a .block-picture__contact .block-picture__contact--line {
   margin-left: 10px;
   width: 50px;
   height: 1px;
   background-color: var(--light-background);
 }
 
-.container .picture a .block-picture__contact:hover .block-picture__contact--line {
+.container-about .picture a .block-picture__contact:hover .block-picture__contact--line {
   animation: ligne 1s 1 normal;
 }
 
@@ -207,7 +208,7 @@
   }
 }
 
-.container .block-description {
+.container-about .block-description {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -216,11 +217,11 @@
   border-left: 1px var(--light-background) solid;
 }
 
-.container .block-description .block-description__text {
+.container-about .block-description .block-description__text {
   padding: 0 60px;
 }
 
-.container .block-description .block-description__text p {
+.container-about .block-description .block-description__text p {
   font-size: 16px;
   font-family: 'didot';
   line-height: 20px;
@@ -229,7 +230,7 @@
   white-space: initial;
 }
 
-.container .block-description .block-description__link {
+.container-about .block-description .block-description__link {
   width: 100%;
   height: 35%;
   display: flex;
@@ -239,14 +240,14 @@
   box-sizing: border-box;
 }
 
-.container .block-description .block-description__link a {
+.container-about .block-description .block-description__link a {
   font-size: 16px;
   font-family: 'DidotLTStd-Bold';
   color: var(--light-font);
   text-decoration: none;
 }
 
-.container .block-description .block-description__footer--small {
+.container-about .block-description .block-description__footer--small {
   display: none;
 }
 

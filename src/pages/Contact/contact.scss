@@ -1,7 +1,7 @@
 @import '../../styles/variables/colors/_colors.scss';
 @import '../../styles/mixins/_typography.scss';
 
-.container{
+.container-contact{
     display: flex;
     padding-left: 75px;
     height: 100vh;
@@ -12,8 +12,9 @@
 	white-space: nowrap;
 	flex-direction: column;
 	flex-wrap: wrap;
+	background-color: var(--dark-background);
 
-
+ 
 	@keyframes opacity {
 		0% {
 			opacity: 0;

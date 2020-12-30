@@ -53,8 +53,6 @@
 </template>
 
 <script>
-// import Vue from 'vue'
-
 export default {
 	name: 'Header',
 	components:{
@@ -106,6 +104,9 @@ export default {
 </script>
 
 <style>
-	@import 'header.min.css';
 	@import '../../styles/reset.css';
+</style>
+
+<style>
+	@import 'header.min.css';
 </style>

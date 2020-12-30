@@ -1,5 +1,5 @@
 <template>
-  <div class="container">
+  <div class="container-home">
     <div class="block-left">
       <div class="block-left__title">
         <h2>All my</h2>
@@ -110,6 +110,9 @@
 </script>
 
 <style>
-  @import 'home.min.css';
   @import '../../styles/reset.css';
+</style>
+
+<style>
+  @import 'home.min.css';
 </style>

@@ -1,7 +1,7 @@
 @import '../../styles/variables/colors/_colors.scss';
 @import '../../styles/mixins/_typography.scss';
 
-.container{
+.container-intro{
 	width: 100vw;
 	height: 100vh;
 	display: flex;
@@ -29,7 +29,7 @@
 				background-color: var(--light-background);
 				transform: scaleX(1);
 				animation: cache 5s 1 forwards;
-			}
+			} 
 
 			p{
 				font-size: 58px;

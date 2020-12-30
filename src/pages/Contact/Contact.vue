@@ -1,5 +1,5 @@
 <template>
-	<div class="container">
+	<div class="container-contact">
 		<div class="block-left">
 			<div class="block-left__title">
 				<h2>Contact</h2>
@@ -54,7 +54,10 @@
   }
 </script>
 
-<style scoped>
-  @import 'contact.min.css';
+<style>
    @import '../../styles/reset.css';
+</style>
+
+<style>
+	@import 'contact.min.css';
 </style>

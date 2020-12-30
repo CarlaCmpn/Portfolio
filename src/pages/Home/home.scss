@@ -1,7 +1,7 @@
 @import '../../styles/mixins/_typography.scss';
 @import '../../styles/variables/colors/colors';
 
-.container{  
+.container-home{  
     display: flex;
     padding-left: 75px;
     height: 100vh;
@@ -19,7 +19,7 @@
 		margin-right: 10px;
 		width: 25%;
 
-		.block-left__title{
+		.block-left__title{ 
 			position: absolute;
 			top: 45vh;
 			z-index: 1;

@@ -1,6 +1,6 @@
 <template>
 	<div>
-		<div class="container">
+		<div class="container-project">
 			<div class="block-cover reveal-cover">
 				<div class="block-cover__image">
 					<img :src="require('@/assets/images/'+`${dataProject[this.id].img_cover}`)">
@@ -149,6 +149,9 @@ import json from '../../../json/data.json'
 </script>
 
 <style>
+  @import '../../styles/reset.css';
+</style>
+
+<style>
   @import 'project.min.css';
-  @import '../../styles/reset.css'
 </style>

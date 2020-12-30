@@ -1,4 +1,7 @@
-.container{
+@import '../../styles/variables/colors/_colors.scss';
+@import '../../styles/mixins/_typography.scss';
+
+.container-404{
 	width: 100vw;
 	height: 100vh;
 	display: flex;
@@ -7,15 +10,14 @@
 	flex-direction: column;
 
 	h1{
-		color: #ffffff;
-		font-size: 45px;
-		font-weight: bold;
+		color: var(--light-font);
+		@include title_second;
 	}
 
 	h2{
+		color: var(--light-font);
 		margin-top: 20px;
-		color: #ffffff;
-		font-size: 30px;
+		@include caption;
 	}
 
 	.button{
@@ -25,20 +27,20 @@
 		width: auto;
 		cursor: pointer;
 
-		a{
+		a{ 
 			color: #ffffff;
 			text-decoration: none;
 			font-size: 20px;
 		}
 
-		.line{
+		.button--line{
 			margin-left: 10px;
 			width: 50px;
 			height: 1px;
 			background-color: #ffffff;
 		}
 
-		&:hover .line{
+		&:hover .button--line{
 			animation: ligne 1s 1 normal;
 		}
 

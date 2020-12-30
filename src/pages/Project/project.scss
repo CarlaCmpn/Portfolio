@@ -1,7 +1,7 @@
 @import '../../styles/variables/colors/_colors.scss';
 @import '../../styles/mixins/_typography.scss';
 
-.container{ 
+.container-project{ 
 	display: flex;
 	flex-direction: column;
     height: auto;
@@ -27,7 +27,7 @@
 		margin-top: 130px;
 		box-sizing: border-box;
 		overflow: hidden;
-
+ 
 		.block-cover__image{
 			display: flex;
 			justify-content: center;

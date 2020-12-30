@@ -4,7 +4,7 @@ import Home from '../pages/Home/Home.vue'
 import About from '../pages/About/About.vue'
 import Contact from '../pages/Contact/Contact.vue'
 import Project from '../pages/Project/Project.vue'
-import PageNotFound from '../components/PageNotFound/PageNotFound.vue'
+import PageNotFound from '../pages/PageNotFound/PageNotFound.vue'
 
 Vue.use(Router)
 

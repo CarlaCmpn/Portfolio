@@ -29,7 +29,8 @@
 			</div>
 		</div>
 		<div class="form">
-			<form action="POST" name="contact" data-netlify="true">
+			<form name="contact" action="" method="post" netlify>
+				<input type="hidden" name="form-name" value="contact" />
 				<input type="text" name="name" placeholder="Name"/>
 				<input type="email" name="email" placeholder="Email"/>
 				<textarea name="message" placeholder="Message"/> 

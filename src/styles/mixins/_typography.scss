@@ -1,0 +1,35 @@
+@mixin title {
+	font-size: 60px;
+	font-family: 'didot';
+}
+
+@mixin title_italic {
+	font-size: 60px;
+	font-family: 'DidotLTStd-Italic';
+}
+
+@mixin title_second {
+	font-size: 41px;
+	font-family: 'didot';
+}
+
+@mixin body {
+	font-size: 16px;
+	font-family: 'didot';
+	line-height: 20px;
+}
+
+@mixin body-bold {
+	font-size: 16px;
+	font-family: 'DidotLTStd-Bold';
+}
+
+@mixin caption {
+	font-size: 18px;
+	font-family: 'didot';
+}
+
+@mixin footer {
+	font-size: 18px;
+	font-family: 'DidotLTStd-Italic';
+}

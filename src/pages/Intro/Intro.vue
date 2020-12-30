@@ -1,16 +1,16 @@
 <template>
-  <div class="container" v-bind:class="[intro ? '' : 'transition-close']">
-		<div class="text">
-			<div class="block">
-				<div class="cache"></div>
-				<p>I'm Carla</p>
+  <div class="container">
+		<div class="block-text">
+			<div class="block-text__content">
+				<div class="block-text__content--cache"></div>
+				<p>I'm Carla Compan</p>
 			</div>
-			<div class="block">
-				<div class="cache"></div>
+			<div class="block-text__content">
+				<div class="block-text__content--cache"></div>
 				<p>a full stack developer</p>
 			</div>
-			<div class="block">
-				<div class="cache"></div>
+			<div class="block-text__content">
+				<div class="block-text__content--cache"></div>
 				<p>and french student at Hetic</p>
 			</div>
 		</div>
@@ -32,10 +32,10 @@
 		<div class="image">
 			<img src="../../assets/triangle.svg" alt="">
 		</div>
-		<div class="close-button">
-			<router-link to="/works">
+		<div class="button">
+			<a href="/works">
 				<img src="../../assets/cross-black.svg" alt="">
-			</router-link>
+			</a>
 		</div>
 	</div>
 </template>
@@ -49,11 +49,12 @@ export default {
   data(){
     return{
 		intro: true
-    }
+    } 
   },
 }
 </script>
 
-<style scoped>
-	@import 'intro.min.css'
+<style>
+	@import 'intro.min.css';
+	@import '../../styles/reset.css';
 </style>

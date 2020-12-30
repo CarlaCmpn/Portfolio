@@ -1,51 +1,51 @@
 <template>
 	<div>
 		<div class="navbar">
-			<div class="name" v-on:click="isActive = false">
+			<div class="navbar-name" v-on:click="isActive = false">
 				<router-link to="/">
-					<h1 v-bind:class="[isActive ? 'open-title' : null]">Carla.</h1>
-					<div class="underligne" v-bind:class="[isActive ? 'open-title' : null]"></div>
+					<h1 v-bind:class="[isActive ? 'navbar-name--open' : null]">Carla.</h1>
+					<div class="navbar-name--underligne" v-bind:class="[isActive ? 'navbar-name--open' : null]"></div>
 				</router-link>
 			</div>
-			<div class="menu" v-bind:class="[isActive ? 'menu_open' : null]" @click="hamburger()">
-				<div class="line-menu"></div>
-				<div class="line-menu"></div>
-				<div class="line-menu"></div>
+			<div class="navbar-menu" v-bind:class="[isActive ? 'navbar-menu--open' : null]" @click="hamburger()">
+				<div class="navbar-menu--line"></div>
+				<div class="navbar-menu--line"></div>
+				<div class="navbar-menu--line"></div>
 			</div>
 		</div>
-		<div class="navbar-open" v-bind:class="[isActive ? 'transition-open' : 'transition-close']">
-			<div class="list">
-				<div class="list-link" v-on:click="isActive = false">
-					<div v-if="selectedHome" class="circle"></div>
+		<div class="navbar-open" v-bind:class="[isActive ? 'navbar-open__transition--open' : 'navbar-open__transition--close']">
+			<div class="navbar-open__list">
+				<div class="navbar-open__list__link" v-on:click="isActive = false">
+					<div v-if="selectedHome" class="navbar-open__list__link__circle"></div>
 					<router-link to="/">
 						<p>Home</p>
-						<div class="underligne"></div>
+						<div class="navbar-open__list__link__circle--underline"></div>
 					</router-link>
-					<div v-if="selectedHome" class="circle"></div>
+					<div v-if="selectedHome" class="navbar-open__list__link__circle"></div>
 				</div>
-				<div class="list-link" v-on:click="isActive = false">
-					<div v-if="selectedWork" class="circle"></div>
+				<div class="navbar-open__list__link" v-on:click="isActive = false">
+					<div v-if="selectedWork" class="navbar-open__list__link__circle"></div>
 					<router-link to="/works">
 						<p>Works</p>
-						<div class="underligne"></div>
+						<div class="navbar-open__list__link__circle--underline"></div>
 					</router-link>
-					<div v-if="selectedWork" class="circle"></div>
+					<div v-if="selectedWork" class="navbar-open__list__link__circle"></div>
 				</div>
-				<div class="list-link" v-on:click="isActive = false">
-					<div v-if="selectedAbout" class="circle"></div>
+				<div class="navbar-open__list__link" v-on:click="isActive = false">
+					<div v-if="selectedAbout" class="navbar-open__list__link__circle"></div>
 					<router-link to="/about">
 						<p>About</p>
-						<div class="underligne"></div>
+						<div class="navbar-open__list__link__circle--underline"></div>
 					</router-link>
-					<div v-if="selectedAbout" class="circle"></div>
+					<div v-if="selectedAbout" class="navbar-open__list__link__circle"></div>
 				</div>
-				<div class="list-link" v-on:click="isActive = false">
-					<div v-if="selectedContact" class="circle"></div>
+				<div class="navbar-open__list__link" v-on:click="isActive = false">
+					<div v-if="selectedContact" class="navbar-open__list__link__circle"></div>
 					<router-link to="/contact">
 						<p>Contact</p>
-						<div class="underligne"></div>
+						<div class="navbar-open__list__link__circle--underline"></div>
 					</router-link>
-					<div v-if="selectedContact" class="circle"></div>
+					<div v-if="selectedContact" class="navbar-open__list__link__circle"></div>
 				</div>
 			</div> 
 		</div>
@@ -105,7 +105,7 @@ export default {
 }
 </script>
 
-<style scoped>
-	@import 'header.css';
+<style>
+	@import 'header.min.css';
 	@import '../../styles/reset.css';
 </style>

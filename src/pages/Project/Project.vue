@@ -1,84 +1,84 @@
 <template>
 	<div>
 		<div class="container">
-			<div class="cover reveal-cover">
-				<div class="cover-image">
+			<div class="block-cover reveal-cover">
+				<div class="block-cover__image">
 					<img :src="require('@/assets/images/'+`${dataProject[this.id].img_cover}`)">
 				</div>
 			</div>
-			<div class="description">
-				<div class="description-intro">
+			<div class="block-description">
+				<div class="block-description__intro">
 					<h4>Presentation</h4>
 					<p>{{dataProject[this.id].text_presentation}}</p>
 					<a v-if="dataProject[this.id].discover_link != ''" :href="dataProject[this.id].discover_link" rel="noopener noreferrer" target="_blank">
-						<div class="discover">
+						<div class="block-description__intro__discover">
 							<p>{{dataProject[this.id].discover_button}}</p>
-							<div class="line"></div>
+							<div class="block-description__intro__discover--line"></div>
 						</div>
 					</a>
-					<div v-if="dataProject[this.id].discover_link === ''" class="discover">
+					<div v-if="dataProject[this.id].discover_link === ''" class="block-description__intro__discover">
 						<p>{{dataProject[this.id].discover_button}}</p>
-						<div class="line"></div>
+						<div class="block-description__intro__discover--line"></div>
 					</div>
 				</div>
-				<div class="description-category">
-					<div class="description-category-block">
+				<div class="block-description__category">
+					<div class="block-description__category__section">
 						<p>Date</p>
 						<p>{{dataProject[this.id].date}}</p>
 					</div>
-					<div class="description-category-block">
+					<div class="block-description__category__section">
 						<p>Role</p>
 						<p>{{dataProject[this.id].role}}</p>
 					</div>
-					<div class="description-category-block">
+					<div class="block-description__category__section">
 						<p>Type</p>
 						<p>{{dataProject[this.id].type_of_project}}</p>
 					</div>
 				</div>
 			</div>
-			<div class="model reveal-img">
+			<div class="block-model reveal-img">
 				<img :src="require('@/assets/images/'+`${dataProject[this.id].three_images_1}`)">
 				<img :src="require('@/assets/images/'+`${dataProject[this.id].three_images_2}`)">
 				<img :src="require('@/assets/images/'+`${dataProject[this.id].three_images_3}`)">
 			</div>
-			<div class="content">
-				<div class="content-intro">
+			<div class="block-content">
+				<div class="block-content__intro">
 					<h4>{{dataProject[this.id].title_roadmap_word_1}}<br>{{dataProject[this.id].title_roadmap_word_2}}</h4>
 					<p>{{dataProject[this.id].text_roadmap_1}}</p>
 				</div>
-				<div class="content-text">
+				<div class="block-content__text">
 					<p>{{dataProject[this.id].text_roadmap_2}}</p>
 					<p>{{dataProject[this.id].text_roadmap_3}}</p>
 				</div>
 			</div>
-			<div class="graphical-charter">
-				<div class="graphical-charter-content">
-					<div class="colors">
+			<div class="block-graphical-charter">
+				<div class="block-graphical-charter__content">
+					<div class="block-graphical-charter__content__colors">
 						<h4>Colors</h4>
 						<img :src="require('@/assets/images/'+`${dataProject[this.id].color}`)">
 					</div>
-					<div class="typographies">
+					<div class="block-graphical-charter__content__typographies">
 						<h4>Typography</h4>
 						<img :src="require('@/assets/images/'+`${dataProject[this.id].font}`)">
 					</div>
 				</div>
 			</div>
-			<div class="quotes reveal-quote">
+			<div class="block-quotes reveal-quote">
 				<p>“{{dataProject[this.id].quote}}“</p>
 			</div>
-			<div class="conclusion">
-				<div class="conclusion-intro">
+			<div class="block-conclusion">
+				<div class="block-conclusion__intro">
 					<h4>{{dataProject[this.id].title_conclusion_word_1}}<br>{{dataProject[this.id].title_conclusion_word_2}}</h4>
 					<p>{{dataProject[this.id].text_conclusion_1}}</p>
 				</div>
-				<div class="mockup">
+				<div class="block-mockup">
 					<img v-if="dataProject[this.id].mockup != ''" :src="require('@/assets/images/'+`${dataProject[this.id].mockup}`)">
 					<video controls v-if="dataProject[this.id].video != ''" :src="require('@/assets/images/'+`${dataProject[this.id].video}`)"/>
 				</div>
 			</div>
-			<div class="next-project">
-				<div class="next-project-button reveal-next">
-					<div class="ligne"></div>
+			<div class="block-next-project">
+				<div class="block-next-project__button reveal-next">
+					<div class="block-next-project__button--line"></div>
 					<a :href="dataProject[this.id].next_page">Next</a>
 				</div>
 			</div>
@@ -148,7 +148,7 @@ import json from '../../../json/data.json'
 }
 </script>
 
-<style scoped>
-  @import 'project.css';
+<style>
+  @import 'project.min.css';
   @import '../../styles/reset.css'
 </style>

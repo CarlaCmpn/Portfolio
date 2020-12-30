@@ -1,6 +1,12 @@
+:root {
+  --dark-background: #252525;
+  --dark-font: #111111;
+  --light-background: #ffffff;
+  --light-font: #ffffff;
+}
+
 .container {
   display: flex;
-  color: white;
   padding-left: 75px;
   height: 100vh;
   opacity: 1;
@@ -21,7 +27,7 @@
   }
 }
 
-.container .title-block {
+.container .block-left {
   display: flex;
   flex-direction: column;
   height: 100%;
@@ -31,26 +37,27 @@
   width: 25%;
 }
 
-.container .title-block .title {
+.container .block-left .block-left__title {
   position: absolute;
   top: 45vh;
   z-index: 1;
 }
 
-.container .title-block .title h2 {
+.container .block-left .block-left__title h2 {
   font-size: 60px;
-  font-weight: normal;
-  margin: 0;
+  font-family: 'didot';
+  color: var(--light-font);
 }
 
-.container .title-block .title .block {
+.container .block-left .block-left__title .block-left__subtitle {
+  margin-top: 15px;
   display: flex;
 }
 
-.container .title-block .title .block p {
-  margin: 0;
+.container .block-left .block-left__title .block-left__subtitle p {
   font-size: 60px;
-  font-style: italic;
+  font-family: 'DidotLTStd-Italic';
+  color: var(--light-font);
   animation-name: opacity-title;
   animation-timing-function: ease-in-out;
   animation-duration: .2s;
@@ -58,48 +65,48 @@
   opacity: 0;
 }
 
-.container .title-block .title .block p:nth-of-type(1) {
+.container .block-left .block-left__title .block-left__subtitle p:nth-of-type(1) {
   animation-delay: .2s;
 }
 
-.container .title-block .title .block p:nth-of-type(2) {
+.container .block-left .block-left__title .block-left__subtitle p:nth-of-type(2) {
   animation-delay: .4s;
 }
 
-.container .title-block .title .block p:nth-of-type(3) {
+.container .block-left .block-left__title .block-left__subtitle p:nth-of-type(3) {
   animation-delay: .6s;
 }
 
-.container .title-block .title .block p:nth-of-type(4) {
+.container .block-left .block-left__title .block-left__subtitle p:nth-of-type(4) {
   animation-delay: .8s;
-  padding-left: 20px;
+  padding-left: 10px;
 }
 
-.container .title-block .title .block p:nth-of-type(5) {
+.container .block-left .block-left__title .block-left__subtitle p:nth-of-type(5) {
   animation-delay: 1s;
 }
 
-.container .title-block .title .block p:nth-of-type(6) {
+.container .block-left .block-left__title .block-left__subtitle p:nth-of-type(6) {
   animation-delay: 1.2s;
 }
 
-.container .title-block .title .block p:nth-of-type(7) {
+.container .block-left .block-left__title .block-left__subtitle p:nth-of-type(7) {
   animation-delay: 1.4s;
 }
 
-.container .title-block .title .block p:nth-of-type(8) {
+.container .block-left .block-left__title .block-left__subtitle p:nth-of-type(8) {
   animation-delay: 1.6s;
 }
 
-.container .title-block .title .block p:nth-of-type(9) {
+.container .block-left .block-left__title .block-left__subtitle p:nth-of-type(9) {
   animation-delay: 1.8s;
 }
 
-.container .title-block .title .block p:nth-of-type(10) {
+.container .block-left .block-left__title .block-left__subtitle p:nth-of-type(10) {
   animation-delay: 2s;
 }
 
-.container .title-block .title .block p:nth-of-type(11) {
+.container .block-left .block-left__title .block-left__subtitle p:nth-of-type(11) {
   animation-delay: 2.2s;
 }
 
@@ -112,40 +119,41 @@
   }
 }
 
-.container .title-block .image {
+.container .block-left .block-left__icon {
   padding-top: 360px;
   padding-left: 90px;
   height: 80%;
 }
 
-.container .title-block .image .image img {
+.container .block-left .block-left__icon .block-left__icon img {
   width: 70%;
   height: auto;
 }
 
-.container .title-block .footer-big {
+.container .block-left .block-left__footer--big {
   width: 100%;
   display: flex;
   align-items: flex-start;
   margin-bottom: 30px;
 }
 
-.container .title-block .footer-big p {
-  margin: 0;
-  font-style: italic;
+.container .block-left .block-left__footer--big p {
+  font-size: 18px;
+  font-family: 'DidotLTStd-Italic';
+  color: var(--light-font);
 }
 
-.container .description {
+.container .block-description {
   display: flex;
   align-items: flex-end;
   justify-content: center;
   width: 75%;
-  border-left: 1px #ffffff solid;
+  border-left: 1px var(--light-background) solid;
   box-sizing: border-box;
   height: 30%;
 }
 
-.container .description .description-content {
+.container .block-description .block-description__content {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -153,80 +161,85 @@
   white-space: initial;
 }
 
-.container .description .description-content p {
+.container .block-description .block-description__content p {
   text-align: center;
-  font-size: 16px;
   width: 60%;
-  font-weight: normal;
+  color: var(--light-font);
+  font-size: 16px;
+  font-family: 'didot';
+  line-height: 20px;
 }
 
-.container .form {
+.container .block-form {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
   width: 75%;
   height: 70%;
-  border-left: 1px #ffffff solid;
+  border-left: 1px var(--light-background) solid;
 }
 
-.container .form form {
+.container .block-form form {
   display: flex;
   width: 274px;
   margin-top: 80px;
   flex-direction: column;
 }
 
-.container .form form input {
+.container .block-form form input {
   border-top: none;
   border-right: none;
   border-left: none;
   padding: 10px 0;
   background-color: #252525;
   margin-bottom: 40px;
-  border-bottom: 1px solid #ffffff;
-  color: #ffffff;
+  border-bottom: 1px solid var(--light-background);
+  color: var(--light-font);
 }
 
-.container .form form input::placeholder {
-  color: #ffffff;
-  font-family: "Didot";
-  font-size: 15px;
+.container .block-form form input::placeholder {
+  color: var(--light-font);
+  font-size: 16px;
+  font-family: 'didot';
+  line-height: 20px;
 }
 
-.container .form form textarea {
+.container .block-form form textarea {
   border-top: none;
   border-right: none;
   border-left: none;
   padding-top: 10px;
   padding-bottom: 110px;
   background-color: #252525;
-  color: #ffffff;
-  border-bottom: 1px solid #ffffff;
+  color: var(--light-font);
+  border-bottom: 1px solid var(--light-background);
 }
 
-.container .form form textarea::placeholder {
-  color: #ffffff;
-  font-family: "Didot";
-  font-size: 15px;
+.container .block-form form textarea::placeholder {
+  color: var(--light-font);
+  font-size: 16px;
+  font-family: 'didot';
+  line-height: 20px;
 }
 
-.container .form form button {
+.container .block-form form button {
   margin-top: 35px;
   padding: 7px 0;
   border-radius: 0px;
   background-color: transparent;
-  border: 1px solid #ffffff;
-  font-size: 12px;
-  font-family: "Didot";
-  color: #ffffff;
+  border: 1px solid var(--light-background);
+  color: var(--light-font);
   width: 100px;
   cursor: pointer;
+  font-size: 16px;
+  font-family: 'didot';
+  line-height: 20px;
 }
 
-.container .form form button:hover {
-  background-color: #ffffff;
-  color: #252525;
+.container .block-form form button:hover {
+  background-color: var(--light-background);
+  color: var(--dark-background);
 }
 
 @media screen and (max-width: 1024px) and (min-width: 431px) {

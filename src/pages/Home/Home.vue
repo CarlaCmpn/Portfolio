@@ -1,9 +1,9 @@
 <template>
   <div class="container">
-    <div class="title-block">
-      <div class="title">
+    <div class="block-left">
+      <div class="block-left__title">
         <h2>All my</h2>
-        <div class="block">
+        <div class="block-left__subtitle">
           <p>w</p>
           <p>o</p>
           <p>r</p>
@@ -11,45 +11,42 @@
           <p>s</p>
         </div>
       </div>
-      <div class="image">
+      <div class="block-left__icon">
         <img src="@/assets/ellipse.svg">
       </div>
-      <footer class="footer-big">
+      <footer class="block-left__footer--big">
 				<p>Code & design by me ✨</p>
 			</footer>
     </div>
-    <div class="projects">
+    <div class="project">
       <div class="block-project" v-for="data in dataHome" :key="data.title">
-        <div class="main-project">
-          <div class="text-left" :class="data.class_reveal_description">
+        <div class="block-project-main">
+          <div class="block-project-main__id" :class="data.class_reveal_description">
               <p>{{data.id}}</p>
           </div>
-          <div class="text-right" :class="data.class_reveal_id">
+          <div class="block-project-main__description" :class="data.class_reveal_id">
             <p>{{data.description}}</p>
           </div>
-          <div class="cover-project">
-            <div class="image-project" :class="data.class_reveal">
+          <div class="block-project-main__cover">
+            <div class="block-project-main__cover__image" :class="data.class_reveal">
               <img :src="require('@/assets/images/'+`${data.img}`)">
             </div>
-            <div class="text-project" :class="data.class_reveal_title">
-              <h3>{{data.title}}</h3>
+            <div class="block-project-main__cover__content" :class="data.class_reveal_title">
+              <p>{{data.title}}</p>
               <a :href="data.link">
-                <div class="see-more">
+                <div class="block-project-main__cover__link">
                   <p>See the project</p>
-                  <div class="line"></div>
+                  <div class="block-project-main__cover__line"></div>
                 </div>
               </a>
             </div>
           </div>
-          <!-- <div class="text-right" :class="data.class_reveal_id">
-            <p>{{data.id}}</p>
-          </div> -->
         </div>
-        <div class="next-project">
+        <div class="block-project__next">
           <div :class="data.class_arrow"></div>
         </div>
       </div>
-      <footer class="footer-small">
+      <footer class="block-project__footer--small">
 				<p>Code & design by me ✨</p>
 			</footer>
     </div>
@@ -113,5 +110,6 @@
 </script>
 
 <style>
-  @import 'home.css';
+  @import 'home.min.css';
+  @import '../../styles/reset.css';
 </style>

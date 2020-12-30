@@ -16,8 +16,16 @@
 		<div class="navbar-open" v-bind:class="[isActive ? 'transition-open' : 'transition-close']">
 			<div class="list">
 				<div class="list-link" v-on:click="isActive = false">
-					<div v-if="selectedWork" class="circle"></div>
+					<div v-if="selectedHome" class="circle"></div>
 					<router-link to="/">
+						<p>Home</p>
+						<div class="underligne"></div>
+					</router-link>
+					<div v-if="selectedHome" class="circle"></div>
+				</div>
+				<div class="list-link" v-on:click="isActive = false">
+					<div v-if="selectedWork" class="circle"></div>
+					<router-link to="/works">
 						<p>Works</p>
 						<div class="underligne"></div>
 					</router-link>
@@ -55,6 +63,7 @@ export default {
 	data(){
 		return {
 			isActive: false,
+			selectedHome: false,
 			selectedWork: false,
 			selectedAbout: false,
 			selectedContact: false,
@@ -70,6 +79,12 @@ export default {
 		console.log(currentUrl);
 
 		if(currentUrl === "/"){
+			this.selectedHome = true
+		}else{
+			this.selectedHome = false
+		}
+
+		if(currentUrl === "/works"){
 			this.selectedWork = true
 		}else{
 			this.selectedWork = false

@@ -5,6 +5,7 @@ import About from '../pages/About/About.vue'
 import Contact from '../pages/Contact/Contact.vue'
 import Project from '../pages/Project/Project.vue'
 import PageNotFound from '../pages/PageNotFound/PageNotFound.vue'
+import Intro from '../pages/Intro/Intro.vue'
 
 Vue.use(Router)
 
@@ -13,6 +14,10 @@ export default new Router({
   routes: [
     {
       path: '/',
+      component: Intro
+    },
+    {
+      path: '/works',
       component: Home
     },
     {

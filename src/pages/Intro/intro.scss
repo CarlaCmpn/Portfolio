@@ -14,7 +14,8 @@
 
 	&.transition-close{
 		transition: all ease-out 1.5s;
-		transform: translateY(-100vh);
+		// transform: translateY(-100vh);
+		opacity: 0;
 	}
 
 	.text{
@@ -137,7 +138,6 @@
 		}
 	}
 }
-
 
 
 

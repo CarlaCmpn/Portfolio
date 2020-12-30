@@ -1,8 +1,7 @@
 <template>
   <div id="app">
-    <Intro />
     <Header />
-    <router-view/>
+    <router-view></router-view>
   </div>
 </template>
 
@@ -36,4 +35,12 @@ body{
   font-family: "Didot";
 }
 
+/* .fade-enter, .fade-leave-to{
+  opacity: 0;
+  transform: translateX(2em);
+}
+
+.fade-enter-active, .fade-leave-active{
+  transition: all .3s ease;
+} */
 </style>

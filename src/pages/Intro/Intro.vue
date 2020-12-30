@@ -32,8 +32,10 @@
 		<div class="image">
 			<img src="../../assets/triangle.svg" alt="">
 		</div>
-		<div v-on:click="intro = false" class="close-button">
-			<img src="../../assets/cross-black.svg" alt="">
+		<div class="close-button">
+			<router-link to="/works">
+				<img src="../../assets/cross-black.svg" alt="">
+			</router-link>
 		</div>
 	</div>
 </template>
@@ -41,7 +43,6 @@
 <script>
 export default {
   name: 'Intro',
-  props: ['click'],
   components: {
 
   },

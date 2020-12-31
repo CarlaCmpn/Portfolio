@@ -1,11 +1,19 @@
 @import '../../styles/variables/colors/_colors.scss';
-@import '../../styles/mixins/_typography.scss';
+
+@font-face{
+	font-family: 'Didot';
+	font-weight: normal;
+	font-style: normal;
+	src: url('../../assets/fonts/Didot-Regular.ttf') format('truetype'),
+		url('../../assets/fonts/Didot-Regular.woff') format('woff'),
+		url('../../assets/fonts/Didot-Regular.woff2') format('woff2')
+}
 
 .container-intro{
 	width: 100vw;
 	height: 100vh;
 	display: flex;
-	position: absolute;
+	position: absolute; 
 	z-index: 10;
 	justify-content: center;
 	align-items: flex-start;
@@ -33,6 +41,7 @@
 
 			p{
 				font-size: 58px;
+				font-family: 'Didot';
 				color:var(--dark-font);
 			}
 		}

@@ -1,9 +1,9 @@
 @font-face {
-  font-family: 'didot';
+  font-family: 'Didot';
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: url("../../../assets/fonts/DidotRegular.woff2") format("woff2"), url("../../../assets//fonts/Didot-Regular.woff") format("woff");
+  src: url("../../../assets/fonts/Didot-Regular.woff2") format("woff2"), url("../../../assets//fonts/Didot-Regular.woff") format("woff");
 }
 
 @font-face {
@@ -11,7 +11,15 @@
   font-style: italic;
   font-weight: 400;
   font-display: swap;
-  src: url("../../../assets/fonts/DidotLTStdItalic.woff2") format("woff2"), url("../../../assets//fonts/Didot-LT-Std-Italic.woff") format("woff");
+  src: url("../../../assets/fonts/DidotLTStd-Italic.woff2") format("woff2"), url("../../../assets//fonts/DidotLTStd-Italic.woff") format("woff");
+}
+
+@font-face {
+  font-family: 'Didot-HTF-M96-Medium';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("../../../assets/fonts/Didot-Medium.woff2") format("woff2"), url("../../../assets//fonts/Didot-Medium.woff") format("woff");
 }
 
 @font-face {
@@ -19,7 +27,7 @@
   font-style: normal;
   font-weight: 700;
   font-display: swap;
-  src: url("../../../assets/fonts/Didot-LT-Std-Bold.woff") format("woff"), url("../../../assets//fonts/DidotLTStdBold.woff2") format("woff2");
+  src: url("../../../assets/fonts/DidotLTStd-Bold.woff2") format("woff2"), url("../../../assets//fonts/DidotLTStd-Bold.woff") format("woff");
 }
 
 @font-face {
@@ -27,5 +35,5 @@
   font-style: italic;
   font-weight: 700;
   font-display: swap;
-  src: url("../../../assets/fonts/Didot-Bold-Italic.woff") format("woff"), url("../../../assets//fonts/DidotBoldItalic.woff2") format("woff2");
+  src: url("../../../assets/fonts/Didot-Bold-Italic.woff2") format("woff2"), url("../../../assets//fonts/Didot-Bold-Italic.woff") format("woff");
 }

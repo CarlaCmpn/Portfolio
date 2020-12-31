@@ -1,6 +1,6 @@
 @mixin title {
 	font-size: 60px;
-	font-family: 'didot';
+	font-family: 'Didot';
 }
 
 @mixin title_italic {
@@ -10,12 +10,12 @@
 
 @mixin title_second {
 	font-size: 41px;
-	font-family: 'didot';
+	font-family: 'Didot';
 }
 
 @mixin body {
 	font-size: 16px;
-	font-family: 'didot';
+	font-family: 'Didot';
 	line-height: 20px;
 }
 
@@ -26,7 +26,7 @@
 
 @mixin caption {
 	font-size: 18px;
-	font-family: 'didot';
+	font-family: 'Didot';
 }
 
 @mixin footer {

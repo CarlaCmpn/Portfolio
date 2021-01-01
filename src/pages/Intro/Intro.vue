@@ -34,8 +34,9 @@
 		</div>
 		<div class="button">
 			<a href="/works">
-				<img src="../../assets/cross-black.svg" alt="">
-			</a>
+				<p>Discover</p>
+				<div class="button--line"></div>
+			</a> 
 		</div>
 	</div>
 </template>

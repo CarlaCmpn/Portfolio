@@ -34,7 +34,7 @@
 
 .container-home .block-left .block-left__title h2 {
   font-size: 60px;
-  font-family: 'didot';
+  font-family: 'Didot';
   color: var(--light-font);
 }
 
@@ -155,7 +155,7 @@
 
 .container-home .project .block-project .block-project-main .block-project-main__id p {
   font-size: 18px;
-  font-family: 'didot';
+  font-family: 'Didot';
   color: var(--light-font);
 }
 
@@ -167,7 +167,7 @@
 
 .container-home .project .block-project .block-project-main .block-project-main__description p {
   font-size: 18px;
-  font-family: 'didot';
+  font-family: 'Didot';
   color: var(--light-font);
 }
 
@@ -210,7 +210,7 @@
 
 .container-home .project .block-project .block-project-main .block-project-main__cover .block-project-main__cover__content p {
   font-size: 16px;
-  font-family: 'didot';
+  font-family: 'Didot';
   line-height: 20px;
   white-space: normal;
   color: var(--light-font);

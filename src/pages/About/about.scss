@@ -138,11 +138,12 @@
 			align-items: center;
 			width: 250px;
 			height: 350px;
-			// background-color: grey;
+			background-color: red;
 			overflow: hidden;
 
 			img{
-				width: 145%;
+				filter: grayscale(100%);
+				width: 130%;
 				height: auto;
 			}
 		}

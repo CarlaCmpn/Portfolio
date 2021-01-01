@@ -46,7 +46,7 @@
 
 .container-about .block-left .block-left__title h2 {
   font-size: 60px;
-  font-family: 'didot';
+  font-family: 'Didot';
   color: var(--light-font);
 }
 
@@ -143,11 +143,13 @@
   align-items: center;
   width: 250px;
   height: 350px;
+  background-color: red;
   overflow: hidden;
 }
 
 .container-about .picture .block-picture img {
-  width: 145%;
+  filter: grayscale(100%);
+  width: 130%;
   height: auto;
 }
 
@@ -223,7 +225,7 @@
 
 .container-about .block-description .block-description__text p {
   font-size: 16px;
-  font-family: 'didot';
+  font-family: 'Didot';
   line-height: 20px;
   padding: 10px 0;
   color: var(--light-font);

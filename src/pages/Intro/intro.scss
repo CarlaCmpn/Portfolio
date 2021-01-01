@@ -1,13 +1,5 @@
 @import '../../styles/variables/colors/_colors.scss';
-
-@font-face{
-	font-family: 'Didot';
-	font-weight: normal;
-	font-style: normal;
-	src: url('../../assets/fonts/Didot-Regular.ttf') format('truetype'),
-		url('../../assets/fonts/Didot-Regular.woff') format('woff'),
-		url('../../assets/fonts/Didot-Regular.woff2') format('woff2')
-}
+@import '../../styles/variables/fonts/_font.scss';
 
 .container-intro{
 	width: 100vw;
@@ -123,17 +115,38 @@
 		display: flex;
 		justify-content: center;
 		align-items: center;
-		width: 50px;
-		height: 50px;
-		border: 2px solid var(--dark-font);
-		border-radius: 100%;
 		position: absolute;
 		top: 90vh;
 		left: 50vw;
 
-		img{
-			width: 50px;
-			height: 50px;
+		a{
+			display: flex;
+			align-items: center;
+			text-decoration: none;
+			p{
+				font-size: 20px;
+				color: var(--dark-font);
+			}
+
+			.button--line{
+				margin-left: 10px;
+				width: 50px;
+				height: 1px;
+				background-color: var(--dark-font)
+			}
+
+			&:hover .button--line{
+				animation: ligne 1s 1 normal;
+			}
+
+			@keyframes ligne{
+				0%{
+					width: 0px;
+				}
+				100%{
+					width: 50px;
+				}
+			}
 		}
 	}
 }

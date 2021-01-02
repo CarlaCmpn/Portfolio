@@ -1,4 +1,4 @@
-@import '../../styles/mixins/_typography.scss'; 
+@import '../../styles/mixins/_typography.scss';   
 
 .container-about{
     display: flex;
@@ -238,6 +238,8 @@
 				@include body-bold;
 				color: var(--light-font);
 				text-decoration: none;
+				// background-color: aqua;
+				width: 80px;
 			}
 
 			a:hover{

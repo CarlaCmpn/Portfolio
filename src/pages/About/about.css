@@ -239,6 +239,7 @@
   font-family: 'DidotLTStd-Bold';
   color: var(--light-font);
   text-decoration: none;
+  width: 80px;
 }
 
 .container-about .block-description .block-description__link a:hover {

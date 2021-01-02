@@ -1,11 +1,3 @@
-:root {
-  --dark-background: #252525;
-  --dark-font: #111111;
-  --light-background: #ffffff;
-  --light-font: #ffffff;
-  --grey-font: #9b9999;
-}
-
 .container-404 {
   width: 100vw;
   height: 100vh;
@@ -13,40 +5,42 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  background-color: var(--dark-background);
 }
 
 .container-404 h1 {
   color: var(--light-font);
   font-size: 41px;
-  font-family: 'didot';
+  font-family: 'Didot';
 }
 
 .container-404 h2 {
   color: var(--light-font);
   margin-top: 20px;
   font-size: 18px;
-  font-family: 'didot';
+  font-family: 'Didot';
 }
 
 .container-404 .button {
   margin-top: 50px;
   display: flex;
   align-items: center;
-  width: auto;
+  width: 170px;
   cursor: pointer;
 }
 
 .container-404 .button a {
-  color: #ffffff;
+  color: var(--light-font);
+  font-size: 16px;
+  font-family: 'DidotLTStd-Bold';
   text-decoration: none;
-  font-size: 20px;
 }
 
 .container-404 .button .button--line {
   margin-left: 10px;
   width: 50px;
   height: 1px;
-  background-color: #ffffff;
+  background-color: var(--light-font);
 }
 
 .container-404 .button:hover .button--line {

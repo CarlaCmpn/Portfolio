@@ -45,7 +45,7 @@ export default new Router({
       component: PageNotFound
     },
     {
-      path: '*',
+      path: '/*',
       component: PageNotFound
     },
   ]

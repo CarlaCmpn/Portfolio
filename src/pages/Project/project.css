@@ -1,11 +1,3 @@
-:root {
-  --dark-background: #252525;
-  --dark-font: #111111;
-  --light-background: #ffffff;
-  --light-font: #ffffff;
-  --grey-font: #9b9999;
-}
-
 .container-project {
   display: flex;
   flex-direction: column;
@@ -63,14 +55,14 @@
 
 .container-project .block-description .block-description__intro h4 {
   font-size: 41px;
-  font-family: 'didot';
+  font-family: 'Didot';
   color: var(--light-font);
 }
 
 .container-project .block-description .block-description__intro p {
   font-size: 16px;
-  font-family: 'didot';
-  line-height: 20px;
+  font-family: 'Didot';
+  line-height: 24px;
   color: var(--light-font);
   width: 489px;
   margin-top: 33px;
@@ -165,12 +157,12 @@
 .container-project .block-description .block-description__category .block-description__category__section p {
   color: var(--light-font);
   font-size: 18px;
-  font-family: 'didot';
+  font-family: 'Didot';
 }
 
 .container-project .block-description .block-description__category .block-description__category__section p:nth-child(1) {
   font-size: 18px;
-  font-family: 'didot';
+  font-family: 'Didot';
   color: var(--grey-font);
   margin-right: 30px;
 }
@@ -208,14 +200,14 @@
 
 .container-project .block-content .block-content__intro h4 {
   font-size: 41px;
-  font-family: 'didot';
+  font-family: 'Didot';
   color: var(--light-font);
 }
 
 .container-project .block-content .block-content__intro p {
   font-size: 16px;
-  font-family: 'didot';
-  line-height: 20px;
+  font-family: 'Didot';
+  line-height: 24px;
   color: var(--light-font);
   width: 80%;
   margin-top: 33px;
@@ -230,8 +222,8 @@
 
 .container-project .block-content .block-content__text p {
   font-size: 16px;
-  font-family: 'didot';
-  line-height: 20px;
+  font-family: 'Didot';
+  line-height: 24px;
   color: var(--light-font);
   margin-top: 33px;
   white-space: normal;
@@ -266,7 +258,7 @@
 
 .container-project .block-graphical-charter .block-graphical-charter__content .block-graphical-charter__content__colors h4 {
   font-size: 41px;
-  font-family: 'didot';
+  font-family: 'Didot';
   color: var(--light-font);
   width: 100%;
   margin-bottom: 50px;
@@ -278,7 +270,7 @@
 
 .container-project .block-graphical-charter .block-graphical-charter__content .block-graphical-charter__content__typographies h4 {
   font-size: 41px;
-  font-family: 'didot';
+  font-family: 'Didot';
   color: var(--light-font);
   width: 100%;
   margin-bottom: 50px;
@@ -327,14 +319,14 @@
 
 .container-project .block-conclusion .block-conclusion__intro h4 {
   font-size: 41px;
-  font-family: 'didot';
+  font-family: 'Didot';
   color: var(--light-font);
 }
 
 .container-project .block-conclusion .block-conclusion__intro p {
   font-size: 16px;
-  font-family: 'didot';
-  line-height: 20px;
+  font-family: 'Didot';
+  line-height: 24px;
   color: var(--light-font);
   width: 489px;
   margin-top: 33px;

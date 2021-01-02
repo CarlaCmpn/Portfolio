@@ -16,14 +16,6 @@
 		<div class="navbar-open" v-bind:class="[isActive ? 'navbar-open__transition--open' : 'navbar-open__transition--close']">
 			<div class="navbar-open__list">
 				<div class="navbar-open__list__link" v-on:click="isActive = false">
-					<div v-if="selectedHome" class="navbar-open__list__link__circle"></div>
-					<router-link to="/">
-						<p>Home</p>
-						<div class="navbar-open__list__link__circle--underline"></div>
-					</router-link>
-					<div v-if="selectedHome" class="navbar-open__list__link__circle"></div>
-				</div>
-				<div class="navbar-open__list__link" v-on:click="isActive = false">
 					<div v-if="selectedWork" class="navbar-open__list__link__circle"></div>
 					<router-link to="/works">
 						<p>Works</p>

@@ -1,11 +1,3 @@
-:root {
-  --dark-background: #252525;
-  --dark-font: #111111;
-  --light-background: #ffffff;
-  --light-font: #ffffff;
-  --grey-font: #9b9999;
-}
-
 .container-about {
   display: flex;
   padding-left: 75px;
@@ -226,7 +218,7 @@
 .container-about .block-description .block-description__text p {
   font-size: 16px;
   font-family: 'Didot';
-  line-height: 20px;
+  line-height: 24px;
   padding: 10px 0;
   color: var(--light-font);
   white-space: initial;

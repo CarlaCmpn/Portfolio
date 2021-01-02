@@ -1,11 +1,3 @@
-:root {
-  --dark-background: #252525;
-  --dark-font: #111111;
-  --light-background: #ffffff;
-  --light-font: #ffffff;
-  --grey-font: #9b9999;
-}
-
 .container-home {
   display: flex;
   padding-left: 75px;
@@ -211,7 +203,7 @@
 .container-home .project .block-project .block-project-main .block-project-main__cover .block-project-main__cover__content p {
   font-size: 16px;
   font-family: 'Didot';
-  line-height: 20px;
+  line-height: 24px;
   white-space: normal;
   color: var(--light-font);
 }

@@ -41,7 +41,7 @@
 				<p>I recently embarked on the adventure of the freelance missions, do not hesitate to contact me for any information.</p>
 			</div>
 			<div class="block-description__link">
-				<a href="">Resume</a>
+				<a href="../../assets/files/CV.pdf" download>Resume</a>
 				<a href="">Malt</a>
 				<a href="https://www.linkedin.com/in/carla-compan-952b2a173/">Linkedin</a>
 				<a href="https://github.com/CarlaCmpn">Github</a>

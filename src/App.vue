@@ -33,3 +33,9 @@ body{
   top: 0;
 }
 </style>
+
+<style>
+  @import 'styles/reset.css';
+  @import 'styles/variables/colors/_colors.min.css';
+  @import 'styles/variables/fonts/_font.css';
+</style>

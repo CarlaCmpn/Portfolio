@@ -1,5 +1,4 @@
-@import '../../styles/variables/colors/_colors.scss';
-@import '../../styles/mixins/_typography.scss';
+@import '../../styles/mixins/_typography.scss'; 
 
 .container-contact{
     display: flex;
@@ -158,7 +157,7 @@
 			white-space: initial;
 
 			p{
-				text-align: center;
+				text-align: left;
 				width: 60%;
 				color: var(--light-font);
 				@include body;

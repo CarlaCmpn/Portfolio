@@ -1,5 +1,4 @@
 @import '../../styles/mixins/_typography.scss';
-@import '../../styles/variables/colors/colors';
 
 .container-home{  
     display: flex;
@@ -202,7 +201,6 @@
 							@include body;
 							white-space: normal;
 							color: var(--light-font);
-
 						}
 
 						a{

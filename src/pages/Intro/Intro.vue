@@ -56,9 +56,5 @@ export default {
 </script>
 
 <style>
-	@import '../../styles/reset.css';
-</style>
-
-<style>
 	@import 'intro.min.css';
 </style>

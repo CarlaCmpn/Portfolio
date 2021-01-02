@@ -54,14 +54,14 @@
 
 			h4{
 				@include title_second;
-				color: var(--light-font)
+				color: var(--light-font);
+				margin-bottom: 33px;
 			}
 
 			p{
 				@include body;
 				color: var(--light-font);
 				width: 489px;
-				margin-top: 33px;
 				white-space: normal;
 			}
 
@@ -73,7 +73,6 @@
 					align-items: center;
 					width: auto;
 					cursor: pointer;
-					margin-top: 30px;
 
 					&:hover .block-description__intro__discover--line{
 						animation: ligne 1s 1 normal;

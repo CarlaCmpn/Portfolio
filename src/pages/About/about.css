@@ -241,6 +241,10 @@
   text-decoration: none;
 }
 
+.container-about .block-description .block-description__link a:hover {
+  color: var(--grey-font);
+}
+
 .container-about .block-description .block-description__footer--small {
   display: none;
 }

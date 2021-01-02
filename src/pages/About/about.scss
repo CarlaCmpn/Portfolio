@@ -239,6 +239,10 @@
 				color: var(--light-font);
 				text-decoration: none;
 			}
+
+			a:hover{
+				color: var(--grey-font);
+			}
 		}
 
 		.block-description__footer--small{

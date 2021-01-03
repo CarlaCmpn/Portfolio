@@ -6,10 +6,9 @@
 			"description": "Personnal project",
 			"img": "travel_diary/couv_travel_diary.png",
 			"link": "/project/travel_diary",
-			"class_reveal": "reveal-2",
-			"class_reveal_title": "reveal-title-2",
-			"class_reveal_description": "reveal-description-2",
-			"class_reveal_id": "reveal-id-2",
+			"class_reveal": "reveal-1",
+			"class_reveal_title": "reveal-title-1",
+			"class_reveal_description": "reveal-description-1",
 			"class_arrow": "arrow"
 		},
 		{
@@ -18,10 +17,9 @@
 			"description": "Personnal project",
 			"img": "portfolio/couv_portfolio.png",
 			"link": "/project/portfolio",
-			"class_reveal": "reveal-1",
-			"class_reveal_title": "reveal-title-1",
-			"class_reveal_description": "reveal-description-1",
-			"class_reveal_id": "reveal-id-1",
+			"class_reveal": "reveal-2",
+			"class_reveal_title": "reveal-title-2",
+			"class_reveal_description": "reveal-description-2",
 			"class_arrow": "arrow"
 		},
 		{
@@ -33,7 +31,6 @@
 			"class_reveal": "reveal-3",
 			"class_reveal_title": "reveal-title-3",
 			"class_reveal_description": "reveal-description-3",
-			"class_reveal_id": "reveal-id-3",
 			"class_arrow": ""
 		}
 	],
@@ -72,8 +69,8 @@
 			"role": "Web developper and  designer",
 			"type_of_project": "Personnal project",
 			"three_images_1": "portfolio/home.png",
-			"three_images_2": "portfolio/about.png",
-			"three_images_3": "portfolio/contact.png",
+			"three_images_2": "portfolio/works.png",
+			"three_images_3": "portfolio/about.png",
 			"title_roadmap_word_1": "Reflexion &",
 			"title_roadmap_word_2": "creation",
 			"text_roadmap_1": "I started to imagine this portfolio after my 3rd year internship in which I was a front-end developer for 5 months. At the end of this internship, I felt the need to have a site that suited me more. Since the creation of my first portfolio a year and a half ago, my design and development skills have evolved. He was no longer representative of my tastes and abilities. It was the ideal project to use my new skills.",

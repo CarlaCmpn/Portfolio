@@ -215,7 +215,7 @@
 }
 
 @media screen and (max-width: 1024px) and (min-width: 431px) {
-  .navbar .name {
+  .navbar .navbar-name {
     padding-left: 0px;
     margin: 30px;
   }

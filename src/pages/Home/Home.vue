@@ -21,12 +21,10 @@
     <div class="project">
       <div class="block-project" v-for="data in dataHome" :key="data.title">
         <div class="block-project-main">
-          <div class="block-project-main__id" :class="data.class_reveal_description">
-              <p>{{data.id}}</p>
-          </div>
-          <div class="block-project-main__description" :class="data.class_reveal_id">
+          <div class="block-project-main__header">
+            <p>{{data.id}}</p>
             <p>{{data.description}}</p>
-          </div>
+          </div>  
           <div class="block-project-main__cover">
             <div class="block-project-main__cover__image" :class="data.class_reveal">
               <img :src="require('@/assets/images/'+`${data.img}`)">
@@ -95,12 +93,6 @@
         observer.observe(document.querySelector('.reveal-title-1'))
         observer.observe(document.querySelector('.reveal-title-2'))
         observer.observe(document.querySelector('.reveal-title-3'))
-        observer.observe(document.querySelector('.reveal-description-1'))
-        observer.observe(document.querySelector('.reveal-description-2'))
-        observer.observe(document.querySelector('.reveal-description-3'))
-        observer.observe(document.querySelector('.reveal-id-1'))
-        observer.observe(document.querySelector('.reveal-id-2'))
-        observer.observe(document.querySelector('.reveal-id-3'))
       }
     },
     mounted(){

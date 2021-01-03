@@ -1,28 +1,21 @@
 @font-face {
   font-family: 'Didot';
-  font-weight: normal;
-  font-style: normal;
   src: url("../../../assets/fonts/Didot-Regular.ttf") format("truetype"), url("../../../assets/fonts/Didot-Regular.woff") format("woff"), url("../../../assets/fonts/Didot-Regular.woff2") format("woff2");
 }
 
 @font-face {
   font-family: 'DidotLTStd-Italic';
   font-weight: normal;
-  font-style: italic;
   src: url("../../../assets/fonts/Didot-LTStd-Italic.ttf") format("truetype"), url("../../../assets/fonts/DidotLTStd-Italic.woff") format("woff"), url("../../../assets/fonts/DidotLTStd-Italic.woff2") format("woff2");
 }
 
 @font-face {
   font-family: 'DidotLTStd-Bold';
-  font-weight: 700;
-  font-style: normal;
   src: url("../../../assets/fonts/Didot-LTStd-Bold.ttf") format("truetype"), url("../../../assets/fonts/DidotLTStd-Bold.woff") format("woff"), url("../../../assets/fonts/DidotLTStd-Bold.woff2") format("woff2");
 }
 
 @font-face {
   font-family: 'Didot-HTF-B16-Bold-Ital';
-  font-weight: 700;
-  font-style: italic;
   src: url("../../../assets/fonts/Didot-Bold-Italic.ttf") format("truetype"), url("../../../assets/fonts/Didot-Bold-Italic.woff") format("woff"), url("../../../assets/fonts/Didot-Bold-Italic.woff2") format("woff2");
 }
  

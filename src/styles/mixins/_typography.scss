@@ -19,6 +19,11 @@
 	line-height: 24px;
 }
 
+@mixin link{
+	font-size: 16px; 
+	font-family: 'Didot-HTF-B16-Bold-Ital';
+}
+
 @mixin body-bold {
 	font-size: 16px;
 	font-family: 'DidotLTStd-Bold';

@@ -80,6 +80,19 @@
   cursor: pointer;
 }
 
+.container-project .block-description .block-description__intro a .block-description__intro__discover p {
+  font-size: 20px;
+  margin: 0;
+  width: auto;
+}
+
+.container-project .block-description .block-description__intro a .block-description__intro__discover .block-description__intro__discover--line {
+  margin-left: 10px;
+  width: 50px;
+  height: 1px;
+  background-color: var(--light-background);
+}
+
 .container-project .block-description .block-description__intro a .block-description__intro__discover:hover .block-description__intro__discover--line {
   animation: ligne 1s 1 normal;
 }
@@ -91,20 +104,6 @@
   100% {
     width: 50px;
   }
-}
-
-.container-project .block-description .block-description__intro a .block-description__intro__discover p {
-  font-size: 20px;
-  font-style: italic;
-  margin: 0;
-  width: auto;
-}
-
-.container-project .block-description .block-description__intro a .block-description__intro__discover .block-description__intro__discover--line {
-  margin-left: 10px;
-  width: 50px;
-  height: 1px;
-  background-color: var(--light-background);
 }
 
 .container-project .block-description .block-description__intro .block-description__intro__discover {
@@ -129,7 +128,8 @@
 }
 
 .container-project .block-description .block-description__intro .block-description__intro__discover p {
-  font-size: 20px;
+  font-size: 16px;
+  font-style: italic;
   font-family: 'DidotLTStd-Bold';
   width: auto;
 }
@@ -292,9 +292,9 @@
 
 .container-project .block-quotes p {
   color: var(--dark-font);
+  font-family: 'DidotLTStd-Italic';
   font-size: 42px;
   text-align: center;
-  font-style: italic;
   font-weight: normal;
   width: 964px;
   white-space: normal;

@@ -74,6 +74,19 @@
 					width: auto;
 					cursor: pointer;
 
+					p{
+						font-size: 20px;
+						margin: 0;
+						width: auto;
+					}
+
+					.block-description__intro__discover--line{
+						margin-left: 10px;
+						width: 50px;
+						height: 1px;
+						background-color: var(--light-background)
+					}
+
 					&:hover .block-description__intro__discover--line{
 						animation: ligne 1s 1 normal;
 					}
@@ -85,20 +98,6 @@
 						100%{
 							width: 50px;
 						}
-					}
-
-					p{
-						font-size: 20px;
-						font-style: italic;
-						margin: 0;
-						width: auto;
-					}
-
-					.block-description__intro__discover--line{
-						margin-left: 10px;
-						width: 50px;
-						height: 1px;
-						background-color: var(--light-background)
 					}
 				}
 			}
@@ -124,8 +123,7 @@
 				}
 
 				p{
-					font-size: 20px;
-					font-family: 'DidotLTStd-Bold';
+					@include link; 
 					width: auto;
 				}
 
@@ -282,9 +280,9 @@
 
 		p{
 			color: var(--dark-font);
+			font-family: 'DidotLTStd-Italic';
 			font-size: 42px;
 			text-align: center;
-			font-style: italic;
 			font-weight: normal;
 			width: 964px;
 			white-space: normal;

@@ -1,3 +1,4 @@
+@import url(/Users/compancarla/Desktop/Folio/src/styles/variables/fonts/_font.css);
 .container-home {
   display: flex;
   padding-left: 75px;
@@ -136,44 +137,29 @@
 .container-home .project .block-project .block-project-main {
   display: flex;
   justify-content: center;
+  align-items: flex-end;
   flex-wrap: wrap;
   width: 40%;
   height: 65%;
 }
 
-.container-home .project .block-project .block-project-main .block-project-main__id {
-  width: 50%;
-}
-
-.container-home .project .block-project .block-project-main .block-project-main__id p {
-  font-size: 18px;
-  font-family: 'Didot';
-  color: var(--light-font);
-}
-
-.container-home .project .block-project .block-project-main .block-project-main__description {
+.container-home .project .block-project .block-project-main .block-project-main__header {
   display: flex;
-  justify-content: flex-end;
-  width: 50%;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 10%;
 }
 
-.container-home .project .block-project .block-project-main .block-project-main__description p {
-  font-size: 18px;
-  font-family: 'Didot';
+.container-home .project .block-project .block-project-main .block-project-main__header p {
   color: var(--light-font);
 }
 
 .container-home .project .block-project .block-project-main .block-project-main__cover {
   display: flex;
   width: 100%;
-  height: 100%;
+  height: 90%;
   flex-direction: column;
-  margin-top: 15px;
-}
-
-.container-home .project .block-project .block-project-main .block-project-main__cover:hover .block-project-main__cover__image img {
-  filter: grayscale(0%);
-  width: 110%;
 }
 
 .container-home .project .block-project .block-project-main .block-project-main__cover .block-project-main__cover__image {
@@ -181,7 +167,7 @@
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: 80%;
+  height: 90%;
   overflow: hidden;
 }
 
@@ -192,9 +178,14 @@
   transition: width 0.5s ease-in-out;
 }
 
+.container-home .project .block-project .block-project-main .block-project-main__cover:hover .block-project-main__cover__image img {
+  filter: grayscale(0%);
+  width: 110%;
+}
+
 .container-home .project .block-project .block-project-main .block-project-main__cover .block-project-main__cover__content {
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   flex-direction: column;
   width: 100%;
   height: 20%;
@@ -210,7 +201,7 @@
 
 .container-home .project .block-project .block-project-main .block-project-main__cover .block-project-main__cover__content a {
   text-decoration: none;
-  margin-top: 20px;
+  margin-top: 10px;
 }
 
 .container-home .project .block-project .block-project-main .block-project-main__cover .block-project-main__cover__content a .block-project-main__cover__link {
@@ -236,6 +227,7 @@
 
 .container-home .project .block-project .block-project-main .block-project-main__cover .block-project-main__cover__content a .block-project-main__cover__link p {
   font-size: 16px;
+  font-style: italic;
   font-family: 'DidotLTStd-Bold';
   color: var(--light-font);
 }
@@ -311,37 +303,31 @@
 .reveal-title-1,
 .reveal-title-2,
 .reveal-title-3 {
-  transition-delay: .1s;
-}
-
-.reveal-description-1,
-.reveal-description-2,
-.reveal-description-3 {
-  transition-delay: .3s;
-}
-
-.reveal-id-1,
-.reveal-id-2,
-.reveal-id-3 {
   transition-delay: .5s;
 }
 
 @media screen and (max-width: 1024px) and (min-width: 431px) {
   .container-home {
-    display: flex;
+    flex-wrap: wrap;
+    overflow-y: scroll;
+    height: auto;
     padding: 0;
-    flex-direction: column;
   }
   .container-home .block-left {
     display: flex;
     justify-content: flex-end;
     width: 100%;
-    height: 25vh;
+    border: none;
+    margin: 0;
+    padding: 0;
+    margin-top: 150px;
+    height: auto;
   }
   .container-home .block-left .block-left__title {
     display: flex;
+    width: 100%;
     flex-direction: column;
-    justify-content: flex-end;
+    justify-content: center;
     align-items: center;
     position: relative;
     top: 0;
@@ -362,28 +348,44 @@
   }
   .container-home .project {
     width: 100%;
-    height: 75vh;
+    height: auto;
+    margin-top: 50px;
+    overflow: visible;
   }
   .container-home .project .block-project {
-    height: 100%;
+    justify-content: flex-start;
     border: none;
+    height: auto;
+    margin-bottom: 50px;
   }
   .container-home .project .block-project .block-project-main {
     display: flex;
-    width: 50%;
-    height: 80%;
-    margin-top: 30px;
+    flex-direction: row;
+    align-items: center;
+    width: 60%;
+    height: auto;
   }
-  .container-home .project .block-project .block-project-main .block-project-main__cover {
-    width: 100%;
-    height: 100%;
+  .container-home .project .block-project .block-project-main .block-project-main__header {
+    margin-bottom: 20px;
   }
   .container-home .project .block-project .block-project-main .block-project-main__cover .block-project-main__cover__image {
-    height: auto;
-    justify-content: space-around;
+    justify-content: flex-start;
+    height: 80%;
+  }
+  .container-home .project .block-project .block-project-main .block-project-main__cover:hover .block-project-main__cover__image img {
+    filter: grayscale(100%);
+    width: 100%;
   }
   .container-home .project .block-project .block-project-main .block-project-main__cover .block-project-main__cover__content {
+    margin-top: 10px;
     height: 30%;
+  }
+  .container-home .project .block-project .block-project-main .block-project-main__cover .block-project-main__cover__content h3 {
+    margin-top: 30px;
+  }
+  .container-home .project .block-project__next {
+    overflow: hidden;
+    display: none !important;
   }
   .container-home .project .block-project__footer--small {
     width: 100%;
@@ -393,27 +395,32 @@
   }
   .container-home .project .block-project__footer--small p {
     margin: 0;
-    font-style: italic;
+    font-family: 'DidotLTStd-Italic';
     color: var(--light-font);
   }
 }
 
 @media screen and (max-width: 430px) {
   .container-home {
-    display: flex;
+    flex-wrap: wrap;
+    overflow-y: scroll;
+    height: auto;
     padding: 0;
-    flex-direction: column;
   }
   .container-home .block-left {
     display: flex;
-    justify-content: flex-start;
+    justify-content: flex-end;
     width: 100%;
+    border: none;
+    margin: 0;
+    padding: 0;
     margin-top: 120px;
     height: auto;
-    padding-bottom: 30px;
   }
   .container-home .block-left .block-left__title {
     display: flex;
+    width: 100%;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     position: relative;
@@ -425,10 +432,13 @@
     margin: 0;
   }
   .container-home .block-left .block-left__title .block-left__subtitle {
-    margin-left: 10px;
+    margin-left: 0px;
   }
   .container-home .block-left .block-left__title .block-left__subtitle p {
     font-size: 35px;
+  }
+  .container-home .block-left .block-left__title .block-left__subtitle p:nth-of-type(6) {
+    padding-left: 10px;
   }
   .container-home .block-left .block-left__icon {
     display: none;
@@ -439,6 +449,7 @@
   .container-home .project {
     width: 100%;
     height: auto;
+    margin-top: 50px;
   }
   .container-home .project .block-project {
     justify-content: flex-start;
@@ -453,22 +464,16 @@
     width: 80%;
     height: auto;
   }
-  .container-home .project .block-project .block-project-main .text-left {
-    padding: 0;
-    width: 100%;
-    margin-bottom: 30px;
-  }
-  .container-home .project .block-project .block-project-main .text-left p {
-    margin: 0;
-    transform: rotate(0deg);
-  }
-  .container-home .project .block-project .block-project-main .block-project-main__cover {
-    width: 100%;
-    height: 100%;
+  .container-home .project .block-project .block-project-main .block-project-main__header {
+    margin-bottom: 20px;
   }
   .container-home .project .block-project .block-project-main .block-project-main__cover .block-project-main__cover__image {
     justify-content: flex-start;
     height: 80%;
+  }
+  .container-home .project .block-project .block-project-main .block-project-main__cover:hover .block-project-main__cover__image img {
+    filter: grayscale(100%);
+    width: 100%;
   }
   .container-home .project .block-project .block-project-main .block-project-main__cover .block-project-main__cover__content {
     margin-top: 10px;
@@ -476,14 +481,6 @@
   }
   .container-home .project .block-project .block-project-main .block-project-main__cover .block-project-main__cover__content h3 {
     margin-top: 30px;
-  }
-  .container-home .project .block-project .block-project-main .text-right {
-    padding: 0;
-    width: 100%;
-  }
-  .container-home .project .block-project .block-project-main .text-right p {
-    margin: 0;
-    transform: rotate(0deg);
   }
   .container-home .project .block-project__next {
     overflow: hidden;
@@ -497,7 +494,7 @@
   }
   .container-home .project .block-project__footer--small p {
     margin: 0;
-    font-style: italic;
+    font-family: 'DidotLTStd-Italic';
     color: var(--light-font);
   }
 }

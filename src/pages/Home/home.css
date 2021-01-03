@@ -158,7 +158,7 @@
 .container-home .project .block-project .block-project-main .block-project-main__cover {
   display: flex;
   width: 100%;
-  height: 90%;
+  height: 100%;
   flex-direction: column;
 }
 
@@ -167,7 +167,7 @@
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: 90%;
+  height: 80%;
   overflow: hidden;
 }
 
@@ -227,8 +227,7 @@
 
 .container-home .project .block-project .block-project-main .block-project-main__cover .block-project-main__cover__content a .block-project-main__cover__link p {
   font-size: 16px;
-  font-style: italic;
-  font-family: 'DidotLTStd-Bold';
+  font-family: 'Didot-HTF-B16-Bold-Ital';
   color: var(--light-font);
 }
 

@@ -64,7 +64,7 @@
 
 .navbar .navbar-menu .navbar-menu--line {
   height: 2px;
-  background-color: #ffffff;
+  background-color: var(--light-background);
   margin: 10px 0;
 }
 
@@ -183,7 +183,8 @@
 
 .navbar-open .navbar-open__list .navbar-open__list__link a p {
   font-size: 60px;
-  color: #252525;
+  font-family: 'Didot';
+  color: var(--dark-font);
   text-decoration: none;
   cursor: pointer;
 }

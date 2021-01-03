@@ -63,7 +63,7 @@
 
 		.navbar-menu--line{
 			height: 2px;
-			background-color: #ffffff;
+			background-color: var(--light-background);
 			margin: 10px 0;
 
 			&:nth-child(1){
@@ -181,8 +181,8 @@
 				flex-direction: column;
 
 				p{
-					font-size: 60px;
-					color: #252525;
+					@include title; 
+					color: var(--dark-font);
 					text-decoration: none;
 					cursor: pointer;
 				}

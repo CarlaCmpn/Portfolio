@@ -31,6 +31,7 @@ body{
   margin: 0;
   padding: 0;
   top: 0;
+  background-color: var(--dark-background);
 }
 </style>
 

@@ -1,12 +1,20 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="icon" sizes="32x32" href="static/favicon-32.png" type="image/png">
+    <link rel="icon" sizes="16x16" href="static/favicon-16.png" type="image/png">
     <title>Carla Compan - Portfolio</title>
   </head>
   <body>
-    <div id="app"></div>
+    <div id="app">
+      <form name="ask-question" netlify netlify-honeypot="bot-field" hidden>
+        <input type="text" name="name" />
+        <input type="email" name="email" />
+        <textarea name="message"></textarea>
+      </form>
+    </div>
   </body>
 </html>
 

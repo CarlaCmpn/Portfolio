@@ -29,12 +29,12 @@
 			</div>
 		</div>
 		<div class="block-form">
-			<form name="contact" action="" method="post" netlify>
-				<input type="hidden" name="form-name" value="contact" />
+			<form name="ask-question" method="post" data-netlify="true" data-netlify-honeypot="bot-field">
+				<input type="hidden" name="form-name" value="ask-question" />
 				<input type="text" name="name" placeholder="Name"/>
 				<input type="email" name="email" placeholder="Email"/>
 				<textarea name="message" placeholder="Message"/> 
-				<button type="submit">Send</button>
+				<button>Send</button>
 			</form>
 		</div>
 		<footer class="block-footer--small">
@@ -44,14 +44,32 @@
 </template>
 
 <script>
-  export default {
-    name: 'Home',
-    data() {
-      return {
-
+import Vue from 'vue'
+import axios from 'axios'
+import VueAxios from 'vue-axios'
+export default {
+  name: "Contact",
+  data () {
+    return {
+      form: {
+        askPerson: ''
       }
-    },
+    }
+  },
+  methods: {
+    // handleSubmit() {
+	// 	fetch("/contact", {
+    //     	method: "POST",
+    //   	})
+    //     .then(() => {
+    //       this.$router.push("thanks");
+    //     })
+    //     .catch(() => {
+    //       this.$router.push("404");
+    //     });
+    // }
   }
+}
 </script>
 
 <style>

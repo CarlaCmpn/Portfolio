@@ -6,6 +6,8 @@ import Contact from '../pages/Contact/Contact.vue'
 import Project from '../pages/Project/Project.vue'
 import PageNotFound from '../pages/PageNotFound/PageNotFound.vue'
 import Intro from '../pages/Intro/Intro.vue'
+import SubmissionSuccess from '../pages/SubmissionSuccess/SubmissionSuccess.vue'
+import SubmissionFail from '../pages/SubmissionFail/SubmissionFail.vue'
 
 Vue.use(Router)
 
@@ -44,6 +46,16 @@ export default new Router({
       path: '/project/*',
       component: PageNotFound
     },
+    // {
+    //   path: '/thanks',
+    //   name: 'success',
+    //   component: SubmissionSuccess
+    // },
+    // {
+    //   path: '/404',
+    //   name: 'fail',
+    //   component: SubmissionFail
+    // },
     {
       path: '/*',
       component: PageNotFound

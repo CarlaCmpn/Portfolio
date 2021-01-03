@@ -326,7 +326,7 @@
   .container-about {
     flex-wrap: wrap;
     overflow-y: scroll;
-    height: 100vh;
+    height: auto;
     padding: 0;
   }
   .container-about .block-left {

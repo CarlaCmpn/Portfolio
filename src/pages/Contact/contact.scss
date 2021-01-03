@@ -238,7 +238,7 @@
 	.container-contact{
 		flex-wrap: wrap;
 		overflow-y: scroll;
-		height: 100vh;
+		height: auto;
 		padding: 0;
 
 		.block-left{
@@ -314,7 +314,7 @@
 			justify-content: center;
 			align-items: flex-start;
 			margin-bottom: 30px;
-			margin-top: 50px;
+			margin-top: 125px;
 
 			p{
 				margin: 0;

@@ -20,8 +20,8 @@
 				<p>Code & design by me ✨</p>
 			</footer>
 		</div>
-		<div class="picture">
-			<div class="block-picture">
+		<div class="block-picture">
+			<div class="block-picture__image">
 				<img src="../../assets/images/about.jpg" alt="">
 			</div>
 			<div class="block-picture__icon">

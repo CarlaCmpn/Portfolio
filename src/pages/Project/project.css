@@ -173,7 +173,7 @@
   width: 100%;
   height: auto;
   background-color: #ffffff;
-  margin-top: 150px;
+  margin-top: 120px;
   padding: 100px 0;
 }
 
@@ -405,39 +405,32 @@
 }
 
 @media screen and (max-width: 1200px) and (min-width: 1025px) {
-  .container .description {
+  .container-project .block-description {
     flex-direction: column;
   }
-  .container .description-category {
+  .container-project .block-description__category {
     margin-top: 50px;
   }
-  .container .duo-images {
+  .container-project .block-model {
     margin-top: 50px;
   }
 }
 
 @media screen and (max-width: 1024px) {
-  .container {
+  .container-project {
     height: auto;
   }
-  .container .title-info {
+  .container-project .block-cover {
     margin-top: 120px;
   }
-  .container .title-info h2 {
-    font-size: 40px;
-    z-index: 1;
-  }
-  .container .cover {
-    margin-top: 50px;
-  }
-  .container .cover .cover-image {
+  .container-project .block-cover .cover-image {
     width: 80%;
   }
-  .container .cover .cover-image img {
+  .container-project .block-cover .cover-image img {
     width: 100%;
     height: auto;
   }
-  .container .description {
+  .container-project .block-description {
     flex-direction: column;
     margin-top: 30px;
     width: 100%;
@@ -445,101 +438,258 @@
     align-items: center;
     justify-content: center;
   }
-  .container .description .description-intro {
+  .container-project .block-description .block-description__intro {
     width: 80%;
   }
-  .container .description .description-intro h4 {
+  .container-project .block-description .block-description__intro h4 {
     font-size: 30px;
   }
-  .container .description .description-intro p {
+  .container-project .block-description .block-description__intro p {
     width: auto !important;
   }
-  .container .description-category {
+  .container-project .block-description__category {
     width: 80% !important;
     padding-right: 0 !important;
     box-sizing: border-box;
     margin-top: 50px;
   }
-  .container .description-category p {
+  .container-project .block-description__category p {
     font-size: 16px !important;
   }
-  .container .duo-images {
+  .container-project .block-model {
     margin-top: 50px;
     padding: 0;
     flex-direction: column;
     align-items: center;
   }
-  .container .duo-images img {
+  .container-project .block-model img {
     width: 80%;
   }
-  .container .content {
-    margin-top: 0px;
+  .container-project .block-content {
+    margin-top: 50px;
     padding: 0;
     align-items: center;
     flex-direction: column;
   }
-  .container .content .content-intro {
+  .container-project .block-content .block-content__intro {
     width: 80%;
   }
-  .container .content .content-intro h4 {
+  .container-project .block-content .block-content__intro h4 {
     font-size: 30px;
   }
-  .container .content .content-intro p {
+  .container-project .block-content .block-content__intro p {
     margin: 0 !important;
     padding: 0;
     width: 100%;
     padding-top: 30px;
   }
-  .container .content .content-text {
+  .container-project .block-content .block-content__text {
     width: 80%;
     margin: 0;
     padding: 0;
   }
-  .container .content .content-text p {
+  .container-project .block-content .block-content__text p {
     margin: 0 !important;
     padding: 0;
     width: 100%;
     padding-top: 30px;
   }
-  .container .quotes {
-    padding: 10px 20px;
+  .container-project .block-graphical-charter {
+    margin-top: 50px;
+  }
+  .container-project .block-graphical-charter .block-graphical-charter__content__typographies img {
+    width: 45% !important;
+  }
+  .container-project .block-quotes {
+    padding: 20px 30px;
     margin-top: 50px;
     box-sizing: border-box;
   }
-  .container .quotes p {
+  .container-project .block-quotes p {
     font-size: 30px;
   }
-  .container .video {
-    margin-top: 50px;
-  }
-  .container .video video {
-    width: 80%;
-  }
-  .container .conclusion {
+  .container-project .block-conclusion {
+    flex-direction: column;
+    align-items: center;
     margin-top: 50px;
     padding: 0;
     justify-content: center;
   }
-  .container .conclusion .conclusion-intro {
+  .container-project .block-conclusion .block-conclusion__intro {
     width: 80%;
   }
-  .container .conclusion .conclusion-intro h4 {
+  .container-project .block-conclusion .block-conclusion__intro h4 {
     font-size: 30px;
   }
-  .container .conclusion .conclusion-intro p {
+  .container-project .block-conclusion .block-conclusion__intro p {
     width: auto !important;
   }
-  .container .next-project {
+  .container-project .block-conclusion .block-mockup {
+    margin-top: 30px;
+  }
+  .container-project .block-conclusion .block-mockup video {
+    width: 160%;
+  }
+  .container-project .block-next-project {
     margin-top: 50px;
     padding: 20px 30px;
   }
-  .container .next-project a {
+  .container-project .block-next-project a {
     font-size: 20px !important;
   }
-  .container footer {
+  .container-project footer {
     padding: 30px 0;
   }
-  .container footer p {
+  .container-project footer p {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 430px) {
+  .container-project {
+    height: auto;
+  }
+  .container-project .block-cover {
+    margin-top: 120px;
+  }
+  .container-project .block-cover .block-cover__image {
+    width: 80%;
+  }
+  .container-project .block-cover .block-cover__image img {
+    width: 100%;
+    height: auto;
+  }
+  .container-project .block-description {
+    flex-direction: column;
+    margin-top: 30px;
+    width: 100%;
+    padding: 0;
+    align-items: center;
+    justify-content: center;
+  }
+  .container-project .block-description .block-description__intro {
+    width: 80%;
+  }
+  .container-project .block-description .block-description__intro h4 {
+    font-size: 30px;
+  }
+  .container-project .block-description .block-description__intro p {
+    width: auto !important;
+  }
+  .container-project .block-description__category {
+    width: 80% !important;
+    padding-right: 0 !important;
+    box-sizing: border-box;
+    margin-top: 50px;
+  }
+  .container-project .block-description__category p {
+    font-size: 16px !important;
+  }
+  .container-project .block-model {
+    margin-top: 50px;
+    padding: 0;
+    flex-direction: column;
+    align-items: center;
+  }
+  .container-project .block-model img {
+    width: 80%;
+  }
+  .container-project .block-content {
+    margin-top: 50px;
+    padding: 0;
+    align-items: center;
+    flex-direction: column;
+  }
+  .container-project .block-content .block-content__intro {
+    width: 80%;
+  }
+  .container-project .block-content .block-content__intro h4 {
+    font-size: 30px;
+  }
+  .container-project .block-content .block-content__intro p {
+    margin: 0 !important;
+    padding: 0;
+    width: 100%;
+    padding-top: 30px;
+  }
+  .container-project .block-content .block-content__text {
+    width: 80%;
+    margin: 0;
+    padding: 0;
+  }
+  .container-project .block-content .block-content__text p {
+    margin: 0 !important;
+    padding: 0;
+    width: 100%;
+    padding-top: 30px;
+  }
+  .container-project .block-graphical-charter {
+    display: flex;
+    align-items: center;
+    padding: 0;
+    margin-top: 50px;
+  }
+  .container-project .block-graphical-charter .block-graphical-charter__content {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .container-project .block-graphical-charter .block-graphical-charter__content .block-graphical-charter__content__colors {
+    margin-bottom: 50px;
+  }
+  .container-project .block-graphical-charter .block-graphical-charter__content .block-graphical-charter__content__colors h4 {
+    font-size: 30px;
+  }
+  .container-project .block-graphical-charter .block-graphical-charter__content .block-graphical-charter__content__colors img {
+    width: 95% !important;
+  }
+  .container-project .block-graphical-charter .block-graphical-charter__content .block-graphical-charter__content__typographies h4 {
+    font-size: 30px;
+  }
+  .container-project .block-graphical-charter .block-graphical-charter__content .block-graphical-charter__content__typographies img {
+    width: 95% !important;
+  }
+  .container-project .block-quotes {
+    padding: 10px 20px;
+    margin-top: 50px;
+    box-sizing: border-box;
+  }
+  .container-project .block-quotes p {
+    font-size: 30px;
+  }
+  .container-project .block-conclusion {
+    margin-top: 50px;
+    padding: 0;
+    justify-content: center;
+  }
+  .container-project .block-conclusion .block-conclusion__intro {
+    width: 80%;
+  }
+  .container-project .block-conclusion .block-conclusion__intro h4 {
+    font-size: 30px;
+  }
+  .container-project .block-conclusion .block-conclusion__intro p {
+    width: auto !important;
+  }
+  .container-project .block-conclusion .block-mockup img {
+    width: 140%;
+    height: auto;
+  }
+  .container-project .block-conclusion .block-mockup video {
+    width: 160%;
+  }
+  .container-project .block-next-project {
+    margin-top: 50px;
+    padding: 20px 30px;
+  }
+  .container-project .block-next-project a {
+    font-size: 20px !important;
+  }
+  .container-project footer {
+    padding: 30px 0;
+  }
+  .container-project footer p {
     font-size: 20px;
   }
 }

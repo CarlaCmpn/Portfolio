@@ -235,13 +235,13 @@
 }
 
 @media screen and (max-width: 1024px) and (min-width: 431px){
-	.container{
+	.container-contact{
 		flex-wrap: wrap;
 		overflow-y: scroll;
 		height: auto;
 		padding: 0;
 
-		.title-block{
+		.block-left{
 			display: flex;
 			justify-content: flex-start;
 			width: 100%;
@@ -252,7 +252,7 @@
 			margin-top: 120px;
 			// background-color: lightgreen;
 
-			.title{
+			.block-left__title{
 				display: flex;
 				width: 100%;
 				flex-direction: column;
@@ -267,7 +267,7 @@
 					margin: 0;
 				}
 
-				.block{
+				.block-left__subtitle{
 					p{
 						font-size: 45px;
 						&:nth-of-type(4){
@@ -277,16 +277,16 @@
 				}
 			}
 
-			.image{
+			.block-left__icon{
 				display: none;
 			}
 
-			.footer-big{
+			.block-left__footer--big{
 				display: none;
 			}
 		}
 
-		.description{
+		.block-description{
 			display: flex;
 			justify-content: center;
 			align-items: center;
@@ -297,7 +297,7 @@
 			// background-color: lightpink;
 		}
 
-		.form{
+		.block-form{
 			width: 100%;
 			height: auto;
 			margin-top: 30px;
@@ -308,7 +308,7 @@
 			}
 		}
 
-		.footer-small{
+		.block-footer--small{
 			width: 100%;
 			display: flex;
 			justify-content: center;
@@ -319,19 +319,20 @@
 			p{
 				margin: 0;
 				font-style: italic;
+				color: var(--light-font);
 			}
 		}
 	}
 }
 
 @media screen and (max-width: 430px){
-	.container{
+	.container-contact{
 		// background-color: lightcoral;
 		padding: 0;
 		overflow-y: scroll;
 		height: auto;
 
-		.title-block{
+		.block-left{
 			display: flex;
 			justify-content: flex-end;
 			width: 100%;
@@ -341,7 +342,7 @@
 			margin-top: 120px;
 			// background-color: lightgreen;
 
-			.title{
+			.block-left__title{
 				display: flex;
 				width: 100%;
 				flex-direction: column;
@@ -356,7 +357,7 @@
 					margin: 0;
 				}
 
-				.block{
+				.block-left__subtitle{
 					margin-left: 10px;
 					p{
 						font-size: 35px;
@@ -368,16 +369,16 @@
 				}
 			}
 
-			.image{
+			.block-left__icon{
 				display: none;
 			}
 
-			.footer-big{
+			.block-left__footer--big{
 				display: none;
 			}
 		}
 
-		.description{
+		.block-description{
 			display: flex;
 			justify-content: center;
 			align-items: center;
@@ -386,7 +387,7 @@
 			margin-top: 30px;
 			// background-color: lightpink;
 
-			.description-content{
+			.block-description__content{
 				width: 100%;
 				p{
 					font-size: 15px !important;
@@ -395,7 +396,7 @@
 			}
 		}
 
-		.form{
+		.block-form{
 			padding: 0;
 			width: 100%;
 			border: none;
@@ -406,7 +407,7 @@
 			}
 		}
 
-		.footer-small{
+		.block-footer--small{
 			width: 100%;
 			display: flex;
 			justify-content: center;
@@ -417,6 +418,7 @@
 			p{
 				margin: 0;
 				font-style: italic;
+				color: var(--light-font);
 			}
 		}
 	}

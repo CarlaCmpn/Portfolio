@@ -148,7 +148,176 @@
 	}
 }
 
+@media screen and (max-width: 1024px) and (min-width: 500px){
+	.container-intro{
+		// background-color: blue;
+		align-items: center;
 
+		.block-text{
+			margin: 0;
+
+			p{
+				font-size: 38px !important;
+			}
+		}
+
+		.image{
+			display: flex;
+			justify-content: center;
+			opacity: 0;
+			width: 80px;
+			height: 80px;
+			animation: form 1s 1 forwards;
+
+			img{
+				width: 100%;
+				height: auto;
+			}
+		}
+
+		.image:nth-of-type(2){
+			top: 5vh;
+			left: 5vw;
+		}
+
+		.image:nth-of-type(3){
+			top: 70vh;
+			animation-delay: .5s;
+		}
+		
+		.image:nth-of-type(4){
+			top: 80vh;
+			left: 10vw;
+			animation-delay: 1s;
+		}
+		
+		.image:nth-of-type(5){
+			top: 20vh;
+			left: 40vw;
+			animation-delay: 1.5s;
+		}
+		
+		.image:nth-of-type(6){
+			top: 80vh;
+			left: 70vw;
+			animation-delay: 2s;	
+		}
+		
+		.image:nth-of-type(7){
+			top: 10vh;
+			left: 70vw;
+			animation-delay: 2.5s;
+		}
+
+		@keyframes form {
+			0% {
+				opacity: 0;
+			}
+			100% {
+				transform: translateX(10px);
+				opacity: 1;
+			}
+		}
+
+		.button{
+			margin: 0;
+			margin-top: 20px;
+			width: 469px;
+			justify-content: flex-start;
+		}
+	}
+}
+
+@media screen and (max-width: 500px){
+	.container-intro{
+		// background-color: blue;
+		align-items: center;
+
+		.block-text{
+			margin: 0;
+			display: flex;
+			justify-content: center;
+			flex-direction: column;
+			align-items: flex-start;
+			text-align: left;
+
+			p{
+				font-size: 24px !important;
+			}
+		}
+
+		.image{
+			display: flex;
+			justify-content: center;
+			opacity: 0;
+			width: 80px;
+			height: 80px;
+			animation: form 1s 1 forwards;
+
+			img{
+				width: 100%;
+				height: auto;
+			}
+		}
+
+		.image:nth-of-type(2){
+			top: 5vh;
+			left: 5vw;
+		}
+
+		.image:nth-of-type(3){
+			top: 70vh;
+			animation-delay: .5s;
+		}
+		
+		.image:nth-of-type(4){
+			top: 80vh;
+			left: 10vw;
+			animation-delay: 1s;
+		}
+		
+		.image:nth-of-type(5){
+			top: 20vh;
+			left: 40vw;
+			animation-delay: 1.5s;
+		}
+		
+		.image:nth-of-type(6){
+			top: 80vh;
+			left: 70vw;
+			animation-delay: 2s;	
+		}
+		
+		.image:nth-of-type(7){
+			top: 10vh;
+			left: 70vw;
+			animation-delay: 2.5s;
+		}
+
+		@keyframes form {
+			0% {
+				opacity: 0;
+			}
+			100% {
+				transform: translateX(10px);
+				opacity: 1;
+			}
+		}
+
+		.button{
+			margin: 0;
+			margin-top: 20px;
+			width: 296px;
+			justify-content: flex-start;
+
+
+			p{
+
+				font-size: 18px !important;
+			}
+		}
+	}
+}
 
 
 

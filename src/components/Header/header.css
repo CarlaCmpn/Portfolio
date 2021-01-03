@@ -219,18 +219,18 @@
     padding-left: 0px;
     margin: 30px;
   }
-  .navbar .menu {
+  .navbar .navbar-menu {
     padding-right: 0px;
     margin: 30px;
   }
 }
 
 @media screen and (max-width: 430px) {
-  .navbar .name {
+  .navbar .navbar-name {
     padding-left: 0px;
     margin: 30px;
   }
-  .navbar .menu {
+  .navbar .navbar-menu {
     padding-right: 0px;
     margin: 30px;
   }

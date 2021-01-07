@@ -115,16 +115,8 @@
 }
 
 .container-project .block-description .block-description__intro .block-description__intro__discover:hover .block-description__intro__discover--line {
-  animation: ligne 1s 1 normal;
-}
-
-@keyframes ligne {
-  0% {
-    width: 0px;
-  }
-  100% {
-    width: 50px;
-  }
+  transition: 0.5s width linear;
+  width: 50px;
 }
 
 .container-project .block-description .block-description__intro .block-description__intro__discover p {
@@ -135,7 +127,7 @@
 
 .container-project .block-description .block-description__intro .block-description__intro__discover .block-description__intro__discover--line {
   margin-left: 10px;
-  width: 50px;
+  width: 0px;
   height: 1px;
   background-color: var(--light-background);
 }

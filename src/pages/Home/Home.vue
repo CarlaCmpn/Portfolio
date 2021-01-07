@@ -27,7 +27,9 @@
           </div>  
           <div class="block-project-main__cover">
             <div class="block-project-main__cover__image" :class="data.class_reveal">
-              <img :src="require('@/assets/images/'+`${data.img}`)">
+              <a :href="data.link">
+                <img :src="require('@/assets/images/'+`${data.img}`)">
+              </a>
             </div>
             <div class="block-project-main__cover__content" :class="data.class_reveal_title">
               <p>{{data.title}}</p>
@@ -79,9 +81,9 @@
           entries.forEach(function(entry) {
             if(entry.intersectionRatio > ratio){
               entry.target.classList.add('reveal-visible')
-              console.log('visible')
+              // console.log('visible')
             }else{
-              console.log('invisible')
+              // console.log('invisible')
             }
           })
         }

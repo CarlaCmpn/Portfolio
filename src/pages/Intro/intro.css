@@ -123,6 +123,11 @@
   text-decoration: none;
 }
 
+.container-intro .button a:hover .button--line {
+  transition: 0.5s width linear;
+  width: 50px;
+}
+
 .container-intro .button a p {
   font-size: 20px;
   color: var(--dark-font);
@@ -131,22 +136,9 @@
 
 .container-intro .button a .button--line {
   margin-left: 10px;
-  width: 50px;
+  width: 0px;
   height: 1px;
   background-color: var(--dark-font);
-}
-
-.container-intro .button a:hover .button--line {
-  animation: ligne 1s 1 normal;
-}
-
-@keyframes ligne {
-  0% {
-    width: 0px;
-  }
-  100% {
-    width: 50px;
-  }
 }
 
 @media screen and (max-width: 1024px) and (min-width: 500px) {

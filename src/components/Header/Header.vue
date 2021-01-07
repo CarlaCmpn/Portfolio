@@ -66,7 +66,7 @@ export default {
 	},
 	updated(){
 		let currentUrl = window.location.pathname;
-		console.log(currentUrl);
+		// console.log(currentUrl);
 
 		if(currentUrl === "/"){
 			this.selectedHome = true

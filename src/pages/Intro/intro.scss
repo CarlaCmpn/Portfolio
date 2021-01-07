@@ -119,6 +119,12 @@
 			display: flex;
 			align-items: center;
 			text-decoration: none;
+
+			&:hover .button--line{
+				transition: 0.5s width linear;
+				width: 50px;
+			}
+
 			p{
 				font-size: 20px;
 				color: var(--dark-font);
@@ -127,22 +133,9 @@
 
 			.button--line{
 				margin-left: 10px;
-				width: 50px;
+				width: 0px;
 				height: 1px;
-				background-color: var(--dark-font)
-			}
-
-			&:hover .button--line{
-				animation: ligne 1s 1 normal;
-			}
-
-			@keyframes ligne{
-				0%{
-					width: 0px;
-				}
-				100%{
-					width: 50px;
-				}
+				background-color: var(--dark-font);
 			}
 		}
 	}

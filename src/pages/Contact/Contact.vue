@@ -44,30 +44,17 @@
 </template>
 
 <script>
-import Vue from 'vue'
-import axios from 'axios'
-import VueAxios from 'vue-axios'
+
 export default {
   name: "Contact",
   data () {
     return {
       form: {
-        askPerson: ''
+      
       }
     }
   },
   methods: {
-    // handleSubmit() {
-	// 	fetch("/contact", {
-    //     	method: "POST",
-    //   	})
-    //     .then(() => {
-    //       this.$router.push("thanks");
-    //     })
-    //     .catch(() => {
-    //       this.$router.push("404");
-    //     });
-    // }
   }
 }
 </script>

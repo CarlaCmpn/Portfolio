@@ -102,7 +102,7 @@ import json from '../../../json/data.json'
 	mounted(){
 
 		let currentUrl = window.location.pathname;
-		console.log(currentUrl);
+		// console.log(currentUrl);
 
 		if(currentUrl === "/project/portfolio"){
 			this.id = 1
@@ -128,9 +128,9 @@ import json from '../../../json/data.json'
           entries.forEach(function(entry) {
             if(entry.intersectionRatio > ratio){
               entry.target.classList.add('reveal-visible')
-              console.log('visible')
+            //   console.log('visible')
             }else{
-              console.log('invisible')
+            //   console.log('invisible')
             //   entry.target.classList.remove('reveal-visible')
             }
           })
